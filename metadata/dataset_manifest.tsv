@@ -1,0 +1,6 @@
+accession	candidate_role	audit_status	source_url
+GSE267018	discovery RNA-seq candidate	pending	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267018
+GSE267019	binding evidence candidate	pending	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267019
+GSE282800	alternative binding evidence candidate	pending	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282800
+GSE201466	independent validation candidate	pending	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201466
+GSE287355	context-transfer candidate; resolve subseries	pending	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287355

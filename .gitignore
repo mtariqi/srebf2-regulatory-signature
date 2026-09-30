@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+data/raw/
+data/processed/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.cram
+work/
+.nextflow*
