@@ -3,7 +3,7 @@
 - [x] Define SREBF2-focused, computational, real-data scope.
 - [x] Establish a dedicated local Git repository.
 - [x] Prepare initial research plan and tracking files.
-- [ ] Verify initial files were pushed to GitHub.
+- [x] Verify initial files were pushed to GitHub (eda8685).
 - [ ] Review literature and confirm research gap.
 - [ ] Audit discovery samples, controls, and replication.
 - [ ] Audit binding datasets and study overlap.
@@ -18,3 +18,5 @@ Next action: audit GSE267018 metadata and count-file availability.
 
 For each milestone, record commands, inputs, outputs, checks,
 decisions, next steps, and commit SHA.
+
+GSE267018 SOFT metadata downloaded; sample-level audit remains pending.
