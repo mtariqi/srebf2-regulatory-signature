@@ -1,0 +1,38 @@
+
+## SRR28966297_1_fastqc.zip
+PASS	Basic Statistics	SRR28966297_1.fastq.gz
+PASS	Per base sequence quality	SRR28966297_1.fastq.gz
+WARN	Per tile sequence quality	SRR28966297_1.fastq.gz
+PASS	Per sequence quality scores	SRR28966297_1.fastq.gz
+FAIL	Per base sequence content	SRR28966297_1.fastq.gz
+PASS	Per sequence GC content	SRR28966297_1.fastq.gz
+PASS	Per base N content	SRR28966297_1.fastq.gz
+PASS	Sequence Length Distribution	SRR28966297_1.fastq.gz
+FAIL	Sequence Duplication Levels	SRR28966297_1.fastq.gz
+PASS	Overrepresented sequences	SRR28966297_1.fastq.gz
+PASS	Adapter Content	SRR28966297_1.fastq.gz
+
+Basic statistics:
+Total Sequences	28254500
+Sequences flagged as poor quality	0
+Sequence length	150
+%GC	50
+
+## SRR28966297_2_fastqc.zip
+PASS	Basic Statistics	SRR28966297_2.fastq.gz
+PASS	Per base sequence quality	SRR28966297_2.fastq.gz
+PASS	Per tile sequence quality	SRR28966297_2.fastq.gz
+PASS	Per sequence quality scores	SRR28966297_2.fastq.gz
+FAIL	Per base sequence content	SRR28966297_2.fastq.gz
+PASS	Per sequence GC content	SRR28966297_2.fastq.gz
+PASS	Per base N content	SRR28966297_2.fastq.gz
+PASS	Sequence Length Distribution	SRR28966297_2.fastq.gz
+FAIL	Sequence Duplication Levels	SRR28966297_2.fastq.gz
+PASS	Overrepresented sequences	SRR28966297_2.fastq.gz
+PASS	Adapter Content	SRR28966297_2.fastq.gz
+
+Basic statistics:
+Total Sequences	28254500
+Sequences flagged as poor quality	0
+Sequence length	150
+%GC	50
