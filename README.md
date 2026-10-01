@@ -72,148 +72,71 @@ The signature will be biologically specific to SREBF2 activity.
 The signature will outperform or complement SREBF2 expression.
 The signature will outperform or complement cholesterol-homeostasis pathway scores.
 
-## Figure 1. Overall Study Design
- ┌──────────────────────────────────────────────────────────┐
- │                BIOLOGICAL QUESTION                       │
- │                                                          │
- │ How can we accurately measure functional SREBF2          │
- │ activity controlling cholesterol metabolism?            │
- └──────────────────────────────────────────────────────────┘
-                           │
-                           ▼
+```mermaid
+flowchart TD
 
-═══════════════════════════════════════════════════════════════
-🔵 DISCOVERY PHASE
-═══════════════════════════════════════════════════════════════
+A[Biological Question<br/>How can we accurately measure SREBF2 activity?]
 
-┌─────────────────────┐
-│ HeLa SREBP2 KO      │
-│ RNA-seq Dataset     │
-└──────────┬──────────┘
-           │
-           ▼
+subgraph D[🔵 Discovery Phase]
+B[HeLa SREBP2 KO RNA-seq]
+C[Quality Control<br/>PCA & Clustering]
+D1[Differential Expression Analysis]
+E[SREBF2 Responsive Genes]
+end
 
-┌─────────────────────┐
-│ Quality Control     │
-│ PCA & Clustering    │
-└──────────┬──────────┘
-           │
-           ▼
+subgraph S[🟢 Signature Development]
+F[Literature Evidence<br/>+ Target Support]
+G[Signature Construction]
+H[Frozen Signature]
+end
 
-┌─────────────────────┐
-│ Differential        │
-│ Expression Analysis │
-│ (DESeq2)            │
-└──────────┬──────────┘
-           │
-           ▼
+subgraph V[🟠 Independent Validation]
+I[HepG2 SREBP2 Knockdown]
+J[shRNA1-4]
+K[Signature Scoring]
+end
 
-┌─────────────────────┐
-│ SREBF2 Responsive   │
-│ Candidate Genes     │
-└──────────┬──────────┘
-           │
-           ▼
+subgraph P[🔴 Performance Evaluation]
+L[H1 Detect Perturbation]
+M[H2 Transferability]
+N[H3 Reproducibility]
+O[H4 Biological Specificity]
+P1[H5 vs SREBF2 Expression]
+Q[H6 vs Pathway Score]
+R[Robustness Testing]
+end
 
-═══════════════════════════════════════════════════════════════
-🟢 SIGNATURE DEVELOPMENT
-═══════════════════════════════════════════════════════════════
+S1[Final Conclusion<br/>Reliable Measure of SREBF2 Activity?]
 
-┌─────────────────────┐
-│ Literature Evidence │
-│ + Target Support    │
-└──────────┬──────────┘
-           │
-           ▼
+A --> B
+B --> C
+C --> D1
+D1 --> E
 
-┌─────────────────────┐
-│ Signature Creation  │
-│ Activated Genes     │
-│ Repressed Genes     │
-└──────────┬──────────┘
-           │
-           ▼
+E --> F
+F --> G
+G --> H
 
-╔═════════════════════╗
-║   FROZEN SIGNATURE  ║
-║  (LOCKED MODEL)     ║
-╚═════════════════════╝
-           │
-           ▼
+H --> I
+I --> J
+J --> K
 
-═══════════════════════════════════════════════════════════════
-🟠 INDEPENDENT VALIDATION
-═══════════════════════════════════════════════════════════════
+K --> L
+K --> M
+K --> N
+K --> O
+K --> P1
+K --> Q
 
-┌─────────────────────┐
-│ HepG2 SREBP2 KD     │
-│ Validation Dataset  │
-└──────────┬──────────┘
-           │
-           ▼
+L --> R
+M --> R
+N --> R
+O --> R
+P1 --> R
+Q --> R
 
-┌─────────────────────┐
-│ shRNA1              │
-│ shRNA2              │
-│ shRNA3              │
-│ shRNA4              │
-└──────────┬──────────┘
-           │
-           ▼
-
-┌─────────────────────┐
-│ Signature Scoring   │
-│ Per Sample          │
-└──────────┬──────────┘
-           │
-           ▼
-
-═══════════════════════════════════════════════════════════════
-🔴 PERFORMANCE EVALUATION
-═══════════════════════════════════════════════════════════════
-
-     ┌────────────┬────────────┬────────────┐
-     ▼            ▼            ▼
-
-┌─────────┐  ┌─────────┐  ┌─────────┐
-│ H1      │  │ H2      │  │ H3      │
-│ Detect  │  │ Transfer│  │ Repro-  │
-│ KD?     │  │ to HepG2│  │ ducible │
-└─────────┘  └─────────┘  └─────────┘
-
-     ┌────────────┬────────────┬────────────┐
-     ▼            ▼            ▼
-
-┌─────────┐  ┌─────────┐  ┌─────────┐
-│ H4      │  │ H5      │  │ H6      │
-│ Specific│  │ vs      │  │ vs      │
-│ to      │  │ SREBF2  │  │ Pathway │
-│ SREBF2? │  │ Expr.   │  │ Score   │
-└─────────┘  └─────────┘  └─────────┘
-
-           │
-           ▼
-
-┌─────────────────────┐
-│ Robustness Testing  │
-│ Gene Dropout Study  │
-└──────────┬──────────┘
-           │
-           ▼
-
-╔══════════════════════════════════════════╗
-║              FINAL OUTCOME               ║
-║                                          ║
-║ ✓ Reproducible?                          ║
-║ ✓ Transferable?                          ║
-║ ✓ Biologically Specific?                 ║
-║ ✓ Better Than Existing Metrics?          ║
-║ ✓ Robust Under Gene Loss?                ║
-║                                          ║
-║ Can the signature serve as a reliable    ║
-║ measure of functional SREBF2 activity?   ║
-╚══════════════════════════════════════════╝
-
+R --> S1
+```
 # SREBF2 Regulatory Signature
 
 An 8–10-week bioinformatics project using real public SREBF2
