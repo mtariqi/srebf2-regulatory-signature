@@ -9,7 +9,7 @@
 
 The project has completed repository initialization, a first dataset audit, selection of 12 human discovery runs, environment capture, and extraction and initial quality assessment of one paired-end pilot run, SRR28966297. This report documents the rationale and methods through that checkpoint. It is not a completed biological study.
 
-The pilot generated 28,254,500 spots and 56,509,000 reads, with 28,254,500 reads in each mate file. Both mates have 150-base reads and 50% GC. FastQC and MultiQC finished with exit status 0. A provisional decision was made to retain the reads untrimmed for pilot alignment, while retaining the tile-quality warning and duplication flags for later assessment. Full mate-identifier validation was supplied as code but its execution result has not yet been reported. No reference download, alignment, gene counting, differential expression, binding integration, signature construction, or independent validation has been completed in the visible session.
+The pilot generated 28,254,500 spots and 56,509,000 reads, with 28,254,500 reads in each mate file. Both mates have 150-base reads and 50% GC. FastQC and MultiQC finished with exit status 0. A provisional decision was made to retain the reads untrimmed for pilot alignment, while retaining the tile-quality warning and duplication flags for later assessment. Full mate-identifier validation passed for all 28,254,500 read pairs. No reference download, alignment, gene counting, differential expression, binding integration, signature construction, or independent validation has been completed in the visible session.
 
 Evidence in this report comes primarily from terminal outputs and metadata supplied by the project owner. The report author has not independently inspected the full local SRA archive, FASTQ files, environment lockfiles, or complete repository at this checkpoint. Actual hash values and installed package builds should be read from the recorded files, not inferred from this document.
 
@@ -85,7 +85,7 @@ Confirmed user-reported commits:
 | 75eac7d | RNA-seq environment capture |
 | 70a1d6a | Metadata audit and 12-run human discovery selection |
 
-The later pilot-QC checkpoint commands were provided, but a successful commit/push output has not yet been reported. No direct GitHub write by the assistant is claimed.
+The pilot report, environment records, checksums, QC summary, and pair validation were committed and pushed in commit 36a8f6b. No direct GitHub write by the assistant is claimed.
 
 Initial tracked material comprises README, research plan, progress tracker, decision log, results index, dataset manifest, sample metadata template, and `.gitignore`. TSV line endings were normalized from CRLF to LF after `git diff --cached --check` flagged carriage returns. New CSV/TSV writers should explicitly use `lineterminator="\n"`.
 
@@ -430,7 +430,7 @@ for p in sorted(Path("results/qc/pilot").glob("*_fastqc.zip")):
                 print(*row)
 ```
 
-### 7.4 Mate validation: `scripts/validate_pilot_pairs.py` â€” pending execution confirmation
+### 7.4 Mate validation: `scripts/validate_pilot_pairs.py` â€” completed successfully
 
 ```python
 import gzip
@@ -467,7 +467,7 @@ Path("results/qc/pilot/PAIR_VALIDATION.txt").write_text(message)
 print(message)
 ```
 
-This streams the files with constant memory and checks structural FASTQ validity, sequence/quality length equality, matching first-token identifiers, and expected count. It is not a comprehensive character/alphabet validator. Matching counts alone were already observed, but matching identifiers at every position still require this check.
+This streams the files with constant memory and checks structural FASTQ validity, sequence/quality length equality, matching first-token identifiers, and expected count. It is not a comprehensive character/alphabet validator. Matching identifiers at every position were confirmed for all 28,254,500 pairs.
 
 ## 8. Outputs and traceability
 
@@ -478,7 +478,7 @@ This streams the files with constant memory and checks structural FASTQ validity
 | Primary run CSV | Inclusion record | Committed |
 | Protocol audit | Dataset questions and protocol evidence | Committed |
 | RNA-seq YAML and explicit export | Processing environment | Committed |
-| Extraction YAML and explicit export | Working extraction environment | Written; push unconfirmed |
+| Extraction YAML and explicit export | Working extraction environment | Committed in 36a8f6b |
 | Pilot SRA archive | Downloaded source reads | Validated locally |
 | Pilot compressed FASTQ mates | Extracted reads | FastQC processed |
 | FASTQ `.sha256` file | Input identity | Written; values not pasted |
@@ -487,14 +487,14 @@ This streams the files with constant memory and checks structural FASTQ validity
 | MultiQC report/data | Aggregated QC | Generated |
 | QC_SUMMARY.txt | Human-readable summary | Generated |
 | QC_FLAG_DETAILS.txt | Detailed module data | Generated |
-| PAIR_VALIDATION.txt | Full mate-identifier check | Not yet confirmed |
+| PAIR_VALIDATION.txt | Full mate-identifier check | PASS; committed in 36a8f6b |
 
 Raw reads and large intermediate files must remain outside Git. Retain accessions, checksums, scripts, environment exports, logs, and compact QC evidence in version control. For every later result, record the input hashes, reference/annotation release, command, software version, generating Git commit, QC status, and interpretation. Avoid claiming provenance solely from a filename.
 
 Paired-read integrity validation. Both compressed FASTQ files for SRR28966297 were streamed using Python’s gzip module. The validation checked FASTQ header and separator structure, sequence–quality length equality, mate-identifier agreement, and the expected number of pairs. All 28,254,500 read pairs passed, with no detected mate mismatches or incomplete records.
 ## 9. Pending work and prespecified analysis safeguards
 
-1. Confirm pair validation and push the pilot checkpoint.
+1. Completed: pair validation passed and the pilot checkpoint was pushed.
 2. Download a matched GRCh38 genome and annotation; freeze exact release, chromosome naming, source URLs, and hashes.
 3. Establish HISAT2 index strategy appropriate to available RAM and document splice-site use.
 4. Align the pilot; inspect mapping, concordant pairing, multimapping, gene assignment, and strand evidence before selecting featureCounts strandedness.
