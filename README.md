@@ -85,159 +85,265 @@ class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R completed
 class S current
 class T,U,V,W,X,Y,Z future
 ```
-# Background
 
-Cellular cholesterol homeostasis is essential for membrane integrity, signal transduction, steroid synthesis, and overall metabolic health. One of the most important regulators of this process is SREBF2 (Sterol Regulatory Element Binding Transcription Factor 2), a transcription factor that controls the expression of numerous genes involved in cholesterol biosynthesis and uptake.
+# PROJECT TITLE
 
-Traditionally, researchers estimate SREBF2 activity using either:
+Deciphering the Functional Regulatory Network of SREBF2 Through Integrated Multi-Omics Analysis of Cholesterol Homeostasis.
 
-SREBF2 gene expression levels, or
-Cholesterol-homeostasis pathway enrichment scores.
+# Background and Significance
 
-However, these approaches have significant limitations. The expression level of SREBF2 does not necessarily reflect its functional activity because SREBF2 must undergo activation, processing, and nuclear translocation before regulating downstream genes. Similarly, cholesterol-pathway scores may capture broader metabolic changes that are not specifically driven by SREBF2.
+Cholesterol homeostasis is fundamental to cellular function, contributing to membrane integrity, intracellular signaling, steroid hormone synthesis, and lipid metabolism. Disruption of cholesterol regulation has been implicated in numerous human diseases, including cardiovascular disorders, metabolic syndromes, and cancer. At the center of this regulatory network is SREBF2 (Sterol Regulatory Element Binding Transcription Factor 2), a transcription factor widely recognized as a master regulator of cholesterol biosynthesis and uptake.
 
-As a result, measuring SREBF2 expression alone may not accurately represent the true regulatory state of the cholesterol synthesis program.
+SREBF2 maintains cholesterol balance by coordinating the expression of numerous genes involved in sterol production, transport, and metabolism. While the importance of SREBF2 in cholesterol regulation is well established, the broader regulatory mechanisms through which SREBF2 influences cellular function remain incompletely understood. In particular, many downstream targets, regulatory interactions, and context-dependent effects of SREBF2 activity have not been systematically characterized.
+
+Current approaches typically assess SREBF2 activity through measurements of SREBF2 mRNA abundance or cholesterol-homeostasis pathway enrichment. However, these approaches have important limitations. SREBF2 activity is regulated through multiple post-transcriptional and post-translational mechanisms, including proteolytic activation and nuclear translocation. Consequently, SREBF2 expression levels may not accurately reflect its functional activity. Similarly, pathway-based measurements often capture broader metabolic responses that may not be specifically attributable to SREBF2.
+
+These limitations highlight the need for more accurate approaches for assessing SREBF2 function and identifying its direct regulatory network.
 
 # Research Problem
 
-A potentially more informative approach is the use of a transcriptional signature, a defined set of downstream genes whose combined expression pattern reflects the activity of a biological regulator.
+One promising strategy for measuring transcription factor activity is the use of a transcriptional signature, a predefined collection of downstream target genes whose combined expression pattern provides a quantitative measure of regulator activity.
 
-Although numerous SREBF2-responsive genes have been identified, it remains unclear whether a fixed SREBF2 transcriptional signature can function reliably across independent experimental systems.
+Although numerous SREBF2-responsive genes have been identified across different experimental systems, it remains unclear whether a robust and transferable SREBF2 transcriptional signature can be developed and applied across independent biological contexts. Most published gene signatures are generated within a single dataset and rarely undergo rigorous validation in independent systems. As a result, their reproducibility, biological specificity, and generalizability are often uncertain.
 
-Most published signatures are developed within a single dataset and are rarely evaluated for:
+This presents a significant methodological challenge because transcriptional signatures are increasingly being used as surrogate measures of regulatory activity in both basic and translational research. Without systematic validation, it is difficult to determine whether observed signature scores truly represent SREBF2 activity or merely reflect dataset-specific transcriptional patterns.
 
-reproducibility,
-transferability across cell types,
-biological specificity,
-robustness to variation,
-or comparative performance against existing approaches.
+Therefore, a critical unanswered question remains:
 
-Consequently, there is insufficient evidence regarding whether an SREBF2 signature derived from one biological system can accurately measure SREBF2 activity in another.
-
-This represents an important methodological gap because transcription-factor signatures are increasingly used as surrogate measures of regulatory activity, yet their ability to generalize beyond the discovery dataset is often unknown.
+Can a biologically informed SREBF2 transcriptional signature provide a reliable, reproducible, and transferable measure of functional SREBF2 activity across independent experimental systems?
 
 # Knowledge Gap
 
-Currently, no systematic evaluation has established whether a biologically supported and perturbation-derived SREBF2 transcriptional signature can:
+Despite extensive research establishing SREBF2 as a central regulator of cholesterol metabolism, several important questions remain unresolved:
 
-Reproducibly detect SREBF2 perturbation.
-Transfer across independent cell types.
-Remain robust across multiple knockdown reagents.
-Provide information beyond SREBF2 expression.
-Perform better than conventional cholesterol-homeostasis pathway scores.
+- Can a perturbation-derived SREBF2 transcriptional signature accurately detect SREBF2 activity in independent datasets?
+- Does such a signature remain effective across different cell types and experimental conditions?
+- Is the signature reproducible when different knockdown reagents are used?
+- Does the signature provide information beyond simple measurements of SREBF2 expression?
+- Can a biologically informed SREBF2 signature outperform conventional cholesterol-homeostasis pathway scores?
 
-# Proposed Solution
+Addressing these questions is essential for determining whether transcriptional signatures can serve as reliable surrogate markers of SREBF2 function.
 
-This study will address this gap by developing a frozen SREBF2 transcriptional signature using HeLa SREBP2 knockout RNA-sequencing data.
+# Overall Objective
 
-Genes significantly affected by SREBP2 loss will be identified through differential expression analysis and prioritized using biological evidence and published target-gene information.
+The overall objective of this project is to characterize the functional regulatory network controlled by SREBF2 and to develop a robust framework for measuring SREBF2 activity through integrated multi-omics analysis.
 
-The resulting signature will then be frozen prior to validation to prevent overfitting.
+# Proposed Research Strategy
 
-Independent validation will subsequently be performed using HepG2 SREBP2 knockdown datasets containing multiple shRNA perturbations.
+This project will combine transcriptomics, epigenomics, proteomics, and lipidomics to investigate the biological functions of SREBF2 across multiple molecular layers.
 
-Signature performance will be evaluated in terms of:
+The study will begin with transcriptomic analysis of SREBF2 perturbation datasets to identify genes whose expression changes following loss of SREBF2 function. Differentially expressed genes will be prioritized using biological evidence, literature-supported targets, and functional relevance to cholesterol metabolism.
 
-Detection of SREBP2 perturbation
-Transferability across cell types
-Reproducibility across shRNAs
-Biological specificity
-Benchmark performance relative to:
-SREBF2 expression
+These analyses will be used to construct a frozen SREBF2 transcriptional signature, in which gene composition, regulatory directionality, and scoring algorithms are finalized prior to validation. Freezing the signature before testing prevents overfitting and enables rigorous evaluation of transferability.
+
+The signature will then be validated in independent experimental systems using multiple SREBF2 knockdown models. Performance will be assessed through measures of sensitivity, reproducibility, transferability, biological specificity, and robustness.
+
+In parallel, complementary omics analyses will provide mechanistic insight into SREBF2 function:
+
+## Transcriptomics
+
+Determine how loss of SREBF2 alters gene expression and identify downstream transcriptional programs.
+
+## Epigenomics
+
+Identify direct regulatory targets of SREBF2 through chromatin accessibility and DNA-binding analyses.
+
+## Proteomics
+
+Determine whether transcriptional changes caused by SREBF2 perturbation translate into changes in protein abundance.
+
+## Lipidomics
+
+Assess how disruption of SREBF2 affects cholesterol and lipid metabolism at the biochemical level.
+
+Together, these methods will provide a systems-level view of SREBF2 function.
+
+
+# Innovation
+
+This proposal contains several innovative features:
+
+1. Development of a Frozen SREBF2 Signature
+
+Most transcriptional signatures are optimized and tested within the same dataset. In contrast, this project develops a frozen signature that is validated independently, reducing overfitting and improving reproducibility.
+
+2. Integrated Multi-Omics Approach
+
+The project combines transcriptomics, epigenomics, proteomics, and lipidomics to study SREBF2 across multiple biological layers.
+
+3. Independent Validation Strategy
+
+The proposed framework evaluates transferability across independent datasets and cellular contexts rather than relying on a single experimental system.
+
+4. Benchmarking Against Existing Approaches
+
+The SREBF2 signature will be directly compared against:
+
+SREBF2 gene expression
 Cholesterol-homeostasis pathway scores
-Robustness to gene loss
 
-# Hypothesis
-Primary Hypothesis
+to determine whether it provides additional biological insight.
 
-A frozen SREBF2 transcriptional signature derived from HeLa SREBP2 knockout RNA-seq data will accurately and reproducibly detect SREBP2 perturbation in independent HepG2 knockdown datasets.
+# Central Hypothesis
 
-Secondary Hypotheses
-The signature will transfer successfully across cell types.
-The signature will show reproducible behavior across independent shRNAs.
-The signature will be biologically specific to SREBF2 activity.
-The signature will outperform or complement SREBF2 expression.
-The signature will outperform or complement cholesterol-homeostasis pathway scores.
+SREBF2 regulates cholesterol homeostasis through coordinated transcriptional, epigenetic, proteomic, and lipidomic networks, and a perturbation-derived transcriptional signature can serve as a robust and transferable measure of functional SREBF2 activity across independent biological systems.
+Specific Aims
+## Aim 1
+Define the transcriptional programs regulated by SREBF2
+
+We will use RNA sequencing to identify genes and pathways altered following SREBF2 perturbation and construct a biologically informed transcriptional signature.
+
+## Aim 2
+Identify direct regulatory targets of SREBF2
+
+We will integrate epigenomic approaches to determine where SREBF2 binds and which genomic regions are directly regulated.
+
+## Aim 3
+Characterize downstream functional consequences of SREBF2 disruption
+
+We will use proteomic and lipidomic analyses to evaluate how transcriptional changes influence protein abundance and cellular lipid composition.
+
+# Primary Hypothesis
+
+A frozen SREBF2 transcriptional signature derived from SREBF2 perturbation data will accurately and reproducibly identify SREBF2 activity in independent validation datasets.
+
+## Secondary Hypotheses
+H1: Transferability
+
+The SREBF2 transcriptional signature will generalize across distinct cellular contexts and independent experimental systems.
+
+H2: Reproducibility
+
+Independent SREBF2 perturbations will produce consistent changes in SREBF2 signature scores.
+
+H3: Biological Specificity
+
+Changes in the signature will specifically reflect SREBF2 activity rather than nonspecific transcriptional variation.
+
+H4: Improved Activity Measurement
+
+The transcriptional signature will provide a more informative measure of SREBF2 activity than SREBF2 gene expression alone.
+
+H5: Enhanced Functional Insight
+
+The transcriptional signature will perform as well as or better than cholesterol-homeostasis pathway enrichment scores for detecting functional SREBF2 activity.
+
+# Expected Outcomes
+
+Successful completion of this project is expected to:
+
+Establish a validated framework for measuring functional SREBF2 activity.
+Identify direct and indirect targets of SREBF2 regulation.
+Reveal how SREBF2 influences transcriptional, epigenetic, proteomic, and lipidomic networks.
+Improve our understanding of cholesterol homeostasis.
+Generate a transferable analytical framework that can be applied to other transcription factors.
+
+Ultimately, this work will provide a comprehensive systems-level understanding of SREBF2 biology and create new opportunities for studying cholesterol-related diseases, metabolic disorders, and cancer-associated lipid dysregulation.
+
 
 ```mermaid
 flowchart TD
 
-A[Biological Question<br/>How can we accurately measure SREBF2 activity?]
+A["SREBF2 Biology<br/>Master Regulator of Cholesterol Homeostasis"]
 
-subgraph D[🔵 Discovery Phase]
-B[HeLa SREBP2 KO RNA-seq]
-C[Quality Control<br/>PCA & Clustering]
-D1[Differential Expression Analysis]
-E[SREBF2 Responsive Genes]
-end
+B["Research Problem<br/>Current measures may not accurately reflect<br/>functional SREBF2 activity"]
 
-subgraph S[🟢 Signature Development]
-F[Literature Evidence<br/>+ Target Support]
-G[Signature Construction]
-H[Frozen Signature]
-end
-
-subgraph V[🟠 Independent Validation]
-I[HepG2 SREBP2 Knockdown]
-J[shRNA1-4]
-K[Signature Scoring]
-end
-
-subgraph P[🔴 Performance Evaluation]
-L[H1 Detect Perturbation]
-M[H2 Transferability]
-N[H3 Reproducibility]
-O[H4 Biological Specificity]
-P1[H5 vs SREBF2 Expression]
-Q[H6 vs Pathway Score]
-R[Robustness Testing]
-end
-
-S1[Final Conclusion<br/>Reliable Measure of SREBF2 Activity?]
+C["Knowledge Gap<br/>Can a transferable, biologically supported<br/>SREBF2 signature measure activity across systems?"]
 
 A --> B
 B --> C
-C --> D1
-D1 --> E
 
-E --> F
-F --> G
-G --> H
+subgraph M["Multi-Omics Discovery Framework"]
+    
+    T["Transcriptomics<br/>RNA-seq<br/>Identify SREBF2-responsive genes"]
 
-H --> I
-I --> J
-J --> K
+    E["Epigenomics<br/>ChIP-seq / ATAC-seq<br/>Identify direct regulatory targets"]
 
-K --> L
-K --> M
-K --> N
-K --> O
-K --> P1
-K --> Q
+    P["Proteomics<br/>LC-MS/MS<br/>Quantify downstream protein changes"]
 
-L --> R
-M --> R
-N --> R
-O --> R
-P1 --> R
-Q --> R
+    L["Lipidomics<br/>Lipid Profiling<br/>Measure functional cholesterol alterations"]
 
-R --> S1
+end
+
+C --> T
+C --> E
+C --> P
+C --> L
+
+subgraph S["Signature Development"]
+
+    S1["HeLa SREBP2 KO RNA-seq"]
+
+    S2["Differential Expression Analysis"]
+
+    S3["Literature Evidence<br/>+ Binding Evidence<br/>+ Functional Relevance"]
+
+    S4["SREBF2 Target Prioritization"]
+
+    S5["Frozen SREBF2 Signature"]
+
+end
+
+T --> S1
+S1 --> S2
+S2 --> S3
+E --> S3
+P --> S3
+L --> S3
+
+S3 --> S4
+S4 --> S5
+
+subgraph V["Independent Validation"]
+
+    V1["HepG2 SREBP2 Knockdown"]
+
+    V2["Multiple shRNAs"]
+
+    V3["Signature Activity Scoring"]
+
+end
+
+S5 --> V1
+V1 --> V2
+V2 --> V3
+
+subgraph H["Hypothesis Testing"]
+
+    H1["Detect SREBP2 Perturbation"]
+
+    H2["Transferability<br/>HeLa → HepG2"]
+
+    H3["Reproducibility<br/>Across shRNAs"]
+
+    H4["Biological Specificity"]
+
+    H5["vs SREBF2 Expression"]
+
+    H6["vs Cholesterol Pathway Score"]
+
+    H7["Robustness to Gene Loss"]
+
+end
+
+V3 --> H1
+V3 --> H2
+V3 --> H3
+V3 --> H4
+V3 --> H5
+V3 --> H6
+V3 --> H7
+
+Z["Final Outcome<br/>Validated Multi-Omics Framework for Measuring Functional SREBF2 Activity"]
+
+H1 --> Z
+H2 --> Z
+H3 --> Z
+H4 --> Z
+H5 --> Z
+H6 --> Z
+H7 --> Z
 ```
-# SREBF2 Regulatory Signature
-
-An 8–10-week bioinformatics project using real public SREBF2
-perturbation RNA-seq and chromatin-binding data.
-
-## Research question
-Can a binding-supported, perturbation-derived transcriptional
-signature capture SREBF2-associated responses more consistently
-than SREBF2 RNA expression alone?
-
-## Scope
-Fully computational. Real public data supply research results.
-Synthetic data may be used only for software testing.
-
 ## Current status
 Planning and dataset audit. No datasets analyzed or biological
 findings established.
