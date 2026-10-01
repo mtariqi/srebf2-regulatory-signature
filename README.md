@@ -1,25 +1,23 @@
-<p align="center">
-<h1 align="center">🧬 SREBF2-Signature</h1>
+<div align="center">
 
-<p align="center">
-Development and Independent Validation of an SREBF2 Transcriptional Signature
-</p>
+# 🧬 SREBF2-Signature
 
-<p align="center">
+### Development and Independent Validation of an SREBF2 Transcriptional Signature
+
+A reproducible framework for measuring functional SREBF2 activity across experimental systems.
+
+<br>
 
 https://img.shields.io/badge/Data-RNAseq-blue
 https://img.shields.io/badge/Analysis-DESeq2-green
-https://img.shields.io/badge/Discovery-HeLa_KO-blue
-![HepG2](https://img.shields.io/badge/Validation-orange
-https://img.shields.io/badge/Evaluation-Benchmarking-red
-![tps://img.shields.io/badge/Evaluation-Robustness-red
+https://img.shields.io/badge/Discovery-HeLa_KO-2563EB
+![HepG2 KD](https://img.shields.io/badgeHepG2_KD-F59E0B
+https://img.shields.io/badge/Method-Frozen_Signature-10B981
+https://img.shields.io/badge/Evaluation-Benchmarking-EF4444
+![Robustness](https://img.shields.io/on-Robustness-DC2626
+https://img.shields.io/badge/Project-MSc_Research-purple
 
-</p>
-
-<p align="center">
-A reproducible framework for measuring functional SREBF2 activity
-using perturbation-derived transcriptional signatures.
-</p>
+</div>
 
 
 🔵 Discovery
