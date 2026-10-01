@@ -6,19 +6,14 @@
 
 A reproducible framework for measuring functional SREBF2 activity across experimental systems.
 
-<br>
-
-https://img.shields.io/badge/Data-RNAseq-blue
-https://img.shields.io/badge/Analysis-DESeq2-green
-https://img.shields.io/badge/Discovery-HeLa_KO-2563EB
-![HepG2 KD](https://img.shields.io/badgeHepG2_KD-F59E0B
-https://img.shields.io/badge/Method-Frozen_Signature-10B981
-https://img.shields.io/badge/Evaluation-Benchmarking-EF4444
-![Robustness](https://img.shields.io/on-Robustness-DC2626
-https://img.shields.io/badge/Project-MSc_Research-purple
-
-</div>
-
+![RNAseq](https://img.shields.io/badge/Data-RNAseq-blue)
+![DESeq2](https://img.shields.io/badge/Analysis-DESeq2-green)
+![HeLa KO](https://img.shields.io/badge/Discovery-HeLa_KO-2563EB)
+https://img.shields.io/badge/Validation-HepG2_KD-F59E0B
+![Frozen Signature](https://img.shields.io/badge/Method-Frozen_Signature-10B981)
+![Benchmarking](https://img.shields.io/badge/Evaluation-Benchmarking-EF4444)
+https://img.shields.io/badge/Evaluation-Robustness-DC2626
+![MSc Research](https://img.shields.io/badge/Project-MSc_Research-purple)
 
 🔵 Discovery
    └─ HeLa SREBP2 KO RNA-seq
