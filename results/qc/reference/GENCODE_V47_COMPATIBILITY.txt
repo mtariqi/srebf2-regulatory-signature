@@ -1,0 +1,4 @@
+PASS: genome and annotation compatibility
+Genome contigs: 194
+Annotation features checked: 4,117,647
+Errors: 0
