@@ -10,3 +10,4 @@ data/processed/
 *.cram
 work/
 .nextflow*
+results/qc/**/strand_check/*_s[012].txt
