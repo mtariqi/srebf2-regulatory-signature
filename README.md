@@ -241,5 +241,16 @@ Synthetic data may be used only for software testing.
 ## Current status
 Planning and dataset audit. No datasets analyzed or biological
 findings established.
+1. Computational Pipeline Progress
+Project Setup                    ✅ 100%
+Reference Preparation            ✅ 100%
+Genome Indexing                  ✅ 100%
+Pipeline Development             ✅ 100%
+Pipeline Validation              ✅ 100%
+Sample Processing                🔄 17% (2/12 samples)
+Count Matrix Generation          ⏳ 0%
+DE Analysis                      ⏳ 0%
+Signature Construction           ⏳ 0%
+Independent Validation           ⏳ 0%
 
 See docs/RESEARCH_PLAN.md and docs/PROGRESS.md.
