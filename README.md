@@ -13,22 +13,32 @@ A reproducible framework for measuring functional SREBF2 activity across experim
 
 
 
-🔵 Discovery
-   └─ HeLa SREBP2 KO RNA-seq
+🔵 AIM 1: DISCOVERY & MOLECULAR PROFILING
+   ├─ Transcriptomics (RNA-seq)
+   ├─ Epigenomics (ChIP-seq / ATAC-seq)
+   ├─ Proteomics (LC-MS/MS)
+   └─ Lipidomics (Lipid Profiling)
 
-🟢 Signature Development
-   └─ Differential Expression
-   └─ Target Prioritization
-   └─ Signature Construction
+🟢 AIM 2: SREBF2 NETWORK RECONSTRUCTION
+   ├─ Differential Expression Analysis
+   ├─ Direct Target Identification
+   ├─ Regulatory Network Analysis
+   ├─ Functional Pathway Analysis
+   └─ SREBF2 Signature Development
 
-🟠 Validation
-   └─ HepG2 SREBP2 Knockdown
-   └─ Multiple shRNAs
+🟠 AIM 3: SIGNATURE VALIDATION
+   ├─ Independent HepG2 Knockdown Data
+   ├─ Multi-shRNA Validation
+   ├─ Cross-Dataset Evaluation
+   └─ Signature Activity Scoring
 
-🔴 Evaluation
-   └─ Transferability
-   └─ Reproducibility
-   └─ Benchmarking
+🔴 AIM 4: BIOLOGICAL & COMPUTATIONAL EVALUATION
+   ├─ Transferability
+   ├─ Reproducibility
+   ├─ Biological Specificity
+   ├─ Benchmarking vs Expression
+   ├─ Benchmarking vs Pathway Scores
+   └─ Robustness to Gene Loss
 
 ```mermaid
 flowchart TD
