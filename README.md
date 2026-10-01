@@ -32,7 +32,59 @@ A reproducible framework for measuring functional SREBF2 activity across experim
    └─ Reproducibility
    └─ Benchmarking
 
+```mermaid
+flowchart TD
 
+A[Project Initialization] --> B[Download GRCh38 Genome]
+B --> C[Download GENCODE v47 Annotation]
+
+C --> D[Reference Integrity Checks]
+D --> E[Genome Annotation Compatibility QC]
+
+E --> F[Build HISAT2 Index]
+F --> G[Index Validation]
+
+G --> H[Pilot Sample Alignment<br>SRR28966297]
+H --> I[Alignment QC<br>97.67% Mapping]
+
+I --> J[Strandness Testing]
+J --> K[Unstranded Library Confirmed]
+
+K --> L[Pilot Gene Counting]
+L --> M[Count Validation]
+
+M --> N[SRR28966285 Processing]
+N --> O[Alignment QC<br>97.82% Mapping]
+
+O --> P[Gene Counting]
+P --> Q[Count Validation]
+
+Q --> R[Generate Processing Queue]
+
+R --> S[Process Remaining 10 Samples]
+
+S --> T[Combine Count Tables]
+
+T --> U[DESeq2 Differential Expression]
+
+U --> V[SREBF2 Signature Development]
+
+V --> W[External Validation Dataset]
+
+W --> X[Transferability Testing]
+
+X --> Y[Benchmarking]
+
+Y --> Z[Publication Figures & Thesis]
+
+classDef completed fill:#16a34a,color:#fff,stroke:#15803d
+classDef current fill:#f59e0b,color:#fff,stroke:#d97706
+classDef future fill:#3b82f6,color:#fff,stroke:#2563eb
+
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R completed
+class S current
+class T,U,V,W,X,Y,Z future
+```
 # Background
 
 Cellular cholesterol homeostasis is essential for membrane integrity, signal transduction, steroid synthesis, and overall metabolic health. One of the most important regulators of this process is SREBF2 (Sterol Regulatory Element Binding Transcription Factor 2), a transcription factor that controls the expression of numerous genes involved in cholesterol biosynthesis and uptake.
