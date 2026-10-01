@@ -1,24 +1,25 @@
+<p align="center">
+<h1 align="center">🧬 SREBF2-Signature</h1>
+
+<p align="center">
+Development and Independent Validation of an SREBF2 Transcriptional Signature
+</p>
+
+<p align="center">
+
 https://img.shields.io/badge/Data-RNAseq-blue
-
+https://img.shields.io/badge/Analysis-DESeq2-green
 https://img.shields.io/badge/Discovery-HeLa_KO-blue
+![HepG2](https://img.shields.io/badge/Validation-orange
+https://img.shields.io/badge/Evaluation-Benchmarking-red
+![tps://img.shields.io/badge/Evaluation-Robustness-red
 
-![HepG2](https://img.shields.io/badgeon-HepG2_KD-orange
+</p>
 
-https://img.shields.io/badge/Target-SREBF2-brightgreen
-
-https://img.shields.io/badge/Method-DESeq2-green
-
-https://img.shields.io/badge/Method-ssGSEA-green
-
-https://img.shields.io/badge/Method-GSVA-green
-
-![Signature](https://img.shields.io/badge/Output-Transcriptional_Signature-s://img.shields.io/badge/Analysis-Benchmarking-red
-
-https://img.shields.io/badge/Analysis-Robustness-red
-
-https://img.shields.io/badge/Publication-Ready-purple
-
-![Masters Thesis](https://img.shields.io/badge/Project
+<p align="center">
+A reproducible framework for measuring functional SREBF2 activity
+using perturbation-derived transcriptional signatures.
+</p>
 
 
 🔵 Discovery
