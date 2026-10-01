@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🧬 SREBF2-Signature
 
 ### Development and Independent Validation of an SREBF2 Transcriptional Signature
