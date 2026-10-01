@@ -1,3 +1,44 @@
+https://img.shields.io/badge/Data-RNAseq-blue
+
+https://img.shields.io/badge/Discovery-HeLa_KO-blue
+
+![HepG2](https://img.shields.io/badgeon-HepG2_KD-orange
+
+https://img.shields.io/badge/Target-SREBF2-brightgreen
+
+https://img.shields.io/badge/Method-DESeq2-green
+
+https://img.shields.io/badge/Method-ssGSEA-green
+
+https://img.shields.io/badge/Method-GSVA-green
+
+![Signature](https://img.shields.io/badge/Output-Transcriptional_Signature-s://img.shields.io/badge/Analysis-Benchmarking-red
+
+https://img.shields.io/badge/Analysis-Robustness-red
+
+https://img.shields.io/badge/Publication-Ready-purple
+
+![Masters Thesis](https://img.shields.io/badge/Project
+
+
+🔵 Discovery
+   └─ HeLa SREBP2 KO RNA-seq
+
+🟢 Signature Development
+   └─ Differential Expression
+   └─ Target Prioritization
+   └─ Signature Construction
+
+🟠 Validation
+   └─ HepG2 SREBP2 Knockdown
+   └─ Multiple shRNAs
+
+🔴 Evaluation
+   └─ Transferability
+   └─ Reproducibility
+   └─ Benchmarking
+
+
 # Background
 
 Cellular cholesterol homeostasis is essential for membrane integrity, signal transduction, steroid synthesis, and overall metabolic health. One of the most important regulators of this process is SREBF2 (Sterol Regulatory Element Binding Transcription Factor 2), a transcription factor that controls the expression of numerous genes involved in cholesterol biosynthesis and uptake.
