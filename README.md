@@ -13,21 +13,7 @@ A reproducible framework for measuring functional SREBF2 activity across experim
 ![Benchmarking](https://img.shields.io/badge/Evaluation-Benchmarking-EF4444)
 ![Omics_Project](https://img.shields.io/badge/Omics_Project-purple)
 
-https://img.shields.io/badge/Data-RNAseq-blue?style=for-the-badge
 
-https://img.shields.io/badge/Analysis-DESeq2-green?style=for-the-badge
-
-https://img.shields.io/badge/Discovery-HeLa%20KO-blue?style=for-the-badge
-
-https://img.shields.io/badge/Validation-HepG2%20KD-orange?style=for-the-badge
-
-https://img.shields.io/badge/Method-Frozen%20Signature-success?style=for-the-badge
-
-https://img.shields.io/badge/Evaluation-Benchmarking-red?style=for-the-badge
-
-https://img.shields.io/badge/Evaluation-Robustness-red?style=for-the-badge
-
-https://img.shields.io/badge/Project-MSc%20Research-purple?style=for-the-badge
 
 🔵 Discovery
    └─ HeLa SREBP2 KO RNA-seq
