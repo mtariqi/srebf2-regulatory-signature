@@ -38,3 +38,13 @@ rules, and their supporting evidence here.
 - Supplementary archive contents and peak availability remain pending inspection.
 - Candidate supporting occupancy evidence; not independent validation of discovery.
 - No replicated differential-binding or direct-target claim established.
+
+## GSE271001 preliminary audit
+- SREBP2 CUT&RUN: HepG2 GSM8366948; Huh7 GSM8366956.
+- Listed controls: HepG2 GSM8749017; Huh7 GSM8749018.
+- Exact control type and suitability remain pending verification.
+- One SREBP2 sample per cell line listed; biological replication not established.
+- Processed assembly is hg19; cannot directly intersect with GRCh38 coordinates.
+- Supplementary inventory confirms 19 BigWig files and no deposited peak-coordinate files.
+- Overall design mentions 22Rv1, but no corresponding sample appears in the extracted records.
+- Reserve as external binding-support candidate; do not use for signature selection yet.
