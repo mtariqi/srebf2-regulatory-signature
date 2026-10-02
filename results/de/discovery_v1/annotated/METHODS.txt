@@ -1,0 +1,5 @@
+GENCODE v47 primary assembly GTF; compressed reference checksum verified.
+Only gene features used; exact versioned gene_id matching; no version stripping.
+Source statistical values and row order preserved; unmapped rows retained and flagged.
+Duplicate gene IDs rejected; duplicate symbols not collapsed.
+SREBF2 extraction is descriptive QC, not a target signature or protein-activity measurement.

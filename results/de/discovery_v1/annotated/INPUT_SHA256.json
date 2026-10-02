@@ -1,0 +1,12 @@
+{
+  "data/raw/reference/gencode_v47/gencode.v47.primary_assembly.annotation.gtf.gz": "f02ee3e1c8e7fd9be264be6d0b974feb225a1e9d6c81915ee271804b060bd8c0",
+  "results/de/discovery_v1/all12/KO_vs_WT_depletion.tsv": "b3b85ff36a26b0853199b9bae7bde4d25078d8683c548deba0a82ee98c54261b",
+  "results/de/discovery_v1/all12/KO_vs_WT_FBS.tsv": "31d3d71566502c781d87c00d87d028879dd66607b005c72c42d4b622084b55c8",
+  "results/de/discovery_v1/all12/interaction.tsv": "65fe9cdd5d3a24b5f362c2b4c2e4d4bbaaefce397c143f15787f12c70c3bf997",
+  "results/de/discovery_v1/without_SRR28966285/KO_vs_WT_depletion.tsv": "4365cd5f396a3ea60763f78c44e9942e610717009853c516c88dfc75a6da91ed",
+  "results/de/discovery_v1/without_SRR28966285/KO_vs_WT_FBS.tsv": "9b327fe116cee52ea6b3f4bcb3ae9401d8c0e6a84edc09efba01d8c71ff6071f",
+  "results/de/discovery_v1/without_SRR28966285/interaction.tsv": "2b0ef87ced49c5f77a4eebd470990a582711d7918a6010e33641d74eb08b757c",
+  "results/de/discovery_v1/KO_vs_WT_depletion_SENSITIVITY.tsv": "995c91c2811b02f119492e5d063ad46cc94e3b4d4cf492aca098805affc12d5a",
+  "results/de/discovery_v1/KO_vs_WT_FBS_SENSITIVITY.tsv": "649a7d814ebad04f6d65f13c5c99b3e295aecd8be651acecd4928a727c98301a",
+  "results/de/discovery_v1/interaction_SENSITIVITY.tsv": "76c4262981fc8453bf3df27480a9411f3f6748eb001c8199fae302a6a6c0551a"
+}
