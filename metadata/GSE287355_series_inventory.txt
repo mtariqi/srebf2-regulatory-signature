@@ -1,0 +1,10 @@
+^SERIES = GSE287355
+!Series_title = An EZH2—SREBP2 axis promotes cholesterol biosynthesis and represents a noncanonical vulnerability in tumorigenesis
+!Series_supplementary_file = ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE287nnn/GSE287355/suppl/GSE287355_RAW.tar
+!Series_relation = SuperSeries of: GSE271000
+!Series_relation = SuperSeries of: GSE271001
+!Series_relation = SuperSeries of: GSE287353
+!Series_relation = SuperSeries of: GSE324559
+!Series_relation = SuperSeries of: GSE324560
+!Series_relation = SuperSeries of: GSE324561
+!Series_relation = BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1212202

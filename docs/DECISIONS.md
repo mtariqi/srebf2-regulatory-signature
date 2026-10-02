@@ -48,3 +48,11 @@ rules, and their supporting evidence here.
 - Supplementary inventory confirms 19 BigWig files and no deposited peak-coordinate files.
 - Overall design mentions 22Rv1, but no corresponding sample appears in the extracted records.
 - Reserve as external binding-support candidate; do not use for signature selection yet.
+
+## GSE324560 binding audit
+- Human 22Rv1 and MV4;11 SREBP2 CUT&RUN; processed assembly hg38.
+- Each cell line has Abcam and Cayman SREBP2 antibody samples and a listed control.
+- Control antibody identity and biological replication remain unverified.
+- Two antibodies are not automatically biological replicates.
+- Supplementary inventory contains eight BigWigs and no peak-coordinate files.
+- Reserve for external support; no signature selection from this study yet.
