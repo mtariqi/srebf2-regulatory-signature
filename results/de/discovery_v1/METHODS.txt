@@ -1,0 +1,8 @@
+Design: ~ genotype * treatment; reference levels WT and FBS.
+Filter: at least 10 counts in at least 3 of the original 12 samples; fixed in sensitivity fit.
+Primary: KO versus WT under depletion. Secondary: KO versus WT under FBS.
+Interaction: (KO-WT under depletion) minus (KO-WT under FBS), on log2 scale.
+Sensitivity: exclude SRR28966285; re-estimate normalization and dispersions.
+DESeq2 Wald tests; BH adjustment separately per contrast; alpha=0.05; default independent filtering and Cook's filtering.
+Unshrunk log2 fold changes; no fold-change cutoff; no automatic outlier exclusion or batch covariate.
+No signature selection or biological conclusions established by this script.
