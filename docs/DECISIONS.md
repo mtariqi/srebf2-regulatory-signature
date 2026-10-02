@@ -56,3 +56,8 @@ rules, and their supporting evidence here.
 - Two antibodies are not automatically biological replicates.
 - Supplementary inventory contains eight BigWigs and no peak-coordinate files.
 - Reserve for external support; no signature selection from this study yet.
+
+## 2026 publication source-data audit
+- See docs/SOURCE_DATA_AUDIT_2026.md.
+- No peak-coordinate tables identified in the supplied source-data archive.
+- Selected decimal expression tables are unsuitable as raw DESeq2 input.
