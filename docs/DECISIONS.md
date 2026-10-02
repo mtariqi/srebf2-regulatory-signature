@@ -61,3 +61,16 @@ rules, and their supporting evidence here.
 - See docs/SOURCE_DATA_AUDIT_2026.md.
 - No peak-coordinate tables identified in the supplied source-data archive.
 - Selected decimal expression tables are unsuitable as raw DESeq2 input.
+
+## GSE271000 control read-structure inspection
+- Date: 2026-10-02.
+- Run metadata reports SINGLE for SRR29927661 and SRR29927662.
+- SRA Toolkit 3.2.1 vdb-dump inspection of spots 1-5 shows
+  READ_LEN 101,101 and two biological reads in each inspected
+  spot for both controls.
+- These observations conflict with the reported library layout.
+- Original downloaded metadata is retained unchanged.
+- Proceed with split-file extraction and full mate validation
+  before deciding the alignment layout.
+- Full-archive integrity, FASTQ pairing, strandedness, and
+  biological replication remain pending verification.

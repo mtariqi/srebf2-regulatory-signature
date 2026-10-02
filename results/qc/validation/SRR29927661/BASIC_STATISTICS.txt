@@ -1,0 +1,23 @@
+## SRR29927661_1_fastqc.zip
+>>Basic Statistics	pass
+#Measure	Value
+Filename	SRR29927661_1.fastq.gz
+File type	Conventional base calls
+Encoding	Sanger / Illumina 1.9
+Total Sequences	52137798
+Total Bases	5.2 Gbp
+Sequences flagged as poor quality	0
+Sequence length	101
+%GC	50
+
+## SRR29927661_2_fastqc.zip
+>>Basic Statistics	pass
+#Measure	Value
+Filename	SRR29927661_2.fastq.gz
+File type	Conventional base calls
+Encoding	Sanger / Illumina 1.9
+Total Sequences	52137798
+Total Bases	5.2 Gbp
+Sequences flagged as poor quality	0
+Sequence length	101
+%GC	50
