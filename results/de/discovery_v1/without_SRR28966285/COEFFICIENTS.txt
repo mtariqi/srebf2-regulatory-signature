@@ -1,0 +1,4 @@
+Intercept
+genotype_KO_vs_WT
+treatment_depletion_vs_FBS
+genotypeKO.treatmentdepletion

@@ -1,0 +1,7 @@
+fit	contrast	genes	genes_with_pvalue	genes_with_padj	FDR05	up	down
+all12	KO_vs_WT_depletion	17158	17158	17158	6387	3105	3282
+all12	KO_vs_WT_FBS	17158	17158	17158	4198	1914	2284
+all12	interaction	17158	17158	13166	62	0	62
+without_SRR28966285	KO_vs_WT_depletion	17158	17157	17157	6835	3196	3639
+without_SRR28966285	KO_vs_WT_FBS	17158	17157	17157	4671	2147	2524
+without_SRR28966285	interaction	17158	17157	9174	175	28	147
