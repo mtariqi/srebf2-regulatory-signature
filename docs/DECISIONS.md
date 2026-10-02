@@ -19,3 +19,12 @@ rules, and their supporting evidence here.
 - Sensitivity analysis excludes SRR28966285 and compares effect estimates and signature stability.
 - Retain SRR28966293; document elevated multimapping and consistent WT-FBS clustering.
 - No sample is excluded or relabeled solely to improve clustering or significance.
+
+## GSE267019 audit
+- Human WT HeLa cells under cholesterol depletion.
+- Assay measures H3K27ac, not SREBP2 occupancy.
+- Two GEO samples listed: input GSM8258573 and H3K27ac GSM8258574.
+- Genome assembly: hg38; listed processed files are BigWig tracks.
+- Excluded from direct SREBP2 binding evidence.
+- Retained as optional chromatin-context evidence, pending further audit.
+- No replicated condition comparison established from these records.
