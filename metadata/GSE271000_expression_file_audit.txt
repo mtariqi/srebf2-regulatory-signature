@@ -1,0 +1,27 @@
+GSE271000 expression-file audit
+Date: 2026-10-02
+
+Files:
+- shSREBP2_664: 17682 nonempty lines after header.
+- shSREBP2_665: 17249 nonempty lines after header.
+- shSREBP2_667: 17197 nonempty lines after header.
+
+Columns:
+Unnamed gene identifier, baseMean, log2FoldChange,
+lfcSE, stat, pvalue, padj.
+
+Conclusion:
+These are differential-expression result tables.
+No sample-level expression columns are present.
+baseMean cannot reconstruct individual sample expression.
+Gene identifier format and contrast direction remain unverified.
+
+Decision:
+Reserve these tables for response-concordance analysis after
+signature freezing. Sample-level score validation requires
+a suitable expression matrix or raw-read processing.
+The three hairpin contrasts share controls.
+
+Next:
+Identify SRA runs for the eight eligible HepG2 samples,
+confirm replication, and estimate processing requirements.
