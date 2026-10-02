@@ -1,0 +1,6 @@
+Initial sample QC; all samples retained.
+Filter: at least 10 counts in at least 3 samples.
+Genes retained: 17158
+Transformation: DESeq2 varianceStabilizingTransformation, blind=TRUE.
+PCA: 500 genes with highest variance; center=TRUE, scale=FALSE.
+No differential-expression contrasts tested.
