@@ -28,3 +28,13 @@ rules, and their supporting evidence here.
 - Excluded from direct SREBP2 binding evidence.
 - Retained as optional chromatin-context evidence, pending further audit.
 - No replicated condition comparison established from these records.
+
+## GSE282800 preliminary binding audit
+- SREBP2 ChIP-seq in human WT HeLa cells; hg38 assembly.
+- GSM8650746: FBS; GSM8650747: cholesterol depletion.
+- One ChIP sample per condition listed; biological replication not established.
+- No input-control sample listed within this series.
+- Listed sample-level processed files are BigWig signal tracks.
+- Supplementary archive contents and peak availability remain pending inspection.
+- Candidate supporting occupancy evidence; not independent validation of discovery.
+- No replicated differential-binding or direct-target claim established.
