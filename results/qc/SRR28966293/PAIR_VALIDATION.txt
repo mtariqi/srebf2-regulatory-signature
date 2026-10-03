@@ -1,0 +1,1 @@
+PASS: 27,957,300 matched read pairs; FASTQ records valid.

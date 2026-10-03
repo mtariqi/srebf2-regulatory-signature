@@ -1,0 +1,37 @@
+## SRR29634180_1_fastqc.zip
+>>Per tile sequence quality	fail
+Worst tile/base-bin/deviation: 2119 / 18-19 / -17.048119050943768
+Tiles with any deviation below -5: 32/701
+
+>>Sequence Duplication Levels	fail
+#Total Deduplicated Percentage	33.2037381997201
+#Duplication Level	Percentage of total
+1	23.92644538127504
+2	8.881815122183959
+3	4.891661897746618
+4	3.1947422103622607
+5	2.4928964584775724
+
+>>Overrepresented sequences	warn
+#Sequence	Count	Percentage	Possible Source
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	118875	0.28403566183319806	No Hit
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	55404	0.13238033066840382	No Hit
+
+## SRR29634180_2_fastqc.zip
+>>Per tile sequence quality	fail
+Worst tile/base-bin/deviation: 2321 / 6 / -34.06965669515635
+Tiles with any deviation below -5: 72/701
+
+>>Sequence Duplication Levels	fail
+#Total Deduplicated Percentage	34.34261385717906
+#Duplication Level	Percentage of total
+1	25.147794735127015
+2	8.816697973016257
+3	4.666610462411844
+4	3.2651663528360206
+5	2.5416637508783415
+
+>>Overrepresented sequences	warn
+#Sequence	Count	Percentage	Possible Source
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	78054	0.1864994283804706	No Hit
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA	74233	0.1773696680114725	No Hit

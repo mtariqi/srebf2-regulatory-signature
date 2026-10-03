@@ -1,0 +1,15 @@
+Status	data/processed/alignment/SRR28966289.sorted.bam
+Assigned	21115090
+Unassigned_Unmapped	189175
+Unassigned_Read_Type	0
+Unassigned_Singleton	682063
+Unassigned_MappingQuality	0
+Unassigned_Chimera	100694
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	2052621
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1649198
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	2452712

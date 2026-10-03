@@ -1,0 +1,4 @@
+PASS: unique gene IDs and nonnegative integer counts
+Gene rows: 78,932
+Genes with nonzero counts: 26,627
+Total assigned fragments: 20,889,788
