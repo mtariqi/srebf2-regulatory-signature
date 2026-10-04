@@ -1,0 +1,25 @@
+## SRR29634177_1_fastqc.zip
+PASS	Basic Statistics	SRR29634177_1.fastq.gz
+PASS	Per base sequence quality	SRR29634177_1.fastq.gz
+FAIL	Per tile sequence quality	SRR29634177_1.fastq.gz
+PASS	Per sequence quality scores	SRR29634177_1.fastq.gz
+FAIL	Per base sequence content	SRR29634177_1.fastq.gz
+PASS	Per sequence GC content	SRR29634177_1.fastq.gz
+PASS	Per base N content	SRR29634177_1.fastq.gz
+PASS	Sequence Length Distribution	SRR29634177_1.fastq.gz
+FAIL	Sequence Duplication Levels	SRR29634177_1.fastq.gz
+WARN	Overrepresented sequences	SRR29634177_1.fastq.gz
+PASS	Adapter Content	SRR29634177_1.fastq.gz
+
+## SRR29634177_2_fastqc.zip
+PASS	Basic Statistics	SRR29634177_2.fastq.gz
+PASS	Per base sequence quality	SRR29634177_2.fastq.gz
+FAIL	Per tile sequence quality	SRR29634177_2.fastq.gz
+PASS	Per sequence quality scores	SRR29634177_2.fastq.gz
+FAIL	Per base sequence content	SRR29634177_2.fastq.gz
+PASS	Per sequence GC content	SRR29634177_2.fastq.gz
+PASS	Per base N content	SRR29634177_2.fastq.gz
+PASS	Sequence Length Distribution	SRR29634177_2.fastq.gz
+FAIL	Sequence Duplication Levels	SRR29634177_2.fastq.gz
+WARN	Overrepresented sequences	SRR29634177_2.fastq.gz
+PASS	Adapter Content	SRR29634177_2.fastq.gz

@@ -1,0 +1,59 @@
+## SRR29634177_1_fastqc.zip
+>>Basic Statistics	pass
+#Measure	Value
+Filename	SRR29634177_1.fastq.gz
+File type	Conventional base calls
+Encoding	Sanger / Illumina 1.9
+Total Sequences	36198256
+Total Bases	3.6 Gbp
+Sequences flagged as poor quality	0
+Sequence length	101
+%GC	49
+
+>>Per tile sequence quality	fail
+Worst tile/base-bin/deviation: 2108 / 84-85 / -17.11072756724937
+Tiles with any deviation below -5: 31/701
+
+>>Sequence Duplication Levels	fail
+#Total Deduplicated Percentage	37.2898587211618
+#Duplication Level	Percentage of total
+1	27.51372812466231
+2	9.50440820790488
+3	5.114032328880475
+4	3.5237942835028373
+5	2.5695162000530334
+
+>>Overrepresented sequences	warn
+#Sequence	Count	Percentage	Possible Source
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	64363	0.17780690870853005	No Hit
+GATCGGAAGAGCACACGTCTGAACTCCAGTCACCAGGCGATCTCGTATGC	58456	0.16148844297913137	TruSeq Adapter, Index 7 (97% over 36bp)
+
+## SRR29634177_2_fastqc.zip
+>>Basic Statistics	pass
+#Measure	Value
+Filename	SRR29634177_2.fastq.gz
+File type	Conventional base calls
+Encoding	Sanger / Illumina 1.9
+Total Sequences	36198256
+Total Bases	3.6 Gbp
+Sequences flagged as poor quality	0
+Sequence length	101
+%GC	49
+
+>>Per tile sequence quality	fail
+Worst tile/base-bin/deviation: 2321 / 6 / -33.958464670105926
+Tiles with any deviation below -5: 72/701
+
+>>Sequence Duplication Levels	fail
+#Total Deduplicated Percentage	38.91571473030681
+#Duplication Level	Percentage of total
+1	29.172842455720133
+2	9.531713747369821
+3	5.221963072398536
+4	3.369920010198746
+5	2.5403222989414007
+
+>>Overrepresented sequences	warn
+#Sequence	Count	Percentage	Possible Source
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG	42297	0.11684817080690298	No Hit
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	42130	0.11638682261377455	No Hit
