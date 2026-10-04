@@ -1,0 +1,15 @@
+Status	data/processed/validation/GSE271000/alignment/SRR29634178.sorted.bam
+Assigned	24548376
+Unassigned_Unmapped	2187541
+Unassigned_Read_Type	0
+Unassigned_Singleton	2715320
+Unassigned_MappingQuality	0
+Unassigned_Chimera	419040
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	8275365
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	3124133
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	3120096
