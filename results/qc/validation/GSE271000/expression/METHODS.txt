@@ -1,0 +1,8 @@
+Purpose: cohort expression QC; no differential-expression tests.
+QC filter: count >=10 in at least two of eight samples.
+Normalization: DESeq2 median-ratio size factors.
+Transformation: varianceStabilizingTransformation, blind=TRUE.
+PCA: centered transformed expression of top 500 variable genes.
+Correlations: Pearson, all QC-retained transformed genes.
+No samples automatically excluded.
+Signature definition must be frozen before validation-effect analysis.

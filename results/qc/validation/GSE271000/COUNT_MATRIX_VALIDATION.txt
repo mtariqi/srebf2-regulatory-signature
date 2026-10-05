@@ -1,0 +1,4 @@
+PASS: eight samples with identical gene IDs and order
+PASS: nonnegative integer counts and expected column totals
+PASS: written matrix read-back verification
+Matrix dimensions: 78,932 genes x 8 samples
