@@ -1,0 +1,15 @@
+status	entries	percent
+Assigned	23818567	56.36
+Unassigned_Unmapped	1946481	4.61
+Unassigned_Read_Type	0	0.00
+Unassigned_Singleton	2392083	5.66
+Unassigned_MappingQuality	0	0.00
+Unassigned_Chimera	423203	1.00
+Unassigned_FragmentLength	0	0.00
+Unassigned_Duplicate	0	0.00
+Unassigned_MultiMapping	8475869	20.05
+Unassigned_Secondary	0	0.00
+Unassigned_NonSplit	0	0.00
+Unassigned_NoFeatures	2197661	5.20
+Unassigned_Overlapping_Length	0	0.00
+Unassigned_Ambiguity	3011272	7.12
