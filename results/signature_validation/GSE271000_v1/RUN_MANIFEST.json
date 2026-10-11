@@ -1,0 +1,12 @@
+{
+  "policy_sha256": "e1cb502b1076550ee1b36a968295e1bb9293295bfc11bfda3e809206cc04f72c",
+  "counts_sha256": "7044bbdc5aa195013cfc660b62a1637a31ee6636fbfb777bea55e2928531dffe",
+  "metadata_sha256": "1117b4c0a095fbc29430dd210575af8f1227a54f6ee8b9f87c7a22aaf222dc22",
+  "samples": 8,
+  "matrix_genes": 78932,
+  "genes_positive_all_samples_for_size_factors": 21830,
+  "signature_positive": 795,
+  "signature_negative": 531,
+  "all_signature_ids_matched": true,
+  "interpretation": "descriptive exploratory external-cohort validation; no binding evidence established"
+}

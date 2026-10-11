@@ -1,0 +1,34 @@
+{
+  "signature_version": "discovery_v1",
+  "date_created": "2026-10-09",
+  "classification": "perturbation-derived candidate signature; binding not established",
+  "source_dataset": "GSE267018",
+  "validation_data_used_for_selection": false,
+  "reference_assembly": "GRCh38",
+  "gene_annotation": "GENCODE v47",
+  "rules": [
+    "primary: KO vs WT under depletion, padj < 0.05, abs(log2FC) >= 1",
+    "same nonzero effect direction in FBS and SRR28966285-excluded sensitivity contrasts",
+    "exact-match annotation only",
+    "exclude SREBF2 itself",
+    "no FBS/sensitivity significance requirement"
+  ],
+  "scoring_policy": "NOT FROZEN; do not evaluate validation until scoring, mapping and missing-gene rules are specified",
+  "counts": {
+    "genes_evaluated": 17158,
+    "selected": 1326,
+    "decreased_in_KO": 795,
+    "increased_in_KO": 531
+  },
+  "inputs_sha256": {
+    "primary": "cd007da50ad598ebe8400339c246b1ea22f2de6953739872a099168b2edbeb7a",
+    "fbs": "5ebd08ada0deee8b4cd4b15dea5e4f58e0662d56052036af91c84113828d5c4a",
+    "sensitivity": "b8f820f69ce357f04647aac2fe200a0d428c04e1b198b795aaf5e20faf79a369"
+  },
+  "outputs_sha256": {
+    "SIGNATURE_SELECTION_AUDIT.tsv": "3fc8c0996e977676ba0ff29e3395150a16b2d1c068b9c1485de84bf00f1c33b5",
+    "SREBF2_SIGNATURE_ALL.tsv": "43a4c0f382a8f24b2287a9db879ec1b16c871544b14213e3402e8c5fc08e6356",
+    "SREBF2_SIGNATURE_POSITIVE.tsv": "249f1e20c585dd77b352e73784fec912ac99578a766dbc523cc84182838964db",
+    "SREBF2_SIGNATURE_NEGATIVE.tsv": "76acfffcd29ddd517cc1e268dc0a51e99958eb1f4a5eafa2f0e4d77bdb869fd4"
+  }
+}

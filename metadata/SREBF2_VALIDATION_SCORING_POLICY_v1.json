@@ -1,0 +1,23 @@
+{
+  "version": "validation_scoring_v1",
+  "status": "frozen_before_validation_scoring",
+  "discovery_manifest_sha256": "6799881ed23562087a4885d678e4f72e38b134c87803731a174c45f15a8036db",
+  "positive_signature_sha256": "249f1e20c585dd77b352e73784fec912ac99578a766dbc523cc84182838964db",
+  "negative_signature_sha256": "76acfffcd29ddd517cc1e268dc0a51e99958eb1f4a5eafa2f0e4d77bdb869fd4",
+  "expected_signature_counts": {
+    "positive": 795,
+    "negative": 531
+  },
+  "sample_cohort": "GSE271000; eight HepG2 samples; 2 controls, 2 per shSREBP2 hairpin 664/665/667",
+  "gene_ids": "exact versioned Ensembl IDs; no symbol or version remapping",
+  "normalization": "DESeq2-style median-of-ratios using genes with positive counts in every sample; geometric mean across all eight samples; median of positive ratios per sample",
+  "expression": "log2(normalized counts + 1)",
+  "ranking_universe": "all 78,932 matrix genes, including zero-count genes; midrank ties within each sample; percentile=(rank-0.5)/N",
+  "primary_score": "mean percentile of 795 decreased-in-KO genes minus mean percentile of 531 increased-in-KO genes; equal weight per gene and equal weight per component",
+  "missing_gene_policy": "error on missing signature genes, missing SREBF2, duplicated IDs, or missing counts; no imputation",
+  "primary_comparison": "descriptive control-versus-each-hairpin differences in signature score and SREBF2 log2 normalized expression; no inferential p values",
+  "expected_direction": "signature score and SREBF2 expression lower in knockdown than control",
+  "secondary_qc": "count of genes with nonzero counts by sample and group; signature expression coverage; per-sample normalization size factors",
+  "validation_gene_selection": "none; frozen discovery genes only",
+  "discovery_source_dataset": "GSE267018"
+}
