@@ -1,0 +1,26 @@
+{
+  "phase": "5D exploratory benchmarking v2 (NaN-aware reproduction fix)",
+  "seed": 20261011,
+  "draws": 200,
+  "matching": "discovery gene_type collapsed to protein_coding/other x expression quintile, without replacement; preserve 795/531 sign group sizes",
+  "input_sha256": {
+    "results/counts/validation/GSE271000/GSE271000_validation_gene_counts.tsv": "7044bbdc5aa195013cfc660b62a1637a31ee6636fbfb777bea55e2928531dffe",
+    "metadata/GSE271000_validation_samples.tsv": "1117b4c0a095fbc29430dd210575af8f1227a54f6ee8b9f87c7a22aaf222dc22",
+    "metadata/SREBF2_VALIDATION_SCORING_POLICY_v1.json": "e1cb502b1076550ee1b36a968295e1bb9293295bfc11bfda3e809206cc04f72c",
+    "results/signature/discovery_v1/SIGNATURE_SELECTION_AUDIT.tsv": "3fc8c0996e977676ba0ff29e3395150a16b2d1c068b9c1485de84bf00f1c33b5",
+    "results/signature_validation/GSE271000_sensitivity_v1/SAMPLE_METHOD_SCORES_v1.tsv": "c4ae76a2aa461ad2dc703956235ef983f1224001714f2e9934e79d3424521373",
+    "results/signature_validation/GSE271000_sensitivity_v1/GROUP_METHOD_COMPARISON_v1.tsv": "26db7ea6a8dc6707dd36a415307179d15c95fb3a49d89610d8f8d93273092dc8",
+    "results/signature/discovery_v1/SIGNATURE_MANIFEST.json": "6799881ed23562087a4885d678e4f72e38b134c87803731a174c45f15a8036db",
+    "results/signature/discovery_v1/SREBF2_SIGNATURE_POSITIVE.tsv": "249f1e20c585dd77b352e73784fec912ac99578a766dbc523cc84182838964db",
+    "results/signature/discovery_v1/SREBF2_SIGNATURE_NEGATIVE.tsv": "76acfffcd29ddd517cc1e268dc0a51e99958eb1f4a5eafa2f0e4d77bdb869fd4"
+  },
+  "limitations": [
+    "Eight samples only: two per group; standardized effects unstable",
+    "Three shRNAs share a common control and are not independent cohorts",
+    "Alternative scoring methods were explored after viewing validation results",
+    "Matched random gene sets do not account for discovery effect-size selection, pathway correlation or latent biology",
+    "Random-draw empirical fractions are descriptive, not calibrated p-values",
+    "Detected-gene percentile means omit undetected-universe NaNs exactly as Phase 5C; matched gene-set denominators may vary by detected coverage",
+    "No claim of binding causality, classification generalization, or superiority over SREBF2 expression"
+  ]
+}
