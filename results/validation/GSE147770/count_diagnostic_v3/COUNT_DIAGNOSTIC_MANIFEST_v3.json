@@ -1,0 +1,11 @@
+{
+  "dataset": "GSE147770",
+  "stage": "count_diagnostic_v3",
+  "counts_sha256": "3f4a2307ede59793b77ac50c38fa519ece012c0a2128fe56ea4c0f44f0b7d598",
+  "matrix_rows": 38344,
+  "samples": 18,
+  "invalid_cells": 7542,
+  "source_modified": false,
+  "repair_applied": false,
+  "interpretation": "Raw count matrix must be assessed before DESeq2; no automatic rounding or imputation."
+}

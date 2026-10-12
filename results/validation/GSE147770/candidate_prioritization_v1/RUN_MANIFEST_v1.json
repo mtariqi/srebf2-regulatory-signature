@@ -1,0 +1,23 @@
+{
+  "phase": "6I",
+  "inputs": {
+    "results/validation/GSE147770/mitochondrial_robustness_v1/OXPHOS_13_GENES_v1.tsv": "c657760abbb75de418f8b697b5813fd48dcba26ef058b14e126d64d9a37082c8",
+    "results/validation/GSE147770/binding_support_v1/OXPHOS_13_PROMOTER_SIGNAL_v1.tsv": "c7cf68b564797b617b2bb220f1f7d8dd78bf0a12b14d14fbf3b79e8471a20c19",
+    "results/validation/GSE147770/binding_support_v1/MATCHED_SENSITIVITY_SUMMARY_v1.tsv": "45b1e9e504ec187242b8973193f1d29f94bb144bdd9d0fa0c2c7cc448d90be35"
+  },
+  "python": "3.11.17 (main, Oct  7 2026, 00:02:24) [GCC 15.3.0]",
+  "pandas": "3.0.6",
+  "numpy": "2.4.6",
+  "ranking": "descriptive mean of within-13-gene percentile ranks for -log10(interaction padj) and absolute KO effect difference (minus_FBS - plus_FBS); weights 50/50; NOT a validated prediction model",
+  "ranking_scope": "Only 13 post-selected OXPHOS genes, not all candidate genes",
+  "promoter_policy": "Promoter signal descriptive only; not ranked because matched-background comparisons did not support consistent enrichment",
+  "caveats": [
+    "HAP1 -FBS serum starvation differs from HeLa cholesterol depletion",
+    "No ChIP peak or binding-specific control validation",
+    "Gene-level interaction FDR does not prove significance of each condition-specific fold change",
+    "Ranking does not measure direct binding or mitochondrial function",
+    "Promoter measurements may reflect technical factors",
+    "Pathway membership and gene directions are selection criteria, not independent validation",
+    "Matched comparison summary applies to the set, not individual genes"
+  ]
+}

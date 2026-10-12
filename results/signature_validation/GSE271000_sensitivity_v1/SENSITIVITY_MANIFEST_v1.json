@@ -1,0 +1,37 @@
+{
+  "analysis": "Phase 5C exploratory sensitivity; primary scoring unchanged",
+  "input_sha256": {
+    "results/counts/validation/GSE271000/GSE271000_validation_gene_counts.tsv": "7044bbdc5aa195013cfc660b62a1637a31ee6636fbfb777bea55e2928531dffe",
+    "metadata/GSE271000_validation_samples.tsv": "1117b4c0a095fbc29430dd210575af8f1227a54f6ee8b9f87c7a22aaf222dc22",
+    "metadata/SREBF2_VALIDATION_SCORING_POLICY_v1.json": "e1cb502b1076550ee1b36a968295e1bb9293295bfc11bfda3e809206cc04f72c",
+    "results/signature_validation/GSE271000_v1/SAMPLE_SCORES.tsv": "f36cab741478a01ff5704244d77aa38037ab6335c114c7ec8a30e429742db834",
+    "results/signature/discovery_v1/SIGNATURE_MANIFEST.json": "6799881ed23562087a4885d678e4f72e38b134c87803731a174c45f15a8036db",
+    "results/signature/discovery_v1/SREBF2_SIGNATURE_POSITIVE.tsv": "249f1e20c585dd77b352e73784fec912ac99578a766dbc523cc84182838964db",
+    "results/signature/discovery_v1/SREBF2_SIGNATURE_NEGATIVE.tsv": "76acfffcd29ddd517cc1e268dc0a51e99958eb1f4a5eafa2f0e4d77bdb869fd4"
+  },
+  "n_samples": 8,
+  "n_matrix_genes": 78932,
+  "n_detected_any_sample": 43561,
+  "n_signature_positive": 795,
+  "n_signature_negative": 531,
+  "methods": [
+    "primary_all_gene_percentile",
+    "detected_any_gene_percentile",
+    "log2_CPM_plus1",
+    "log2_DESeq2_normalized_plus1"
+  ],
+  "method_notes": {
+    "primary_all_gene_percentile": "reproduces frozen primary score",
+    "detected_any_gene_percentile": "fixed detected-in-any-sample universe; ranks still include zero values for genes in this universe",
+    "log2_CPM_plus1": "library-total counts-per-million with pseudocount 1",
+    "log2_DESeq2_normalized_plus1": "median-of-ratios normalized counts with pseudocount 1"
+  },
+  "limitations": [
+    "No new gene selection or scoring weights",
+    "Scores from different methods have different scales; compare directions, not absolute magnitudes",
+    "No statistical inference with two samples per group",
+    "Within-sample rank is invariant to sample-wide library scaling",
+    "Log-transformed component scores can reflect differences in expression baseline between gene sets",
+    "Does not establish direct binding or superiority over SREBF2 expression"
+  ]
+}

@@ -1,0 +1,13 @@
+group	metric	replicate_1_delta	replicate_2_delta	both_below_control_mean	both_above_control_mean	discordant_around_control_mean
+shSREBP2_664	signature_score	-0.006455595194999997	-0.012470935205000006	True	False	False
+shSREBP2_664	SREBF2_log2_normalized_count	-1.6048598099999989	-1.7555405099999994	True	False	False
+shSREBP2_664	positive_component	-0.012753561899999988	-0.00319845409999997	True	False	False
+shSREBP2_664	negative_component	-0.006297966699999935	0.009272481100000007	False	False	True
+shSREBP2_665	signature_score	0.0008935560150000049	0.0003248507849999971	False	True	False
+shSREBP2_665	SREBF2_log2_normalized_count	-1.1279828499999986	-1.3822123499999979	True	False	False
+shSREBP2_665	positive_component	-0.008139702699999973	-0.00577793729999998	True	False	False
+shSREBP2_665	negative_component	-0.009033258799999944	-0.006102788099999978	True	False	False
+shSREBP2_667	signature_score	-0.009694869925000002	-0.011180366025	True	False	False
+shSREBP2_667	SREBF2_log2_normalized_count	-2.874988187999998	-2.073842029999998	True	False	False
+shSREBP2_667	positive_component	-0.011107060700000004	-0.013135444600000046	True	False	False
+shSREBP2_667	negative_component	-0.0014121907999999905	-0.001955078599999993	True	False	False

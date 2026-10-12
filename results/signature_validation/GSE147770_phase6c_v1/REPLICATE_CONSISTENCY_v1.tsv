@@ -1,0 +1,17 @@
+method	serum	comparison	n_below_WT_mean	n_above_WT_mean	n_positive_below_WT_mean	n_negative_below_WT_mean
+all_gene_percentile_primary	plus_FBS	SREBF2_KO_minus_WT	3	0	3	2
+all_gene_percentile_primary	plus_FBS	C12orf49_KO_minus_WT	3	0	3	2
+all_gene_percentile_primary	minus_FBS	SREBF2_KO_minus_WT	0	3	0	1
+all_gene_percentile_primary	minus_FBS	C12orf49_KO_minus_WT	1	2	1	2
+detected_any_percentile	plus_FBS	SREBF2_KO_minus_WT	3	0	3	1
+detected_any_percentile	plus_FBS	C12orf49_KO_minus_WT	3	0	3	1
+detected_any_percentile	minus_FBS	SREBF2_KO_minus_WT	0	3	0	2
+detected_any_percentile	minus_FBS	C12orf49_KO_minus_WT	1	2	0	2
+log2_CPM_plus_1	plus_FBS	SREBF2_KO_minus_WT	3	0	3	0
+log2_CPM_plus_1	plus_FBS	C12orf49_KO_minus_WT	3	0	3	0
+log2_CPM_plus_1	minus_FBS	SREBF2_KO_minus_WT	0	3	0	3
+log2_CPM_plus_1	minus_FBS	C12orf49_KO_minus_WT	0	3	2	3
+log2_DESeq2_normalized_plus_1	plus_FBS	SREBF2_KO_minus_WT	3	0	3	1
+log2_DESeq2_normalized_plus_1	plus_FBS	C12orf49_KO_minus_WT	3	0	3	0
+log2_DESeq2_normalized_plus_1	minus_FBS	SREBF2_KO_minus_WT	0	3	0	2
+log2_DESeq2_normalized_plus_1	minus_FBS	C12orf49_KO_minus_WT	1	2	2	3

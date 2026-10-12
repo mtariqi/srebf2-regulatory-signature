@@ -1,0 +1,19 @@
+{
+  "analysis": "GSE271000_processed_DE_v1",
+  "input_sha256": {
+    "/home/mtariq/srebf2-regulatory-signature/results/signature/discovery_v1/SREBF2_SIGNATURE_ALL.tsv": "43a4c0f382a8f24b2287a9db879ec1b16c871544b14213e3402e8c5fc08e6356",
+    "/home/mtariq/srebf2-regulatory-signature/data/raw/validation/GSE271000/GSE271000_DESeq_HepG2_shSREBP2_664.txt.gz": "73eaec30c3672ab85a4a5e4d3cdb3ed882c168ff72781893b8b3fc653eec4d51",
+    "/home/mtariq/srebf2-regulatory-signature/data/raw/validation/GSE271000/GSE271000_DESeq_HepG2_shSREBP2_665.txt.gz": "bece28aa319d38de8a64a8bc7bacbd7ffe3af256e95b8607bd2c921e8a75d007",
+    "/home/mtariq/srebf2-regulatory-signature/data/raw/validation/GSE271000/GSE271000_DESeq_HepG2_shSREBP2_667.txt.gz": "b64637502be69f79dc37108a9d3fd1916fd89163b90d5cb0cf0ba04ba3a68631"
+  },
+  "frozen_signature_size": 1326,
+  "assumed_contrast": "shSREBP2_vs_shControl",
+  "contrast_orientation_verified": false,
+  "mapping": "exact unique gene symbols; ambiguous excluded",
+  "limitations": [
+    "No sample-level scores",
+    "Contrast orientation not independently verified",
+    "Gene dependence makes binomial p values exploratory",
+    "Cell type and perturbation differ from discovery"
+  ]
+}

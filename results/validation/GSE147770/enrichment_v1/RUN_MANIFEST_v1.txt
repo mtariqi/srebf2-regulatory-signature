@@ -1,0 +1,10 @@
+Phase 6F v1: descriptive exploratory ORA
+Source: 
+msigdbr 26.1.1; MSigDB version 2026.1.Hs
+Background: 14171 genes with nonmissing Phase 6D Wald interaction padj
+Targets: expected reversal AND interaction FDR<0.05; positive 131, negative 50, combined 181
+Gene sets: 10 <= background-mapped genes <= 500
+Test: one-sided hypergeometric
+Correction: BH separately by component and collection
+Caution: gene correlation, selection effects, and power can affect enrichment; no direct-binding inference
+R: R version 4.6.1 (2026-06-24)

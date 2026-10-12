@@ -1,0 +1,1327 @@
+gene_id	664	665	667	all_three_evaluable	all_three_concordant	concordant_count
+ENSG00000000971.17				False	False	0
+ENSG00000001630.18	True	True	True	True	True	3
+ENSG00000003147.19				False	False	0
+ENSG00000003989.18	True	True	True	True	True	3
+ENSG00000004777.19	False	False	True	True	False	1
+ENSG00000004975.12	True	True	True	True	True	3
+ENSG00000005238.20				False	False	0
+ENSG00000006327.14	True	True	True	True	True	3
+ENSG00000006468.15		True		False	False	1
+ENSG00000006611.17				False	False	0
+ENSG00000006740.18	True	True	True	True	True	3
+ENSG00000007080.11	True	True	True	True	True	3
+ENSG00000007255.10	False	True	False	True	False	1
+ENSG00000008311.16	True	True	True	True	True	3
+ENSG00000008735.14	True	True	False	True	False	2
+ENSG00000009694.14				False	False	0
+ENSG00000010319.7	True	True	False	True	False	2
+ENSG00000011021.23	True	True	True	True	True	3
+ENSG00000011347.10	True	True	True	True	True	3
+ENSG00000011465.18				False	False	0
+ENSG00000011478.13	False	False	False	True	False	0
+ENSG00000014123.10	True	True	True	True	True	3
+ENSG00000023445.17	True	True	False	True	False	2
+ENSG00000026036.23	False	False	False	True	False	0
+ENSG00000026751.17				False	False	0
+ENSG00000029153.15				False	False	0
+ENSG00000031691.7	True	True	True	True	True	3
+ENSG00000034510.6	True	True	True	True	True	3
+ENSG00000039650.12	True	True	True	True	True	3
+ENSG00000040608.14	True	True	True	True	True	3
+ENSG00000047457.14	True	False	True	True	False	2
+ENSG00000047617.18				False	False	0
+ENSG00000048052.25				False	False	0
+ENSG00000049089.15	True	False	True	True	False	2
+ENSG00000049246.15	True	False	True	True	False	2
+ENSG00000049768.18	False	False	True	True	False	1
+ENSG00000050165.19	False	False	False	True	False	0
+ENSG00000050344.9	False	False	False	True	False	0
+ENSG00000051128.19	True	True	True	True	True	3
+ENSG00000051523.12	False	False	False	True	False	0
+ENSG00000052344.16	False	True	False	True	False	1
+ENSG00000052802.13	True	True	True	True	True	3
+ENSG00000054148.18	False	True	False	True	False	1
+ENSG00000054803.4				False	False	0
+ENSG00000055813.6				False	False	0
+ENSG00000059804.18	True	False	True	True	False	2
+ENSG00000060982.15	True	False	False	True	False	1
+ENSG00000063241.8	True	True	True	True	True	3
+ENSG00000064393.16	True	True	True	True	True	3
+ENSG00000066629.19	False	False	False	True	False	0
+ENSG00000067064.13	True	True	True	True	True	3
+ENSG00000067191.17	True	False	False	True	False	1
+ENSG00000067836.13	True	True	True	True	True	3
+ENSG00000068001.14	True	False	False	True	False	1
+ENSG00000068885.15	True	True	True	True	True	3
+ENSG00000069020.19	True	True	True	True	True	3
+ENSG00000069493.15	True	True	True	True	True	3
+ENSG00000070540.13	True	True	False	True	False	2
+ENSG00000071794.16	False	False	False	True	False	0
+ENSG00000072195.15	True	False	True	True	False	2
+ENSG00000072840.13	True	True	True	True	True	3
+ENSG00000073282.14				False	False	0
+ENSG00000074071.15	True	True	True	True	True	3
+ENSG00000074842.8	True	True	True	True	True	3
+ENSG00000075407.19	True	True	True	True	True	3
+ENSG00000076641.4	True	True	False	True	False	2
+ENSG00000078114.19				False	False	0
+ENSG00000079432.9	True	False	True	True	False	2
+ENSG00000079435.11				False	False	0
+ENSG00000079459.14	True	True	True	True	True	3
+ENSG00000079841.20				False	False	0
+ENSG00000080224.18				False	False	0
+ENSG00000080298.16	True	True	True	True	True	3
+ENSG00000081041.9	True	True	False	True	False	2
+ENSG00000081665.15	True	True	True	True	True	3
+ENSG00000082269.17	False	False	False	True	False	0
+ENSG00000082397.18				False	False	0
+ENSG00000083535.16	True	True	True	True	True	3
+ENSG00000083807.10	False	True	False	True	False	1
+ENSG00000085662.14	True	True	True	True	True	3
+ENSG00000085831.16	True	True	True	True	True	3
+ENSG00000086205.18				False	False	0
+ENSG00000086300.17	True	True	True	True	True	3
+ENSG00000086504.18	False	True	True	True	False	2
+ENSG00000086717.19				False	False	0
+ENSG00000087085.16	True	True	True	True	True	3
+ENSG00000087086.16	True	True	True	True	True	3
+ENSG00000088726.16		False		False	False	0
+ENSG00000090097.22	True	True	True	True	True	3
+ENSG00000090539.16	True	True	True	True	True	3
+ENSG00000090971.5	True	True	True	True	True	3
+ENSG00000095370.20				False	False	0
+ENSG00000099385.12	False	True	True	True	False	2
+ENSG00000099795.7	True	True	True	True	True	3
+ENSG00000099800.8	True	True	True	True	True	3
+ENSG00000099849.15	True	True	True	True	True	3
+ENSG00000099866.16	False	False	False	True	False	0
+ENSG00000099958.15				False	False	0
+ENSG00000099992.16	True	True	True	True	True	3
+ENSG00000100075.10	True	True	True	True	True	3
+ENSG00000100078.4	True	True	True	True	True	3
+ENSG00000100097.12	True	True	True	True	True	3
+ENSG00000100142.16	True	True	True	True	True	3
+ENSG00000100292.18	True	True	False	True	False	2
+ENSG00000100342.22	True	True	True	True	True	3
+ENSG00000100344.11	True	False	True	True	False	2
+ENSG00000100473.18	False	False	False	True	False	0
+ENSG00000100739.11				False	False	0
+ENSG00000101084.19	True	True	True	True	True	3
+ENSG00000101255.13	True	True	True	True	True	3
+ENSG00000101265.16	True	True	True	True	True	3
+ENSG00000101695.10	False	False	True	True	False	1
+ENSG00000101871.18	True	True	False	True	False	2
+ENSG00000102003.12	True	False	False	True	False	1
+ENSG00000102174.10				False	False	0
+ENSG00000102309.15	False	False	False	True	False	0
+ENSG00000102312.24	False	False	True	True	False	1
+ENSG00000102349.18				False	False	0
+ENSG00000102931.8	True	True	True	True	True	3
+ENSG00000103024.8	False	False	False	True	False	0
+ENSG00000103152.12	True	True	True	True	True	3
+ENSG00000103175.11				False	False	0
+ENSG00000103202.13	False	True	False	True	False	1
+ENSG00000103241.7				False	False	0
+ENSG00000103489.12				False	False	0
+ENSG00000103495.15	True	True	True	True	True	3
+ENSG00000103740.10	True	True	True	True	True	3
+ENSG00000103876.14	False	True	False	True	False	1
+ENSG00000104290.11	True	True	True	True	True	3
+ENSG00000104361.10	False	False	False	True	False	0
+ENSG00000104497.15	True	False	False	True	False	1
+ENSG00000104549.12	True	True	True	True	True	3
+ENSG00000104723.21	False	False	False	True	False	0
+ENSG00000104728.16	True	True		False	False	2
+ENSG00000104824.18	True	True	True	True	True	3
+ENSG00000104870.13	False	False	False	True	False	0
+ENSG00000104946.14	True	False	False	True	False	1
+ENSG00000104960.15	True	True	True	True	True	3
+ENSG00000104976.13	True	True	True	True	True	3
+ENSG00000104979.9	False	False	True	True	False	1
+ENSG00000105248.16	True	True	True	True	True	3
+ENSG00000105321.14	True	True	False	True	False	2
+ENSG00000105327.18	False	True	True	True	False	2
+ENSG00000105329.11	True	True	True	True	True	3
+ENSG00000105379.10	True	True	True	True	True	3
+ENSG00000105383.15				False	False	0
+ENSG00000105401.10	True	True	True	True	True	3
+ENSG00000105404.11	False	False	False	True	False	0
+ENSG00000105427.10	False	False	False	True	False	0
+ENSG00000105516.11	False	False	False	True	False	0
+ENSG00000105518.14	True	True	False	True	False	2
+ENSG00000105617.4	False	False	False	True	False	0
+ENSG00000105619.14	True	True	False	True	False	2
+ENSG00000105699.17	False	True	True	True	False	2
+ENSG00000105722.11	True	True	True	True	True	3
+ENSG00000105750.15	True	False	True	True	False	2
+ENSG00000105810.10	False	False	False	True	False	0
+ENSG00000106034.18	False	True	False	True	False	1
+ENSG00000106211.11	False	False	False	True	False	0
+ENSG00000106268.16	True	True	True	True	True	3
+ENSG00000106330.12	True	True	True	True	True	3
+ENSG00000106460.20	False	False	True	True	False	1
+ENSG00000106541.12	False	False	False	True	False	0
+ENSG00000106692.15	True	True	True	True	True	3
+ENSG00000106701.13	False	False	True	True	False	1
+ENSG00000107140.17	True	True	True	True	True	3
+ENSG00000107187.17				False	False	0
+ENSG00000107223.13	False	False	False	True	False	0
+ENSG00000108106.14	True	True	True	True	True	3
+ENSG00000108515.18	False	False	False	True	False	0
+ENSG00000109066.14	True	True	True	True	True	3
+ENSG00000109107.14	True	True	True	True	True	3
+ENSG00000109265.15	True	True	True	True	True	3
+ENSG00000109654.16	True	True	True	True	True	3
+ENSG00000109738.11				False	False	0
+ENSG00000109929.10	True	True	True	True	True	3
+ENSG00000110011.14	False	False	False	True	False	0
+ENSG00000110693.19	True	True	True	True	True	3
+ENSG00000110723.12				False	False	0
+ENSG00000110921.14	True	True	True	True	True	3
+ENSG00000111181.13	False	True	False	True	False	1
+ENSG00000111335.14	True	True	False	True	False	2
+ENSG00000111678.11	True	True	False	True	False	2
+ENSG00000111775.3	False	False	False	True	False	0
+ENSG00000111879.20	True	True	True	True	True	3
+ENSG00000111886.11				False	False	0
+ENSG00000112245.14	False	True	True	True	False	2
+ENSG00000112276.14	False	False	False	True	False	0
+ENSG00000112297.18	False	False	False	True	False	0
+ENSG00000112414.15	False	False	False	True	False	0
+ENSG00000112655.16	True	True	True	True	True	3
+ENSG00000112658.8	False	False	True	True	False	1
+ENSG00000112667.13	False	True	False	True	False	1
+ENSG00000112902.12				False	False	0
+ENSG00000112972.16	True	True	True	True	True	3
+ENSG00000113083.15	True	True	True	True	True	3
+ENSG00000113161.17	True	True	True	True	True	3
+ENSG00000113389.16				False	False	0
+ENSG00000113504.21	True	True	True	True	True	3
+ENSG00000113657.13				False	False	0
+ENSG00000114378.17	True	True	True	True	True	3
+ENSG00000114395.11	True	True	True	True	True	3
+ENSG00000114446.5	False	False	False	True	False	0
+ENSG00000114541.15	True	True	False	True	False	2
+ENSG00000114767.7	True	True	True	True	True	3
+ENSG00000114854.8	True	True	False	True	False	2
+ENSG00000115041.14				False	False	0
+ENSG00000115129.14	True	True	True	True	True	3
+ENSG00000115221.13				False	False	0
+ENSG00000115257.15	True	False	False	True	False	1
+ENSG00000115286.21	False	False	False	True	False	0
+ENSG00000115363.14	False	False	False	True	False	0
+ENSG00000115414.21	False	False	False	True	False	0
+ENSG00000115468.13	True	True	True	True	True	3
+ENSG00000115844.11	True	True	True	True	True	3
+ENSG00000115896.17				False	False	0
+ENSG00000115935.19				False	False	0
+ENSG00000116016.14	False	True	False	True	False	1
+ENSG00000116133.13	True	True	True	True	True	3
+ENSG00000116668.13	True	True	True	True	True	3
+ENSG00000116690.13	False			False	False	0
+ENSG00000116833.14	False	False	True	True	False	1
+ENSG00000116990.12	True	True	False	True	False	2
+ENSG00000117226.13	True	True	True	True	True	3
+ENSG00000117228.11	True	True	True	True	True	3
+ENSG00000117480.16	False	True	False	True	False	1
+ENSG00000117862.14	True	True	True	True	True	3
+ENSG00000117984.15	True	True	True	True	True	3
+ENSG00000118496.5	False	True	True	True	False	2
+ENSG00000118507.19	True	True	True	True	True	3
+ENSG00000118596.12	True	True	True	True	True	3
+ENSG00000118922.19	False	False	True	True	False	1
+ENSG00000118997.14				False	False	0
+ENSG00000119655.11	False	True	True	True	False	2
+ENSG00000120437.9	True	True	True	True	True	3
+ENSG00000120738.8	False	True	False	True	False	1
+ENSG00000120784.17	True	True	True	True	True	3
+ENSG00000120833.14	True	False	True	True	False	2
+ENSG00000120875.9	True	True	True	True	True	3
+ENSG00000120896.14	False	False	False	True	False	0
+ENSG00000120913.24	False	True	False	True	False	1
+ENSG00000121089.4	True	True	True	True	True	3
+ENSG00000121858.11	True	False	True	True	False	2
+ENSG00000121900.19	True	True	True	True	True	3
+ENSG00000121966.8	True	True	True	True	True	3
+ENSG00000122386.11	False	False	False	True	False	0
+ENSG00000122482.22	False	False	False	True	False	0
+ENSG00000123154.12	False	False	False	True	False	0
+ENSG00000123395.15	True	True	True	True	True	3
+ENSG00000124104.19	True	False	True	True	False	2
+ENSG00000124216.4	False	False	False	True	False	0
+ENSG00000124406.17	False	False	True	True	False	1
+ENSG00000124429.18				False	False	0
+ENSG00000124657.1				False	False	0
+ENSG00000124733.5	False	False	False	True	False	0
+ENSG00000125356.7	False	False	False	True	False	0
+ENSG00000125458.7	True	False	True	True	False	2
+ENSG00000125503.13	True	False	True	True	False	2
+ENSG00000125531.7				False	False	0
+ENSG00000125534.11	False	False	False	True	False	0
+ENSG00000125652.8	True	True	True	True	True	3
+ENSG00000125657.5	False	False	False	True	False	0
+ENSG00000125841.14	False	False	False	True	False	0
+ENSG00000125851.10				False	False	0
+ENSG00000125995.16	False	False	False	True	False	0
+ENSG00000126062.4	True	True	True	True	True	3
+ENSG00000126106.14	True	True	True	True	True	3
+ENSG00000126217.22	False	False	False	True	False	0
+ENSG00000126267.11	False	False	False	True	False	0
+ENSG00000126432.14	True	True	True	True	True	3
+ENSG00000126456.16	True	True	True	True	True	3
+ENSG00000126458.4	False	False	False	True	False	0
+ENSG00000126461.15	True	True	True	True	True	3
+ENSG00000126464.15	False	False	True	True	False	1
+ENSG00000126603.9	False	True	True	True	False	2
+ENSG00000127084.19	False	False	False	True	False	0
+ENSG00000127528.6	True	False	True	True	False	2
+ENSG00000127564.17	True	True	True	True	True	3
+ENSG00000127774.7	True	True	False	True	False	2
+ENSG00000127946.17	True	True	True	True	True	3
+ENSG00000127948.17	True	True	True	True	True	3
+ENSG00000128016.8	False	True	False	True	False	1
+ENSG00000128165.9	False	False	False	True	False	0
+ENSG00000128268.12				False	False	0
+ENSG00000128510.12	True	True	True	True	True	3
+ENSG00000128512.24	False	False	False	True	False	0
+ENSG00000128626.12	True	True	True	True	True	3
+ENSG00000128709.13				False	False	0
+ENSG00000128918.15	False			False	False	0
+ENSG00000128923.11	True	True	True	True	True	3
+ENSG00000128965.13	False		False	False	False	0
+ENSG00000129204.17	True	True	False	True	False	2
+ENSG00000129354.12	False	True	True	True	False	2
+ENSG00000129355.7	False	True	True	True	False	2
+ENSG00000129534.14	True	True	True	True	True	3
+ENSG00000129911.9	True	True	True	True	True	3
+ENSG00000130052.14	False	False	False	True	False	0
+ENSG00000130164.16	True	True	True	True	True	3
+ENSG00000130255.13	False	False	False	True	False	0
+ENSG00000130312.7	True	True	True	True	True	3
+ENSG00000130332.15	False	False	False	True	False	0
+ENSG00000130475.16	True	True	False	True	False	2
+ENSG00000130522.6	False	True	True	True	False	2
+ENSG00000130748.7	False	False	False	True	False	0
+ENSG00000130956.14	True	True	True	True	True	3
+ENSG00000131067.17	False	False	True	True	False	1
+ENSG00000131069.20	True	True	True	True	True	3
+ENSG00000131089.17	False	False	False	True	False	0
+ENSG00000131094.5	False	False	False	True	False	0
+ENSG00000131116.12	True	True	False	True	False	2
+ENSG00000131187.11	False	False	False	True	False	0
+ENSG00000131408.15	True	True	False	True	False	2
+ENSG00000131473.17	True	True	True	True	True	3
+ENSG00000131495.9	False	False	False	True	False	0
+ENSG00000131650.15	True	True	True	True	True	3
+ENSG00000131737.7				False	False	0
+ENSG00000131746.13	True	True	True	True	True	3
+ENSG00000132196.16	True	True	True	True	True	3
+ENSG00000132274.17	False	False	False	True	False	0
+ENSG00000132334.17				False	False	0
+ENSG00000132429.10				False	False	0
+ENSG00000132471.12	False	True	True	True	False	2
+ENSG00000132522.16	False	False	False	True	False	0
+ENSG00000132530.17	True	True	True	True	True	3
+ENSG00000132854.19	True	True	True	True	True	3
+ENSG00000133019.12				False	False	0
+ENSG00000133216.17				False	False	0
+ENSG00000133316.16	True	False	False	True	False	1
+ENSG00000133328.4	False			False	False	0
+ENSG00000133401.16	True	True	True	True	True	3
+ENSG00000133433.11	False	False	False	True	False	0
+ENSG00000133710.17				False	False	0
+ENSG00000133739.16	True	True	True	True	True	3
+ENSG00000133740.11	False	False	False	True	False	0
+ENSG00000133935.7	True	True	True	True	True	3
+ENSG00000134072.11	False	False	True	True	False	1
+ENSG00000134107.5	False	True	False	True	False	1
+ENSG00000134321.13				False	False	0
+ENSG00000134324.12	True	True	False	True	False	2
+ENSG00000134419.15	False	True	True	True	False	2
+ENSG00000134590.14	True	True	True	True	True	3
+ENSG00000134709.13	True	True	True	True	True	3
+ENSG00000134755.19	False	False	False	True	False	0
+ENSG00000134809.9	True	True	True	True	True	3
+ENSG00000134830.6	False		False	False	False	0
+ENSG00000135049.16	True	True	True	True	True	3
+ENSG00000135083.17	True	True	True	True	True	3
+ENSG00000135116.9	False	True	True	True	False	2
+ENSG00000135315.12	False	True	False	True	False	1
+ENSG00000135338.14	True	True	True	True	True	3
+ENSG00000135362.14				False	False	0
+ENSG00000135838.14				False	False	0
+ENSG00000135931.19	True	True	True	True	True	3
+ENSG00000135940.7	False	False	False	True	False	0
+ENSG00000136010.14	False	False	True	True	False	1
+ENSG00000136149.6				False	False	0
+ENSG00000136160.17				False	False	0
+ENSG00000136244.12				False	False	0
+ENSG00000136286.16	True	True	False	True	False	2
+ENSG00000136327.7				False	False	0
+ENSG00000136463.9	True	True	True	True	True	3
+ENSG00000136717.15	False	False	True	True	False	1
+ENSG00000136824.19	True	True	True	True	True	3
+ENSG00000136854.26	True	True	True	True	True	3
+ENSG00000136866.14	True	True	True	True	True	3
+ENSG00000137094.16	True	True	True	True	True	3
+ENSG00000137440.5				False	False	0
+ENSG00000137474.23	False	False	False	True	False	0
+ENSG00000137561.5	True	False	True	True	False	2
+ENSG00000137628.18				False	False	0
+ENSG00000137673.9	True		True	False	False	2
+ENSG00000137727.13				False	False	0
+ENSG00000137821.12	True	True	False	True	False	2
+ENSG00000137841.12				False	False	0
+ENSG00000137872.17				False	False	0
+ENSG00000137941.17				False	False	0
+ENSG00000137959.17				False	False	0
+ENSG00000137965.11				False	False	0
+ENSG00000138028.17	True	False	True	True	False	2
+ENSG00000138061.13				False	False	0
+ENSG00000138080.14	False	False	False	True	False	0
+ENSG00000138449.11	True	True	False	True	False	2
+ENSG00000138622.4				False	False	0
+ENSG00000138642.16	False	True	False	True	False	1
+ENSG00000138670.19				False	False	0
+ENSG00000138696.11				False	False	0
+ENSG00000138798.13				False	False	0
+ENSG00000139269.3	False	True	True	True	False	2
+ENSG00000139428.12	True	True	True	True	True	3
+ENSG00000140264.22	False	False	False	True	False	0
+ENSG00000140287.11				False	False	0
+ENSG00000140465.15	False	False	False	True	False	0
+ENSG00000140545.16	True	True	True	True	True	3
+ENSG00000140691.18	True	True	True	True	True	3
+ENSG00000140961.14	False	True	False	True	False	1
+ENSG00000140990.15	True	True	True	True	True	3
+ENSG00000141526.18	False	True	False	True	False	1
+ENSG00000141570.11	True	True	True	True	True	3
+ENSG00000141577.14	False	False	False	True	False	0
+ENSG00000141639.12				False	False	0
+ENSG00000142065.14	True	True	True	True	True	3
+ENSG00000142227.12	True	False	True	True	False	2
+ENSG00000142235.13	False	False	False	True	False	0
+ENSG00000142409.6	True	True	True	True	True	3
+ENSG00000142534.7	True	True	True	True	True	3
+ENSG00000142544.7	False	False	False	True	False	0
+ENSG00000142546.14	True	True	False	True	False	2
+ENSG00000142623.11				False	False	0
+ENSG00000142910.16	False	False	True	True	False	1
+ENSG00000143314.12	False	False	False	True	False	0
+ENSG00000143452.16				False	False	0
+ENSG00000143545.10	False	False	False	True	False	0
+ENSG00000143590.14	False	False	False	True	False	0
+ENSG00000143630.10	False	False	False	True	False	0
+ENSG00000143797.12	True	False	True	True	False	2
+ENSG00000144451.20	True	False	True	True	False	2
+ENSG00000144452.15				False	False	0
+ENSG00000144485.11	True	True	True	True	True	3
+ENSG00000144712.13				False	False	0
+ENSG00000145002.13				False	False	0
+ENSG00000145050.19	True	True	True	True	True	3
+ENSG00000145113.22	True			False	False	1
+ENSG00000145494.12	True	True	True	True	True	3
+ENSG00000145569.6	False	True	False	True	False	1
+ENSG00000145592.14	False	False	False	True	False	0
+ENSG00000145819.18	False	False	True	True	False	1
+ENSG00000145882.11	True	False	False	True	False	1
+ENSG00000145912.10	True	True	True	True	True	3
+ENSG00000146066.3	False	False	False	True	False	0
+ENSG00000146243.14	True	True	True	True	True	3
+ENSG00000146386.8	False	False	False	True	False	0
+ENSG00000146530.15				False	False	0
+ENSG00000146540.15	True	True	True	True	True	3
+ENSG00000146834.16	True	True	True	True	True	3
+ENSG00000147155.11	True	True	True	True	True	3
+ENSG00000147206.17				False	False	0
+ENSG00000147251.16				False	False	0
+ENSG00000147383.11	True	True	True	True	True	3
+ENSG00000147437.10	True	True	True	True	True	3
+ENSG00000148848.15				False	False	0
+ENSG00000149212.12	False	True	False	True	False	1
+ENSG00000149218.5	False	False	False	True	False	0
+ENSG00000149308.18	False	False	True	True	False	1
+ENSG00000149761.9	True	True	False	True	False	2
+ENSG00000149809.17	True	True	True	True	True	3
+ENSG00000149929.16	False	True	True	True	False	2
+ENSG00000150540.14	False	True	False	True	False	1
+ENSG00000150637.9	True			False	False	1
+ENSG00000150773.12	True	True	True	True	True	3
+ENSG00000150779.12	True	True	True	True	True	3
+ENSG00000151229.13	True	True	True	True	True	3
+ENSG00000151240.18	True	True	True	True	True	3
+ENSG00000151468.11				False	False	0
+ENSG00000151575.15	True	True	False	True	False	2
+ENSG00000151623.15	False	False	False	True	False	0
+ENSG00000151692.15	False	False	False	True	False	0
+ENSG00000151726.16	False	True	True	True	False	2
+ENSG00000151882.11				False	False	0
+ENSG00000152082.15	False	False	False	True	False	0
+ENSG00000152270.9	False	False	False	True	False	0
+ENSG00000152377.15				False	False	0
+ENSG00000152926.17	False	True	True	True	False	2
+ENSG00000153165.19	False	True	True	True	False	2
+ENSG00000153707.19				False	False	0
+ENSG00000153832.12	False	True	True	True	False	2
+ENSG00000154153.15				False	False	0
+ENSG00000154162.15				False	False	0
+ENSG00000154274.15				False	False	0
+ENSG00000154330.13				False	False	0
+ENSG00000154370.16	True	True	True	True	True	3
+ENSG00000154438.8				False	False	0
+ENSG00000154511.12	True	False	True	True	False	2
+ENSG00000154518.10	True	True	True	True	True	3
+ENSG00000154856.13	True	True	True	True	True	3
+ENSG00000155066.16				False	False	0
+ENSG00000155085.16	True	True	True	True	True	3
+ENSG00000156414.20				False	False	0
+ENSG00000156427.8			True	False	False	1
+ENSG00000156860.16	False	False	True	True	False	1
+ENSG00000156875.14	True	False	True	True	False	2
+ENSG00000157388.20	True	True	True	True	True	3
+ENSG00000157510.14	True	True	False	True	False	2
+ENSG00000157514.18	True	True	True	True	True	3
+ENSG00000157654.19	False	True	False	True	False	1
+ENSG00000157873.18	True	True	True	True	True	3
+ENSG00000157992.12	False	False	False	True	False	0
+ENSG00000158246.8	True	True	True	True	True	3
+ENSG00000158258.16				False	False	0
+ENSG00000158406.6	True	False	True	True	False	2
+ENSG00000158486.15	False	True	False	True	False	1
+ENSG00000158716.9				False	False	0
+ENSG00000159335.19	False	False	False	True	False	0
+ENSG00000159884.12	False	False	False	True	False	0
+ENSG00000160200.18	False	False	False	True	False	0
+ENSG00000160213.10	False	False	False	True	False	0
+ENSG00000160223.18	False	False	True	True	False	1
+ENSG00000160229.13	True	True	True	True	True	3
+ENSG00000160256.14				False	False	0
+ENSG00000160284.15	False	False	False	True	False	0
+ENSG00000160285.15	True	True	True	True	True	3
+ENSG00000160602.14	False	False	False	True	False	0
+ENSG00000160752.15	True	True	True	True	True	3
+ENSG00000160767.23				False	False	0
+ENSG00000160799.13	False	False	False	True	False	0
+ENSG00000160813.7	False	False	False	True	False	0
+ENSG00000160867.15	True	True	True	True	True	3
+ENSG00000160886.13	False	False	True	True	False	1
+ENSG00000160888.8	True	True	True	True	True	3
+ENSG00000160991.17	False	True	False	True	False	1
+ENSG00000161016.18	True	True	True	True	True	3
+ENSG00000161653.11	False	True	True	True	False	2
+ENSG00000161671.17	False	False		False	False	0
+ENSG00000161677.12	False	True	True	True	False	2
+ENSG00000161955.17	True	True	True	True	True	3
+ENSG00000161970.15	False	True	False	True	False	1
+ENSG00000162076.13	False	False	False	True	False	0
+ENSG00000162194.13	True	False	True	True	False	2
+ENSG00000162302.13	True	True	True	True	True	3
+ENSG00000162366.8	True	False	False	True	False	1
+ENSG00000162433.15	True	False	True	True	False	2
+ENSG00000162512.16	True	False	True	True	False	2
+ENSG00000162645.13	True	False	True	True	False	2
+ENSG00000162670.11				False	False	0
+ENSG00000162687.19				False	False	0
+ENSG00000162729.14	True	True	True	True	True	3
+ENSG00000162745.11				False	False	0
+ENSG00000162772.18	False	True	False	True	False	1
+ENSG00000162814.11	False	True	True	True	False	2
+ENSG00000162894.12				False	False	0
+ENSG00000162946.24	True	True	True	True	True	3
+ENSG00000162994.16	True	True	True	True	True	3
+ENSG00000162999.13	True	True	True	True	True	3
+ENSG00000163017.14	True	True	True	True	True	3
+ENSG00000163069.13	False	False	True	True	False	1
+ENSG00000163083.6	True	True	True	True	True	3
+ENSG00000163121.10	False	True	True	True	False	2
+ENSG00000163126.15	True	True	True	True	True	3
+ENSG00000163131.12	True	True	True	True	True	3
+ENSG00000163344.6	True	True	True	True	True	3
+ENSG00000163346.17	True	True	True	True	True	3
+ENSG00000163453.11	True	True	True	True	True	3
+ENSG00000163508.13	True	True	True	True	True	3
+ENSG00000163517.15	False	True	False	True	False	1
+ENSG00000163577.8	False	False	True	True	False	1
+ENSG00000163596.17	True	True	True	True	True	3
+ENSG00000163611.11	True	True	True	True	True	3
+ENSG00000163617.11	True	True	True	True	True	3
+ENSG00000163701.19	True	True	True	True	True	3
+ENSG00000163702.21	False	False	False	True	False	0
+ENSG00000163728.11	True	True	True	True	True	3
+ENSG00000163734.4	True	False	False	True	False	1
+ENSG00000163795.14	False	False	False	True	False	0
+ENSG00000163814.8	True	True	True	True	True	3
+ENSG00000163888.4	True	True	True	True	True	3
+ENSG00000164056.11	True	True	True	True	True	3
+ENSG00000164062.13	True	True	True	True	True	3
+ENSG00000164081.13	True	True	True	True	True	3
+ENSG00000164128.7				False	False	0
+ENSG00000164211.13	True	True	True	True	True	3
+ENSG00000164265.9				False	False	0
+ENSG00000164342.14				False	False	0
+ENSG00000164379.7	True	True	True	True	True	3
+ENSG00000164620.9	True	False	False	True	False	1
+ENSG00000164647.9	False	False	True	True	False	1
+ENSG00000164684.13	False	True	False	True	False	1
+ENSG00000164749.13	False	False	False	True	False	0
+ENSG00000164897.14	True	True	True	True	True	3
+ENSG00000164967.10	True	True	True	True	True	3
+ENSG00000165028.12	True	True	True	True	True	3
+ENSG00000165115.15	True	True	True	True	True	3
+ENSG00000165181.17				False	False	0
+ENSG00000165502.7	False	True	False	True	False	1
+ENSG00000165591.7	True	True	True	True	True	3
+ENSG00000165782.11	True	True	True	True	True	3
+ENSG00000165886.5	True	True	True	True	True	3
+ENSG00000165887.12				False	False	0
+ENSG00000166106.4				False	False	0
+ENSG00000166313.20	False	False	False	True	False	0
+ENSG00000166337.11	True	True	True	True	True	3
+ENSG00000166595.12	False	False	False	True	False	0
+ENSG00000166681.14	True	True	True	True	True	3
+ENSG00000166816.15	False	True	False	True	False	1
+ENSG00000166927.13				False	False	0
+ENSG00000167080.9				False	False	0
+ENSG00000167107.13	False	False	False	True	False	0
+ENSG00000167136.7	True	True	True	True	True	3
+ENSG00000167216.19				False	False	0
+ENSG00000167232.14	True	True	True	True	True	3
+ENSG00000167397.15	True	True	True	True	True	3
+ENSG00000167487.12	True	True	True	True	True	3
+ENSG00000167508.12	True	True	True	True	True	3
+ENSG00000167555.14	True	True	True	True	True	3
+ENSG00000167645.17	False	False	False	True	False	0
+ENSG00000167674.15	False	True	True	True	False	2
+ENSG00000167685.15	True	True	True	True	True	3
+ENSG00000167702.13	False	False	False	True	False	0
+ENSG00000167799.10	True	True	True	True	True	3
+ENSG00000167880.8	False	False	False	True	False	0
+ENSG00000167967.16	False	False	False	True	False	0
+ENSG00000167968.13	True	True	True	True	True	3
+ENSG00000167972.14	True	True	False	True	False	2
+ENSG00000167984.18	False	True	True	True	False	2
+ENSG00000168061.17	True	True	True	True	True	3
+ENSG00000168071.22	False	False	False	True	False	0
+ENSG00000168079.17				False	False	0
+ENSG00000168143.9				False	False	0
+ENSG00000168273.8				False	False	0
+ENSG00000168282.6	True	True	True	True	True	3
+ENSG00000168528.12	False	False	False	True	False	0
+ENSG00000168539.4				False	False	0
+ENSG00000168542.18				False	False	0
+ENSG00000168701.19	False	False	False	True	False	0
+ENSG00000168765.19	True	True	True	True	True	3
+ENSG00000168890.14	True	True	False	True	False	2
+ENSG00000169020.10	False	False	False	True	False	0
+ENSG00000169136.13	True	False	True	True	False	2
+ENSG00000169220.18	True	True	False	True	False	2
+ENSG00000169228.14	False	False	False	True	False	0
+ENSG00000169247.14	True	True	True	True	True	3
+ENSG00000169564.7	True	True	True	True	True	3
+ENSG00000169710.9	True	True	True	True	True	3
+ENSG00000169750.9	True	False	True	True	False	2
+ENSG00000169894.18	False		False	False	False	0
+ENSG00000169908.12	True	True	True	True	True	3
+ENSG00000169994.20				False	False	0
+ENSG00000170085.18	False	False	False	True	False	0
+ENSG00000170264.13	True	True	True	True	True	3
+ENSG00000170571.12	True		True	False	False	2
+ENSG00000170689.10				False	False	0
+ENSG00000170786.13				False	False	0
+ENSG00000170802.17	True	True	True	True	True	3
+ENSG00000170892.13	True	True	True	True	True	3
+ENSG00000170906.16	False	False	False	True	False	0
+ENSG00000170915.9	True	True	True	True	True	3
+ENSG00000171159.5				False	False	0
+ENSG00000171222.11	True	False	False	True	False	1
+ENSG00000171236.10	False	True	False	True	False	1
+ENSG00000171401.15		False		False	False	0
+ENSG00000171425.10	False	True	False	True	False	1
+ENSG00000171443.7	True	True	True	True	True	3
+ENSG00000171444.19	True	True	True	True	True	3
+ENSG00000171451.15	True	True	True	True	True	3
+ENSG00000171488.15	False	True	True	True	False	2
+ENSG00000171617.16	True	True	True	True	True	3
+ENSG00000171631.16	False	False	False	True	False	0
+ENSG00000171817.17	True		True	False	False	2
+ENSG00000172296.13	False	True	True	True	False	2
+ENSG00000172379.22	True	True	True	True	True	3
+ENSG00000172456.18	False	True	False	True	False	1
+ENSG00000172671.20	True	True	True	True	True	3
+ENSG00000172687.14	False	True	True	True	False	2
+ENSG00000172780.17	False	False	False	True	False	0
+ENSG00000172840.7	False	False	False	True	False	0
+ENSG00000172893.18	True	True	True	True	True	3
+ENSG00000173113.8	False	False	False	True	False	0
+ENSG00000173137.12	True	False	False	True	False	1
+ENSG00000173210.21	True	True	False	True	False	2
+ENSG00000173258.13	True	False	True	True	False	2
+ENSG00000173272.16	False	True	True	True	False	2
+ENSG00000173432.13	False			False	False	0
+ENSG00000173457.11	False	True	False	True	False	1
+ENSG00000173511.10	True	True	True	True	True	3
+ENSG00000173581.8	False	False	False	True	False	0
+ENSG00000173660.12	False	True	True	True	False	2
+ENSG00000173698.18				False	False	0
+ENSG00000173702.7	False	False	True	True	False	1
+ENSG00000173890.17	False	False	False	True	False	0
+ENSG00000173928.4	True	True	True	True	True	3
+ENSG00000174327.7	True	True	True	True	True	3
+ENSG00000174514.13	False	False	False	True	False	0
+ENSG00000174599.5	True	False	True	True	False	2
+ENSG00000174808.12				False	False	0
+ENSG00000174837.15				False	False	0
+ENSG00000174886.15	True	True	True	True	True	3
+ENSG00000174917.9	False	False	False	True	False	0
+ENSG00000174939.11	True	False	True	True	False	2
+ENSG00000175040.6				False	False	0
+ENSG00000175318.12				False	False	0
+ENSG00000175416.16	True	True	True	True	True	3
+ENSG00000175550.8	False	True	False	True	False	1
+ENSG00000175591.12	False	True	True	True	False	2
+ENSG00000175602.4	True	True	True	True	True	3
+ENSG00000175701.11	False	False	False	True	False	0
+ENSG00000175756.14	True	True	True	True	True	3
+ENSG00000175793.12	True	True	True	True	True	3
+ENSG00000175879.9				False	False	0
+ENSG00000175984.16	True	True	False	True	False	2
+ENSG00000176046.9	False	True	True	True	False	2
+ENSG00000176076.7	False	True	False	True	False	1
+ENSG00000176125.7	True	True	True	True	True	3
+ENSG00000176208.9	True	True	True	True	True	3
+ENSG00000176340.4	True	True	True	True	True	3
+ENSG00000176788.9	False	False	False	True	False	0
+ENSG00000176842.16				False	False	0
+ENSG00000176884.17	False	False	False	True	False	0
+ENSG00000176978.16	False	False	False	True	False	0
+ENSG00000177000.13	True	False	False	True	False	1
+ENSG00000177045.11	True	True	True	True	True	3
+ENSG00000177380.14	False	True	False	True	False	1
+ENSG00000177409.12				False	False	0
+ENSG00000177700.6	True	True	True	True	True	3
+ENSG00000177853.15	True	True	True	True	True	3
+ENSG00000177989.14				False	False	0
+ENSG00000178075.20	True	True	True	True	True	3
+ENSG00000178172.7				False	False	0
+ENSG00000178301.4	False	False	False	True	False	0
+ENSG00000178568.16				False	False	0
+ENSG00000178691.12	True	True	True	True	True	3
+ENSG00000178726.7				False	False	0
+ENSG00000178821.13	False	True	True	True	False	2
+ENSG00000178966.17	False	False	False	True	False	0
+ENSG00000179066.8				False	False	0
+ENSG00000179085.8	False	False	False	True	False	0
+ENSG00000179277.9				False	False	0
+ENSG00000179361.18	False	False	False	True	False	0
+ENSG00000179588.9	False	False	True	True	False	1
+ENSG00000179869.15				False	False	0
+ENSG00000179922.6	True	True	True	True	True	3
+ENSG00000179943.8	True	True	True	True	True	3
+ENSG00000179967.11	True	True	True	True	True	3
+ENSG00000180113.16				False	False	0
+ENSG00000180209.12				False	False	0
+ENSG00000180257.14	False	False	False	True	False	0
+ENSG00000180537.13				False	False	0
+ENSG00000180787.6				False	False	0
+ENSG00000180806.5	False	False	False	True	False	0
+ENSG00000180846.9				False	False	0
+ENSG00000180881.21				False	False	0
+ENSG00000181029.9	False	False	False	True	False	0
+ENSG00000181143.17				False	False	0
+ENSG00000181284.3	True	False	True	True	False	2
+ENSG00000181450.18	True	True	False	True	False	2
+ENSG00000181577.16				False	False	0
+ENSG00000181588.17	True	True	True	True	True	3
+ENSG00000181634.8	True			False	False	1
+ENSG00000181649.9	True	True	False	True	False	2
+ENSG00000181804.15				False	False	0
+ENSG00000182095.15	True	True	True	True	True	3
+ENSG00000182134.17	True	True	True	True	True	3
+ENSG00000182141.11	True	True	True	True	True	3
+ENSG00000182150.20	False	True	False	True	False	1
+ENSG00000182175.15			True	False	False	1
+ENSG00000182208.15	True	True	True	True	True	3
+ENSG00000182240.16	True	False	True	True	False	2
+ENSG00000182621.19	True	True	True	True	True	3
+ENSG00000182685.8	False	False	True	True	False	1
+ENSG00000182871.16	False	False	False	True	False	0
+ENSG00000183011.14	False	False	False	True	False	0
+ENSG00000183098.12	True	True	False	True	False	2
+ENSG00000183161.6	False	False	False	True	False	0
+ENSG00000183248.12	False	True	True	True	False	2
+ENSG00000183397.6				False	False	0
+ENSG00000183421.12	True	True	True	True	True	3
+ENSG00000183479.13	True	True	True	True	True	3
+ENSG00000183496.6	True	True	True	True	True	3
+ENSG00000183671.13				False	False	0
+ENSG00000183762.13	True	True	True	True	True	3
+ENSG00000183826.19	True	True	True	True	True	3
+ENSG00000183963.19	True	True	True	True	True	3
+ENSG00000184110.15	False	False	True	True	False	1
+ENSG00000184207.9	True	True	True	True	True	3
+ENSG00000184227.8	True	True	True	True	True	3
+ENSG00000184304.17	False	False	True	True	False	1
+ENSG00000184500.16	False	False	False	True	False	0
+ENSG00000184524.6				False	False	0
+ENSG00000184635.17	True	True	False	True	False	2
+ENSG00000184828.10	False	False	False	True	False	0
+ENSG00000184897.7	False	True	True	True	False	2
+ENSG00000184898.7	True	True	True	True	True	3
+ENSG00000184956.16				False	False	0
+ENSG00000185247.15				False	False	0
+ENSG00000185261.16	False	False	False	True	False	0
+ENSG00000185269.12	True	False	False	True	False	1
+ENSG00000185305.12	False	False	False	True	False	0
+ENSG00000185361.9	False	True	True	True	False	2
+ENSG00000185482.8	False	False	False	True	False	0
+ENSG00000185518.12				False	False	0
+ENSG00000185633.11	True	True	True	True	True	3
+ENSG00000185669.6	False	False	True	True	False	1
+ENSG00000185736.16				False	False	0
+ENSG00000185803.12	True	True	True	True	True	3
+ENSG00000185813.11	True	False	True	True	False	2
+ENSG00000185839.3				False	False	0
+ENSG00000185883.12	True	True	True	True	True	3
+ENSG00000185909.15	True	True	True	True	True	3
+ENSG00000186104.11	False	True	True	True	False	2
+ENSG00000186204.15	True	True	False	True	False	2
+ENSG00000186222.5	True	True	True	True	True	3
+ENSG00000186480.13				False	False	0
+ENSG00000186487.21				False	False	0
+ENSG00000186564.6	False	False	False	True	False	0
+ENSG00000186577.14	False	True	True	True	False	2
+ENSG00000186654.22	False	False	True	True	False	1
+ENSG00000187051.9	True	True	True	True	True	3
+ENSG00000187091.14	True	True	True	True	True	3
+ENSG00000187534.6	True	True	True	True	True	3
+ENSG00000187634.13	False	False	False	True	False	0
+ENSG00000187994.14	False	False	False	True	False	0
+ENSG00000188015.10	True	True	True	True	True	3
+ENSG00000188185.14	True	True	True	True	True	3
+ENSG00000188343.14	False	False	False	True	False	0
+ENSG00000188483.8	True	True	True	True	True	3
+ENSG00000188641.14	True	False	True	True	False	2
+ENSG00000188647.13	False	True	True	True	False	2
+ENSG00000188760.11	True	True	False	True	False	2
+ENSG00000188761.13				False	False	0
+ENSG00000188818.13	True	True	True	True	True	3
+ENSG00000188856.6				False	False	0
+ENSG00000188992.12				False	False	0
+ENSG00000189042.14	True	True	True	True	True	3
+ENSG00000189057.11	False	False	False	True	False	0
+ENSG00000189114.8	True	True	True	True	True	3
+ENSG00000189143.10	True	True	True	True	True	3
+ENSG00000189195.15	True	True	True	True	True	3
+ENSG00000189334.9	False	False	False	True	False	0
+ENSG00000189410.12	True	True	True	True	True	3
+ENSG00000196081.10	True	True	True	True	True	3
+ENSG00000196109.9				False	False	0
+ENSG00000196118.12				False	False	0
+ENSG00000196196.3	False	False	False	True	False	0
+ENSG00000196208.14	True	False	False	True	False	1
+ENSG00000196267.14	True	True	True	True	True	3
+ENSG00000196268.12	True	True	True	True	True	3
+ENSG00000196458.11	True	True	True	True	True	3
+ENSG00000196465.11	False	True	True	True	False	2
+ENSG00000196507.11				False	False	0
+ENSG00000196544.8	True	True	True	True	True	3
+ENSG00000196557.14	False	True	False	True	False	1
+ENSG00000196754.13	True	True	True	True	True	3
+ENSG00000196814.15	False	False	False	True	False	0
+ENSG00000196843.18	False	True	False	True	False	1
+ENSG00000196860.8				False	False	0
+ENSG00000196944.5				False	False	0
+ENSG00000196967.11	True	True	True	True	True	3
+ENSG00000196972.9	True	True	True	True	True	3
+ENSG00000196976.8	True	True	True	True	True	3
+ENSG00000197008.10	True	True	True	True	True	3
+ENSG00000197013.11	True	True	True	True	True	3
+ENSG00000197019.5	True	True	True	True	True	3
+ENSG00000197128.13	True	False	False	True	False	1
+ENSG00000197147.15	False	True	False	True	False	1
+ENSG00000197180.5				False	False	0
+ENSG00000197191.7	False	True	True	True	False	2
+ENSG00000197353.4				False	False	0
+ENSG00000197415.12				False	False	0
+ENSG00000197472.15	True	False	False	True	False	1
+ENSG00000197479.7				False	False	0
+ENSG00000197696.10	True	True	True	True	True	3
+ENSG00000197841.15	False	False	False	True	False	0
+ENSG00000197956.10	True	False	True	True	False	2
+ENSG00000197969.14	False	True	True	True	False	2
+ENSG00000197978.10	True	True	True	True	True	3
+ENSG00000198087.7	True	True	True	True	True	3
+ENSG00000198156.11	True			False	False	1
+ENSG00000198171.13	True	True	True	True	True	3
+ENSG00000198258.11	False	False	False	True	False	0
+ENSG00000198467.16	False	False	False	True	False	0
+ENSG00000198478.9	False	False	False	True	False	0
+ENSG00000198517.10	False	True	True	True	False	2
+ENSG00000198576.4	True	True	True	True	True	3
+ENSG00000198626.19				False	False	0
+ENSG00000198796.7	False	False	False	True	False	0
+ENSG00000198816.7	False	False	False	True	False	0
+ENSG00000198835.4	True	True	True	True	True	3
+ENSG00000198846.6				False	False	0
+ENSG00000198892.7	True	True	True	True	True	3
+ENSG00000198909.8	True	False	True	True	False	2
+ENSG00000198931.11	True	True	True	True	True	3
+ENSG00000198945.8	True	True	True	True	True	3
+ENSG00000200090.1				False	False	0
+ENSG00000200152.1				False	False	0
+ENSG00000200534.1				False	False	0
+ENSG00000203392.3				False	False	0
+ENSG00000203722.8				False	False	0
+ENSG00000203896.10	False	False	False	True	False	0
+ENSG00000204103.4	False	False	False	True	False	0
+ENSG00000204186.11	True	True	True	True	True	3
+ENSG00000204220.12	False	False	False	True	False	0
+ENSG00000204262.14	True	True	True	True	True	3
+ENSG00000204335.4	False	True	True	True	False	2
+ENSG00000204362.7				False	False	0
+ENSG00000204386.13	True	True	True	True	True	3
+ENSG00000204435.15	False	False	True	True	False	1
+ENSG00000204442.4				False	False	0
+ENSG00000204520.14	True	True	True	True	True	3
+ENSG00000204620.4				False	False	0
+ENSG00000204673.11	True	False	False	True	False	1
+ENSG00000204681.11	True	False	False	True	False	1
+ENSG00000204941.14				False	False	0
+ENSG00000205143.5				False	False	0
+ENSG00000205155.8	False	False	False	True	False	0
+ENSG00000205220.12	False	False	False	True	False	0
+ENSG00000205325.5				False	False	0
+ENSG00000205413.8	True	True	True	True	True	3
+ENSG00000205544.4	False	False	False	True	False	0
+ENSG00000205560.14	False	False	False	True	False	0
+ENSG00000205707.11	False	False	False	True	False	0
+ENSG00000205746.10	False	False	True	True	False	1
+ENSG00000205930.12				False	False	0
+ENSG00000206075.14				False	False	0
+ENSG00000210112.1				False	False	0
+ENSG00000210140.1				False	False	0
+ENSG00000210144.1				False	False	0
+ENSG00000210176.1				False	False	0
+ENSG00000210184.1				False	False	0
+ENSG00000210191.1				False	False	0
+ENSG00000212443.1				False	False	0
+ENSG00000212802.4	True	True	True	True	True	3
+ENSG00000212907.2	True	True	True	True	True	3
+ENSG00000213096.11	False	False	True	True	False	1
+ENSG00000213144.2				False	False	0
+ENSG00000213204.8				False	False	0
+ENSG00000213222.3	True	False	True	True	False	2
+ENSG00000213347.11	False	False	False	True	False	0
+ENSG00000213465.8	False	True	True	True	False	2
+ENSG00000213553.4	True	True	True	True	True	3
+ENSG00000213563.7	True	True	True	True	True	3
+ENSG00000213763.4				False	False	0
+ENSG00000213866.3	True	True	True	True	True	3
+ENSG00000213949.10	True	True	False	True	False	2
+ENSG00000213967.12				False	False	0
+ENSG00000214026.11	False	False	False	True	False	0
+ENSG00000214279.13	True	False	True	True	False	2
+ENSG00000214309.5	True	True	True	True	True	3
+ENSG00000214558.5				False	False	0
+ENSG00000214756.8	True	False	False	True	False	1
+ENSG00000214776.13				False	False	0
+ENSG00000215030.5	False	False	False	True	False	0
+ENSG00000215182.8				False	False	0
+ENSG00000215241.5				False	False	0
+ENSG00000215414.4	True	False	True	True	False	2
+ENSG00000215559.9				False	False	0
+ENSG00000218891.5	False	False	True	True	False	1
+ENSG00000221821.4	True	True	True	True	True	3
+ENSG00000221845.5				False	False	0
+ENSG00000223374.1				False	False	0
+ENSG00000223692.1				False	False	0
+ENSG00000223751.3				False	False	0
+ENSG00000223901.2				False	False	0
+ENSG00000224020.4				False	False	0
+ENSG00000224152.3				False	False	0
+ENSG00000224269.1				False	False	0
+ENSG00000224513.2				False	False	0
+ENSG00000224903.2	True	True	True	True	True	3
+ENSG00000225206.13				False	False	0
+ENSG00000225697.13	True	True	False	True	False	2
+ENSG00000225806.9				False	False	0
+ENSG00000225855.8	True	False	True	True	False	2
+ENSG00000225968.8	False	False	False	True	False	0
+ENSG00000226121.2	True	True	True	True	True	3
+ENSG00000226149.7				False	False	0
+ENSG00000226383.8	True	True	False	True	False	2
+ENSG00000226415.1	True	True	True	True	True	3
+ENSG00000226496.4				False	False	0
+ENSG00000227051.7	False	False		False	False	0
+ENSG00000227063.5				False	False	0
+ENSG00000227071.2				False	False	0
+ENSG00000227124.11				False	False	0
+ENSG00000227470.1				False	False	0
+ENSG00000227473.1				False	False	0
+ENSG00000227486.5				False	False	0
+ENSG00000227741.2				False	False	0
+ENSG00000227888.5				False	False	0
+ENSG00000228065.14	True	True	True	True	True	3
+ENSG00000228205.1				False	False	0
+ENSG00000228271.3				False	False	0
+ENSG00000228300.14	True	True	True	True	True	3
+ENSG00000228323.3				False	False	0
+ENSG00000228474.6	False	True	False	True	False	1
+ENSG00000228521.3				False	False	0
+ENSG00000228549.5				False	False	0
+ENSG00000228672.4	False	False	False	True	False	0
+ENSG00000228709.3	True	True	True	True	True	3
+ENSG00000228727.10	False	False	False	True	False	0
+ENSG00000228793.4				False	False	0
+ENSG00000228857.4				False	False	0
+ENSG00000228933.9				False	False	0
+ENSG00000229117.9	True	True	True	True	True	3
+ENSG00000229152.2	True	True	True	True	True	3
+ENSG00000229261.1				False	False	0
+ENSG00000229325.1				False	False	0
+ENSG00000229487.1				False	False	0
+ENSG00000229587.2				False	False	0
+ENSG00000229994.1	True	True	True	True	True	3
+ENSG00000230409.3	True	True	True	True	True	3
+ENSG00000230667.7				False	False	0
+ENSG00000230698.2				False	False	0
+ENSG00000231010.1				False	False	0
+ENSG00000231107.3				False	False	0
+ENSG00000231188.2				False	False	0
+ENSG00000231407.7				False	False	0
+ENSG00000231443.2				False	False	0
+ENSG00000231760.5				False	False	0
+ENSG00000232233.2				False	False	0
+ENSG00000232653.9	True	True	True	True	True	3
+ENSG00000232656.11	True	True	True	True	True	3
+ENSG00000232712.6				False	False	0
+ENSG00000232810.5				False	False	0
+ENSG00000232838.4	True	True	False	True	False	2
+ENSG00000233175.3				False	False	0
+ENSG00000233225.3				False	False	0
+ENSG00000233237.10				False	False	0
+ENSG00000233328.3				False	False	0
+ENSG00000233379.2				False	False	0
+ENSG00000233493.4	False		False	False	False	0
+ENSG00000233515.3				False	False	0
+ENSG00000233588.1				False	False	0
+ENSG00000233589.1				False	False	0
+ENSG00000233806.11				False	False	0
+ENSG00000233954.7	True	True	True	True	True	3
+ENSG00000233966.1	True	True	True	True	True	3
+ENSG00000234444.10				False	False	0
+ENSG00000234779.2				False	False	0
+ENSG00000234832.2				False	False	0
+ENSG00000235021.2				False	False	0
+ENSG00000235123.6				False	False	0
+ENSG00000235174.1	False	True	True	True	False	2
+ENSG00000235837.2				False	False	0
+ENSG00000236078.3	False	False	False	True	False	0
+ENSG00000236104.3	True	True	True	True	True	3
+ENSG00000236283.6				False	False	0
+ENSG00000236700.9				False	False	0
+ENSG00000236827.3				False	False	0
+ENSG00000236882.10				False	False	0
+ENSG00000237126.9				False	False	0
+ENSG00000237943.8	False	True	True	True	False	2
+ENSG00000237978.7				False	False	0
+ENSG00000237991.3				False	False	0
+ENSG00000239382.11	True	True	False	True	False	2
+ENSG00000239857.7	True	True	True	True	True	3
+ENSG00000239883.10	False	True	False	True	False	1
+ENSG00000239911.5				False	False	0
+ENSG00000240489.1	False	False	False	True	False	0
+ENSG00000240571.1				False	False	0
+ENSG00000240694.9				False	False	0
+ENSG00000241360.2	True	True	True	True	True	3
+ENSG00000241404.7	False	False	False	True	False	0
+ENSG00000241468.8	False	False	False	True	False	0
+ENSG00000241494.1				False	False	0
+ENSG00000241741.1	False	False	False	True	False	0
+ENSG00000241769.7				False	False	0
+ENSG00000241852.11	False	False	False	True	False	0
+ENSG00000241935.9	False	True	True	True	False	2
+ENSG00000242114.6	False	True	False	True	False	1
+ENSG00000242242.8	True	False	False	True	False	1
+ENSG00000242372.9	False	True	True	True	False	2
+ENSG00000243279.4	False	False	False	True	False	0
+ENSG00000243449.8				False	False	0
+ENSG00000243477.6	True	True	True	True	True	3
+ENSG00000243989.9	False	True	False	True	False	1
+ENSG00000244041.7	False	False	True	True	False	1
+ENSG00000244124.1				False	False	0
+ENSG00000244151.1				False	False	0
+ENSG00000244187.8	False	True	False	True	False	1
+ENSG00000244274.9	True	True	True	True	True	3
+ENSG00000245112.3	True	False	True	True	False	2
+ENSG00000245248.11	True	True	True	True	True	3
+ENSG00000245680.11	True	True	True	True	True	3
+ENSG00000246228.8				False	False	0
+ENSG00000247199.7				False	False	0
+ENSG00000247934.4				False	False	0
+ENSG00000248019.4	True	True	True	True	True	3
+ENSG00000248527.1	True	True	True	True	True	3
+ENSG00000248607.2				False	False	0
+ENSG00000248866.2	False	False	False	True	False	0
+ENSG00000249395.5	True	True	True	True	True	3
+ENSG00000249456.1				False	False	0
+ENSG00000249628.4				False	False	0
+ENSG00000249863.2				False	False	0
+ENSG00000250155.4				False	False	0
+ENSG00000250208.8				False	False	0
+ENSG00000250305.9				False	False	0
+ENSG00000250337.11	True	True	True	True	True	3
+ENSG00000250479.9	False	False	False	True	False	0
+ENSG00000250764.1				False	False	0
+ENSG00000251095.9				False	False	0
+ENSG00000251247.13	False	True	True	True	False	2
+ENSG00000251257.4				False	False	0
+ENSG00000251432.9	True	True	True	True	True	3
+ENSG00000252026.1				False	False	0
+ENSG00000252498.1				False	False	0
+ENSG00000253200.1				False	False	0
+ENSG00000253363.8				False	False	0
+ENSG00000253598.3	True	False	True	True	False	2
+ENSG00000253683.1				False	False	0
+ENSG00000253741.5				False	False	0
+ENSG00000253982.4				False	False	0
+ENSG00000254004.7	False	True	False	True	False	1
+ENSG00000254339.7				False	False	0
+ENSG00000254413.8	False	False	False	True	False	0
+ENSG00000254416.7	False	True	False	True	False	1
+ENSG00000254681.7	False	False	False	True	False	0
+ENSG00000254682.3				False	False	0
+ENSG00000254694.1				False	False	0
+ENSG00000254858.10	True	True	True	True	True	3
+ENSG00000255198.7	True	False	False	True	False	1
+ENSG00000255642.1				False	False	0
+ENSG00000255910.3				False	False	0
+ENSG00000256393.1				False	False	0
+ENSG00000256771.5	False	False	False	True	False	0
+ENSG00000256940.5	True	True	False	True	False	2
+ENSG00000256973.1				False	False	0
+ENSG00000257027.1				False	False	0
+ENSG00000257086.2				False	False	0
+ENSG00000257771.7				False	False	0
+ENSG00000258168.7				False	False	0
+ENSG00000259022.2				False	False	0
+ENSG00000259527.3				False	False	0
+ENSG00000259553.7				False	False	0
+ENSG00000259605.3				False	False	0
+ENSG00000259917.1	True	True	True	True	True	3
+ENSG00000259953.3				False	False	0
+ENSG00000260001.8	True	True	True	True	True	3
+ENSG00000260260.4	True	True	True	True	True	3
+ENSG00000260423.4	True	True	True	True	True	3
+ENSG00000260428.3	False	False	False	True	False	0
+ENSG00000260442.8				False	False	0
+ENSG00000260528.8	True	True	True	True	True	3
+ENSG00000260578.1				False	False	0
+ENSG00000260630.10	True	True	True	True	True	3
+ENSG00000260669.2				False	False	0
+ENSG00000260708.3				False	False	0
+ENSG00000260806.2				False	False	0
+ENSG00000260947.1				False	False	0
+ENSG00000261115.7				False	False	0
+ENSG00000261187.1				False	False	0
+ENSG00000261221.5	False	False	False	True	False	0
+ENSG00000261408.7	False	False	False	True	False	0
+ENSG00000261513.1				False	False	0
+ENSG00000261730.1				False	False	0
+ENSG00000261879.10				False	False	0
+ENSG00000262772.3	True	True	True	True	True	3
+ENSG00000262814.8	True	True	True	True	True	3
+ENSG00000263393.1				False	False	0
+ENSG00000263535.2	False	False	False	True	False	0
+ENSG00000264278.2	True	True	True	True	True	3
+ENSG00000264666.4				False	False	0
+ENSG00000264808.3				False	False	0
+ENSG00000265107.3				False	False	0
+ENSG00000265490.2				False	False	0
+ENSG00000265917.1				False	False	0
+ENSG00000265962.3				False	False	0
+ENSG00000266235.1				False	False	0
+ENSG00000266962.4				False	False	0
+ENSG00000267076.1				False	False	0
+ENSG00000267096.1				False	False	0
+ENSG00000267216.1	True	True	True	True	True	3
+ENSG00000267257.1				False	False	0
+ENSG00000267313.8				False	False	0
+ENSG00000267390.4				False	False	0
+ENSG00000267546.3				False	False	0
+ENSG00000267809.1	True	True	True	True	True	3
+ENSG00000268189.3				False	False	0
+ENSG00000268366.1				False	False	0
+ENSG00000268388.7				False	False	0
+ENSG00000268649.5				False	False	0
+ENSG00000268785.1				False	False	0
+ENSG00000269397.1				False	False	0
+ENSG00000269825.4				False	False	0
+ENSG00000269959.1				False	False	0
+ENSG00000270372.2				False	False	0
+ENSG00000270504.2				False	False	0
+ENSG00000271303.2	False	False	False	True	False	0
+ENSG00000271553.1				False	False	0
+ENSG00000271778.1				False	False	0
+ENSG00000271825.1				False	False	0
+ENSG00000272004.2				False	False	0
+ENSG00000272077.1				False	False	0
+ENSG00000272115.1				False	False	0
+ENSG00000272325.2	False	False	False	True	False	0
+ENSG00000272509.1				False	False	0
+ENSG00000272604.1				False	False	0
+ENSG00000272750.1				False	False	0
+ENSG00000272829.2				False	False	0
+ENSG00000272910.1				False	False	0
+ENSG00000273084.3				False	False	0
+ENSG00000273117.2				False	False	0
+ENSG00000273243.1				False	False	0
+ENSG00000273449.1				False	False	0
+ENSG00000273619.3				False	False	0
+ENSG00000274090.2				False	False	0
+ENSG00000274290.3	False	False	True	True	False	1
+ENSG00000274349.5	True	True	True	True	True	3
+ENSG00000274565.2				False	False	0
+ENSG00000274816.1				False	False	0
+ENSG00000275202.1				False	False	0
+ENSG00000275318.1				False	False	0
+ENSG00000275329.2				False	False	0
+ENSG00000275457.2				False	False	0
+ENSG00000275708.1	False	False	True	True	False	1
+ENSG00000275807.2				False	False	0
+ENSG00000276007.1				False	False	0
+ENSG00000276168.1	False	False	False	True	False	0
+ENSG00000276529.1				False	False	0
+ENSG00000277693.3				False	False	0
+ENSG00000278000.1				False	False	0
+ENSG00000278156.4				False	False	0
+ENSG00000278922.1				False	False	0
+ENSG00000278952.1				False	False	0
+ENSG00000279136.1				False	False	0
+ENSG00000279289.1				False	False	0
+ENSG00000279432.1				False	False	0
+ENSG00000279483.2				False	False	0
+ENSG00000279605.1				False	False	0
+ENSG00000280109.4				False	False	0
+ENSG00000280145.4				False	False	0
+ENSG00000280211.1				False	False	0
+ENSG00000280219.1				False	False	0
+ENSG00000280287.1				False	False	0
+ENSG00000280355.1				False	False	0
+ENSG00000281128.2				False	False	0
+ENSG00000281912.1	True	False	True	True	False	2
+ENSG00000283128.3				False	False	0
+ENSG00000283703.3	False	False	False	True	False	0
+ENSG00000284862.3	False	False	False	True	False	0
+ENSG00000286158.1				False	False	0
+ENSG00000286447.2				False	False	0
+ENSG00000286467.1				False	False	0
+ENSG00000286546.2				False	False	0
+ENSG00000287151.2				False	False	0
+ENSG00000287288.2	True	True	True	True	True	3
+ENSG00000287481.1				False	False	0
+ENSG00000287580.2				False	False	0
+ENSG00000287910.2				False	False	0
+ENSG00000288065.1				False	False	0
+ENSG00000288675.1				False	False	0
+ENSG00000288704.2				False	False	0
+ENSG00000288767.3				False	False	0
+ENSG00000288922.3				False	False	0
+ENSG00000288935.2				False	False	0
+ENSG00000288993.2				False	False	0
+ENSG00000289056.3				False	False	0
+ENSG00000289102.1				False	False	0
+ENSG00000289196.3				False	False	0
+ENSG00000289207.2				False	False	0
+ENSG00000289281.1				False	False	0
+ENSG00000289293.2				False	False	0
+ENSG00000289305.1				False	False	0
+ENSG00000289318.3				False	False	0
+ENSG00000289353.1				False	False	0
+ENSG00000289357.1				False	False	0
+ENSG00000289396.1				False	False	0
+ENSG00000289574.1				False	False	0
+ENSG00000289594.2				False	False	0
+ENSG00000289615.3				False	False	0
+ENSG00000289850.2				False	False	0
+ENSG00000289956.2				False	False	0
+ENSG00000290394.3	True	False	False	True	False	1
+ENSG00000290457.2				False	False	0
+ENSG00000290469.1				False	False	0
+ENSG00000290537.2				False	False	0
+ENSG00000290603.2				False	False	0
+ENSG00000290654.2				False	False	0
+ENSG00000290824.2				False	False	0
+ENSG00000290830.1				False	False	0
+ENSG00000290849.2				False	False	0
+ENSG00000290876.2				False	False	0
+ENSG00000290989.2				False	False	0
+ENSG00000291139.2				False	False	0
+ENSG00000291175.2				False	False	0
+ENSG00000291177.2				False	False	0
+ENSG00000293107.1				False	False	0
+ENSG00000293141.2				False	False	0
+ENSG00000293279.2				False	False	0
+ENSG00000293484.2				False	False	0
+ENSG00000293517.2				False	False	0
+ENSG00000293970.1				False	False	0
+ENSG00000294305.1				False	False	0
+ENSG00000294348.1				False	False	0
+ENSG00000294479.1				False	False	0
+ENSG00000295196.1				False	False	0
+ENSG00000296390.1				False	False	0
+ENSG00000296507.1				False	False	0
+ENSG00000296609.1				False	False	0
+ENSG00000296848.1				False	False	0
+ENSG00000297007.1				False	False	0
+ENSG00000297451.1				False	False	0
+ENSG00000297670.1				False	False	0
+ENSG00000298137.1				False	False	0
+ENSG00000298611.1				False	False	0
+ENSG00000298692.1				False	False	0
+ENSG00000298802.1				False	False	0
+ENSG00000298827.1				False	False	0
+ENSG00000299166.1				False	False	0
+ENSG00000299228.1				False	False	0
+ENSG00000299383.1				False	False	0
+ENSG00000299590.1				False	False	0
+ENSG00000299701.1				False	False	0
+ENSG00000299836.1				False	False	0
+ENSG00000299853.1				False	False	0
+ENSG00000300133.1				False	False	0
+ENSG00000300153.1				False	False	0
+ENSG00000300209.1				False	False	0
+ENSG00000300379.1				False	False	0
+ENSG00000300524.1				False	False	0
+ENSG00000300952.1				False	False	0
+ENSG00000301358.1				False	False	0
+ENSG00000302489.1				False	False	0
+ENSG00000302784.1				False	False	0
+ENSG00000302877.1				False	False	0
+ENSG00000303006.1				False	False	0
+ENSG00000303116.1				False	False	0
+ENSG00000303255.1				False	False	0
+ENSG00000303902.1				False	False	0
+ENSG00000303991.1	False	False	False	True	False	0
+ENSG00000304208.1				False	False	0
+ENSG00000304316.1				False	False	0
+ENSG00000304354.1				False	False	0
+ENSG00000305586.1				False	False	0
+ENSG00000306093.1				False	False	0
+ENSG00000306366.1				False	False	0
+ENSG00000306384.1				False	False	0
+ENSG00000306767.1				False	False	0
+ENSG00000307242.1				False	False	0
+ENSG00000307307.1				False	False	0
+ENSG00000308185.1				False	False	0
+ENSG00000308270.1				False	False	0
+ENSG00000308602.1				False	False	0
+ENSG00000308663.1				False	False	0
+ENSG00000308674.1				False	False	0
+ENSG00000308793.1				False	False	0
+ENSG00000308901.1				False	False	0
+ENSG00000309109.1				False	False	0
+ENSG00000309294.1				False	False	0
+ENSG00000310123.1				False	False	0
+ENSG00000310164.1				False	False	0

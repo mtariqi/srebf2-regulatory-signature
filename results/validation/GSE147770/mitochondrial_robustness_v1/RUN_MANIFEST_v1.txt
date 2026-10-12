@@ -1,0 +1,12 @@
+Phase 6G v1; no DESeq2 refitting
+Hallmark pathway: HALLMARK_OXIDATIVE_PHOSPHORYLATION
+Primary Phase 6F background: 14171 genes with interaction padj
+Sensitivity background: 807 evaluable frozen signature genes
+Sensitivity selected target: 359 interaction-significant signature genes
+One-sided hypergeometric ORA for Hallmark only; nominal p-values; no multi-pathway adjusted p from this sensitivity analysis
+msigdbr version: 26.1.1
+MSigDB version: 2026.1.Hs
+R version: R version 4.6.1 (2026-06-24)
+Genomic origin unknown without chromosome annotation; do not infer from ENSG ID
+Figures display gene-level KO vs WT log2FC, not expression or protein function
+Phase 6F enrichment adjusted p-values computed within component x collection; see prior manifest

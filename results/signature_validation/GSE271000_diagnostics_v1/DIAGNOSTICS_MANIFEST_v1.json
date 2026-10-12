@@ -1,0 +1,18 @@
+{
+  "version": "GSE271000_diagnostics_v1",
+  "source_scores": "/home/mtariq/srebf2-regulatory-signature/results/signature_validation/GSE271000_v1/SAMPLE_SCORES.tsv",
+  "source_score_sha256": "f36cab741478a01ff5704244d77aa38037ab6335c114c7ec8a30e429742db834",
+  "source_manifest_sha256": "ac55864b8851a39934a908fc8aa0383e2fdf15a5cceebe6754a77abeff1bbfd4",
+  "policy_sha256": "e1cb502b1076550ee1b36a968295e1bb9293295bfc11bfda3e809206cc04f72c",
+  "counts_sha256": "7044bbdc5aa195013cfc660b62a1637a31ee6636fbfb777bea55e2928531dffe",
+  "metadata_sha256": "1117b4c0a095fbc29430dd210575af8f1227a54f6ee8b9f87c7a22aaf222dc22",
+  "discovery_manifest_sha256": "6799881ed23562087a4885d678e4f72e38b134c87803731a174c45f15a8036db",
+  "limitations": [
+    "Descriptive diagnostic analysis; n=2 samples per group; no significance tests.",
+    "Within-sample percentile ranking uses all 78,932 genes, including zero-count genes, per frozen v1 policy.",
+    "Group differences are against a shared two-sample control mean; replicate indices are not matched pairs.",
+    "No new gene selection, score optimization, or binding evidence.",
+    "Matched background concordance in Phase 4C does not establish sample-level superiority.",
+    "Only existing v1 scores are decomposed; no alternative scoring methods tested."
+  ]
+}

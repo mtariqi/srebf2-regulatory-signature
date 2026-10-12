@@ -1,0 +1,20 @@
+{
+  "phase": "6H",
+  "inputs": {
+    "results/binding/GSE282800/SREBF2_DISCOVERY_UNIVERSE_PROMOTER_SIGNAL_v1.tsv": "a3cf94930db86e82ddf18e58f59aa870d92d0c94355cf8e29eaecf2891e4d947",
+    "results/validation/GSE147770/mitochondrial_robustness_v1/OXPHOS_13_GENES_v1.tsv": "c657760abbb75de418f8b697b5813fd48dcba26ef058b14e126d64d9a37082c8",
+    "results/validation/GSE147770/direction_audit_v1/SIGNATURE_DIRECTION_AUDIT_v1.tsv": "f2fde10aca23bef5d4e5c3b7d1e339d848a5517a9a92cc5c2094a9f358ba23f6",
+    "results/validation/GSE147770/interaction_v1/interaction_Wald_v1.tsv": "2ff901cde1dff5819ee5fcbd2c474c67deab30a02a6d44a35b085f92fd5dfcb1"
+  },
+  "seed": 20261012,
+  "matching": "500 repeated random samples with replacement if needed, same discovery gene_type and global expression quintile; descriptive only",
+  "tests": "two-sided Mann-Whitney exploratory, unadjusted, not independent evidence",
+  "cautions": [
+    "GSE282800 cholesterol-depletion LPPS differs from HAP1 serum-starvation -FBS",
+    "bigWig promoter signal is not validated binding or peak calling",
+    "GSE282800 binding and discovery GSE267018 share HeLa context, while HAP1 validation is independent",
+    "FBS and LPPS signal differences can reflect library normalization and ChIP experimental factors",
+    "Overlapping promoters and nearby genes violate independence",
+    "Exploratory post-selection comparisons; no mechanistic or causal conclusion"
+  ]
+}

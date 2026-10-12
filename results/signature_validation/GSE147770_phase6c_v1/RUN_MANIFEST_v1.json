@@ -1,0 +1,27 @@
+{
+  "phase": "6C",
+  "version": "v1",
+  "analysis": "descriptive decomposition of frozen Phase 6B scores",
+  "source_files_sha256": {
+    "results/signature_validation/GSE147770_phase6b_v1/SAMPLE_SCORES_v1.tsv": "084680eb5f7191eacdc01c0b159e28ba25967fa55f790d82ca6bd755e307a0e6",
+    "results/signature_validation/GSE147770_phase6b_v1/GROUP_COMPARISONS_v1.tsv": "d6c148007c7da654acc0385fe49b7b64b6fd0ee480001f89a0ce789af0763936"
+  },
+  "methods": [
+    "all_gene_percentile_primary",
+    "detected_any_percentile",
+    "log2_CPM_plus_1",
+    "log2_DESeq2_normalized_plus_1"
+  ],
+  "serum_conditions": [
+    "plus_FBS",
+    "minus_FBS"
+  ],
+  "perturbations": [
+    "SREBF2_KO",
+    "C12orf49_KO"
+  ],
+  "definition": "signature = positive - negative; component deltas = perturbed mean - WT mean; serum difference of differences = minus_FBS delta - plus_FBS delta",
+  "no_rescoring": true,
+  "no_inferential_p_values": true,
+  "replicates_per_group": 3
+}

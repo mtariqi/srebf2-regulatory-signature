@@ -1,0 +1,5 @@
+contrast	tested	non_na_padj	significant_FDR_05
+ko_vs_wt_plus_FBS	15363	15363	3954
+ko_vs_wt_minus_FBS	15363	15363	7729
+interaction_Wald	15363	14171	5308
+interaction_LRT	15363	14171	5309

@@ -1,0 +1,30 @@
+{
+  "phase": "6B",
+  "status": "external_cohort_adaptation_of_frozen_phase5_policy",
+  "source_sha256": {
+    "data/raw/validation/GSE147770/GSE147770_STAR_readCounts.txt.gz": "3f4a2307ede59793b77ac50c38fa519ece012c0a2128fe56ea4c0f44f0b7d598",
+    "results/signature/discovery_v1/SREBF2_SIGNATURE_ALL.tsv": "43a4c0f382a8f24b2287a9db879ec1b16c871544b14213e3402e8c5fc08e6356",
+    "results/validation/GSE147770/audit_v4/MATRIX_ROW_AUDIT_v4.tsv": "3f3d4f39a273738ea063c5e6b10acf196f112caa2e287c49f19f6d1229ba83d9",
+    "results/validation/GSE147770/audit_v4/SIGNATURE_MAPPING_v4.tsv": "3dfe0f7659b9e633bcc33cef54d8f6c90ea3a5a560f0bd9e277087b36cff8f3e",
+    "metadata/SREBF2_VALIDATION_SCORING_POLICY_v1.json": "e1cb502b1076550ee1b36a968295e1bb9293295bfc11bfda3e809206cc04f72c"
+  },
+  "eligible_genes": 37919,
+  "signature_positive_mapped": 676,
+  "signature_negative_mapped": 389,
+  "normalization_all_positive_genes": 15621,
+  "detected_any_genes": 27594,
+  "index_gene_found": true,
+  "methods": [
+    "all_gene_percentile_primary",
+    "detected_any_percentile",
+    "log2_CPM_plus_1",
+    "log2_DESeq2_normalized_plus_1"
+  ],
+  "no_source_modification": true,
+  "notes": [
+    "HAP1-specific eligible universe and gene mapping; not a literal application of Phase 5 exact-ID policy",
+    "No inferential significance testing; comparisons are descriptive",
+    "C12orf49 is exploratory, not WT",
+    "Different datasets scores are not directly comparable"
+  ]
+}

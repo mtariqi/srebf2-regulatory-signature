@@ -1,0 +1,13 @@
+R: R version 4.6.1 (2026-06-24)
+DESeq2: 1.52.0
+counts_sha256: 3f4a2307ede59793b77ac50c38fa519ece012c0a2128fe56ea4c0f44f0b7d598
+audit_sha256: 3f3d4f39a273738ea063c5e6b10acf196f112caa2e287c49f19f6d1229ba83d9
+mapping_sha256: 3dfe0f7659b9e633bcc33cef54d8f6c90ea3a5a560f0bd9e277087b36cff8f3e
+design: ~ genotype + serum + genotype:serum
+reference genotype: WT; serum: plus_FBS
+tested_genes: 15363
+filter: counts >= 10 in >= 3 samples
+wald_main: genotype_SREBF2_KO_vs_WT
+wald_interaction: genotypeSREBF2_KO.serumminus_FBS
+interaction_lrt_reduced: ~ genotype + serum
+no source files modified: TRUE

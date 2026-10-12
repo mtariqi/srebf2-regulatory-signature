@@ -1,0 +1,4 @@
+component	selected_genes	pathways_tested	pathways_FDR05	min_padj
+positive	131	5647	16	1.40315197575442e-06
+negative	50	5647	0	0.818650354900435
+combined	181	5647	7	6.149295664482e-05

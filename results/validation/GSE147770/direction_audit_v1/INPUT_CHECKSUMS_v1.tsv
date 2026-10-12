@@ -1,0 +1,6 @@
+input	md5
+/home/mtariq/srebf2-regulatory-signature/results/validation/GSE147770/audit_v4/SIGNATURE_MAPPING_v4.tsv	1120caeac621c61cf8cdcdc6ac570155
+/home/mtariq/srebf2-regulatory-signature/results/validation/GSE147770/interaction_v1/ko_vs_wt_plus_FBS_v1.tsv	b39cb5a10a31744ce9cf934cdd7d6a07
+/home/mtariq/srebf2-regulatory-signature/results/validation/GSE147770/interaction_v1/ko_vs_wt_minus_FBS_v1.tsv	53570c9ff15c8a49c38875eba8a3f04a
+/home/mtariq/srebf2-regulatory-signature/results/validation/GSE147770/interaction_v1/interaction_Wald_v1.tsv	dc5e72bc8db111422a3d45eba3845065
+/home/mtariq/srebf2-regulatory-signature/results/validation/GSE147770/interaction_v1/interaction_LRT_v1.tsv	99bf21f549016d48a8fe7407b9442745

@@ -1,0 +1,16 @@
+{
+  "count_sha256": "3f4a2307ede59793b77ac50c38fa519ece012c0a2128fe56ea4c0f44f0b7d598",
+  "signature_sha256": "43a4c0f382a8f24b2287a9db879ec1b16c871544b14213e3402e8c5fc08e6356",
+  "matrix_rows": 38344,
+  "invalid_any_rows": 419,
+  "invalid_all_18_rows": 419,
+  "partially_invalid_rows": 0,
+  "duplicate_id_rows": 6,
+  "eligible_unique_complete_rows": 37919,
+  "signature_mapping": {
+    "unique_complete": 1065,
+    "absent": 260,
+    "unique_missing_counts": 1
+  },
+  "no_source_modification": true
+}

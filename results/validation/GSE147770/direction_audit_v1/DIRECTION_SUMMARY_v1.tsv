@@ -1,0 +1,4 @@
+direction	mapped	both_LFC_available	sign_switch	expected_reversal	interaction_padj_available	interaction_FDR05	expected_reversal_and_interaction_FDR05
+decreased_in_KO	676	573	221	175	548	270	131
+increased_in_KO	389	284	110	82	259	89	50
+all	1065	857	331	257	807	359	181
