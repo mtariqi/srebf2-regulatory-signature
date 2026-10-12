@@ -385,7 +385,14 @@ Future work can proceed through public datasets and computational reproducibilit
 ## 13. Attribution, citations, and stewardship
 
 **Researcher:** Md. Tariqul Islam  
+**Collaborator:** Sarah Daley  
 **Program:** MSc Bioinformatics, Northeastern University  
 **Repository:** [mtariqi/srebf2-regulatory-signature](https://github.com/mtariqi/srebf2-regulatory-signature)
+
+### Suggested repository citation
+
+> Islam, M. T., & Daley, S. (2026). *SREBF2 regulatory signature: Integrative transcriptomic and epigenomic analysis with a proposed multi-omics framework* [Research code and data repository]. GitHub. https://github.com/mtariqi/srebf2-regulatory-signature
+
+This is a **suggested citation for the collaborative repository**, not a published article citation. Confirm manuscript author order, contributions, and approval with both contributors before submitting a paper or depositing a formal citation record.
 
 Data originate from their respective public GEO studies. **Cite the primary publications for each dataset and the software/database versions in the manuscript**; accession links alone are not a complete bibliography. Repository results are computational research outputs, not medical or clinical recommendations. Check the repository license and original data reuse conditions before redistribution.
