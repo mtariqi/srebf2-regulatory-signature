@@ -384,7 +384,7 @@ Future work can proceed through public datasets and computational reproducibilit
 
 ## 13. Attribution, citations, and stewardship
 
-**Researcher:** Md. Tariqul Islam  
+**Graduate Research Student:** Md. Tariqul Islam  
 **Collaborator:** Sarah Daley  
 **Program:** MSc Bioinformatics, Northeastern University  
 **Repository:** [mtariqi/srebf2-regulatory-signature](https://github.com/mtariqi/srebf2-regulatory-signature)
