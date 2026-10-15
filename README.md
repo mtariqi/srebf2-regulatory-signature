@@ -48,15 +48,67 @@ The original benchmarking hypothesis remains **unproven**; the context-dependent
 
 **Hypothesis H1:** A subset of SREBF2-responsive genes shows reproducible directionality, but the global signature is modified by cell type, perturbation modality, and nutrient context.
 
-### Aim 2 — Epigenomic integration (partially completed)
+### Aim 2 — Epigenomic Integration (Partially Completed)
 
-- Audit public SREBP2 ChIP-seq/CUT&RUN resources and matched controls.
-- Quantify existing HeLa ChIP-seq-derived promoter bigWig signal near annotated transcription start sites.
-- Compare candidate promoter signal with expression- and biotype-matched backgrounds.
-- **Future computational extension:** If suitable peaks and controls are available, call or validate peaks, examine motif enrichment, assess replicate concordance, and link credible occupancy to perturbation responses.
+**Objective:** Integrate SREBF2 perturbation-derived transcriptomic signatures with epigenomic evidence to identify candidate regulatory relationships and assess context-dependent transcriptional responses.
 
-**Hypothesis H2:** Some transcriptionally responsive candidates may have SREBP2-associated promoter occupancy; **existing bigWig promoter coverage alone does not establish this**.
+**Completed analyses:**
+- Audited publicly available SREBP2 ChIP-seq/CUT&RUN resources and associated metadata.
+- Quantified HeLa SREBP2 ChIP-seq-derived promoter bigWig signals near transcription start sites.
+- Compared promoter signals with expression- and biotype-matched background genes.
+- Evaluated the 13 OXPHOS-associated candidates identified through the HAP1 interaction analysis.
 
+**Proposed epigenomic extension:**
+- Prioritize CUT&Tag for future SREBP2 occupancy profiling, contingent on antibody validation.
+- Profile H3K27ac and H3K4me3 to characterize active regulatory chromatin.
+- Perform peak calling, replicate concordance analysis, motif enrichment, and peak-to-gene annotation using suitable public or newly generated datasets.
+- Integrate credible occupancy evidence with the frozen 1,326-gene signature and the 181 context-dependent HAP1 directional-reversal candidates.
+
+**Hypothesis H2:** A subset of transcriptionally responsive genes may exhibit SREBP2-associated regulatory occupancy. Existing ChIP-seq bigWig promoter coverage alone does not establish direct binding or transcriptional regulation.
+
+**Status:** RNA-seq and exploratory ChIP-seq promoter-signal analyses completed; CUT&Tag experiments and peak-level occupancy integration proposed.
+
+### Proposed Epigenomic Method: CUT&Tag
+
+**Cleavage Under Targets and Tagmentation (CUT&Tag)** is proposed as the primary low-input epigenomic profiling approach for investigating SREBP2-associated chromatin occupancy and regulatory histone modifications.
+
+#### Experimental objectives
+
+1. Assess whether SREBP2 occupies regulatory regions associated with genes responding to SREBF2 perturbation.
+2. Characterize H3K27ac-associated active regulatory regions and H3K4me3-associated promoter chromatin.
+3. Integrate chromatin profiles with the frozen 1,326-gene SREBF2 transcriptional signature and 181 context-dependent HAP1 directional-reversal candidates.
+4. Prioritize regulatory hypotheses involving mitochondrial and cholesterol-homeostasis pathways.
+
+#### Proposed experimental design
+
+A factorial study will compare wild-type and SREBF2-deficient cells under defined sterol-replete and sterol-depleted conditions, with at least three independent biological replicates per group as an initial design target. Replicate numbers will be reassessed according to feasibility and statistical requirements.
+
+CUT&Tag assays will target:
+
+- **SREBP2:** Candidate transcription-factor occupancy, contingent on validated antibody specificity and suitable assay performance.
+- **H3K27ac:** Active enhancer- and promoter-associated chromatin.
+- **H3K4me3:** Promoter-associated chromatin states.
+
+Appropriate negative controls, positive-control loci, and SREBF2-deficient controls will be incorporated. SREBP2 antibody suitability must be established before treating the assay as a reliable occupancy measurement.
+
+#### Proposed computational workflow
+
+1. Perform FASTQ quality assessment using FastQC and MultiQC.
+2. Align sequencing reads to the appropriate reference genome using Bowtie2 or another validated aligner.
+3. Assess alignment quality, fragment-size distributions, background signal, library complexity, and replicate concordance.
+4. Identify enriched regions using a CUT&Tag-appropriate peak-calling workflow with assay-specific parameters and background controls.
+5. Annotate peaks relative to transcription start sites, promoters, and distal regulatory regions.
+6. Compare regulatory profiles between experimental conditions, accounting for biological replication and normalization.
+7. Integrate candidate regulatory regions with DESeq2 results, pathway enrichment, and the frozen SREBF2 signature.
+8. Evaluate candidate genes using prespecified genomic backgrounds and sensitivity analyses.
+
+#### Interpretation and limitations
+
+SREBP2-specific CUT&Tag enrichment would provide evidence of candidate chromatin occupancy, but would not independently prove direct transcriptional regulation. H3K27ac and H3K4me3 signals describe chromatin states rather than SREBP2 binding.
+
+The existing GSE282800 ChIP-seq promoter-signal analysis remains an exploratory, separate evidence layer. Existing public CUT&RUN and ChIP-seq datasets retain their original assay labels.
+
+**Status:** Proposed methodology. No new CUT&Tag experimental data have been generated or analyzed in this repository.
 ### Aim 3 — Proteomic and lipidomic consequences (proposed)
 
 - Locate compatible public LC-MS/MS proteomics and lipidomics datasets, prioritizing matched SREBF2 perturbations and nutrient conditions.
