@@ -10,6 +10,10 @@
 ![Reference](https://img.shields.io/badge/Annotation-GENCODE%20v47-555555)
 ![Status](https://img.shields.io/badge/Status-Manuscript%20preparation-008080)
 
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/35518438-2375-4803-9f8f-fd4561dacebf" />
+
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
 **Research update:** 12 October 2026  
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.  
