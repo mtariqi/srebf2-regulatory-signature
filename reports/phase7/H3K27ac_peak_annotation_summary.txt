@@ -1,0 +1,8 @@
+H3K27ac PEAK ANNOTATION SUMMARY
+==============================
+Total peaks: 93,427
+Promoter: 10,109 (10.82%)
+Gene_body_only: 57,453 (61.50%)
+Intergenic: 25,865 (27.68%)
+Total classified: 93,427
+Classification difference: 0
