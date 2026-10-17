@@ -1,0 +1,23 @@
+SREBF2 SIGNATURE × H3K27ac INTEGRATION
+=====================================
+Signature genes: 1,326
+Exact Ensembl matches: 1,316
+Stable-ID matches: 0
+Ambiguous matches: 0
+Unmatched genes: 10
+
+H3K27ac OVERLAPS BY SIGNATURE DIRECTION
+
+Direction: decreased_in_KO
+Matched genes: 789
+Genes with promoter peaks: 34
+Genes with gene-body peaks: 89
+Genes with any peaks: 94
+
+Direction: increased_in_KO
+Matched genes: 527
+Genes with promoter peaks: 41
+Genes with gene-body peaks: 150
+Genes with any peaks: 155
+
+Integrated table: results/cut_and_tag/integration/SREBF2_SIGNATURE_H3K27ac_INTEGRATED.tsv

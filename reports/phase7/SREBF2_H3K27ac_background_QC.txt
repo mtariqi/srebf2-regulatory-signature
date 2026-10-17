@@ -1,0 +1,22 @@
+SREBF2 RNA-SEQ × H3K27ac BACKGROUND QC
+====================================
+Total audited genes: 17,158
+Selected signature genes: 1,326
+Nonselected genes: 15,832
+
+Exact matches: 17,097
+Stable-ID matches: 0
+Ambiguous matches: 0
+Unmatched genes: 61
+
+SELECTED
+Matched genes: 1,316
+Promoter-positive: 75
+Gene-body-positive: 239
+Any-overlap-positive: 249
+
+NONSELECTED
+Matched genes: 15,781
+Promoter-positive: 434
+Gene-body-positive: 1,591
+Any-overlap-positive: 1,655

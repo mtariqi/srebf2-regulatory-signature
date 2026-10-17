@@ -1,0 +1,121 @@
+!Sample_title = HepG2_shctr_H3K4me1_CUTTAG
+!Sample_geo_accession = GSM7113541
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: control shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K4me1 ab176877 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872288
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758148
+!Sample_title = HepG2_shKDM1A_H3K4me1_CUTTAG
+!Sample_geo_accession = GSM7113542
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: KDM1A shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K4me1 ab176877 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872287
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758149
+!Sample_title = HepG2_shctr_H3K4me2_CUTTAG
+!Sample_geo_accession = GSM7113543
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: control shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K4me2 ab32356 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872286
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758150
+!Sample_title = HepG2_shKDM1A_H3K4me2_CUTTAG
+!Sample_geo_accession = GSM7113544
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: KDM1A shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K4me2 ab32356 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872285
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758151
+!Sample_title = HepG2_shctr_H3K9me2_CUTTAG
+!Sample_geo_accession = GSM7113545
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: control shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K9me2 ab1220 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872284
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758152
+!Sample_title = HepG2_shKDM1A_H3K9me2_CUTTAG
+!Sample_geo_accession = GSM7113546
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: KDM1A shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K9me2 ab1220 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872283
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758153
+!Sample_title = HepG2_shctr_H3K27ac_CUTTAG
+!Sample_geo_accession = GSM7113547
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: control shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K27ac ab4729 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872282
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758154
+!Sample_title = HepG2_shKDM1A_H3K27ac_CUTTAG
+!Sample_geo_accession = GSM7113548
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: KDM1A shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: H3K27ac ab4729 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872281
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758155
+!Sample_title = HepG2_KDM1A_CUTTAG
+!Sample_geo_accession = GSM7113549
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: WT
+!Sample_characteristics_ch1 = cut&tag antibody: KDM1A ab129195 Abcam
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN33872280
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758156
+!Sample_title = HepG2_shctr_IgG_CUTTAG
+!Sample_geo_accession = GSM7750106
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: control shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: IgG Abclonal AC005
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37231195
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21591585
+!Sample_title = HepG2_shKDM1A_IgG_CUTTAG
+!Sample_geo_accession = GSM7750107
+!Sample_source_name_ch1 = liver
+!Sample_characteristics_ch1 = tissue: liver
+!Sample_characteristics_ch1 = cell line: HepG2
+!Sample_characteristics_ch1 = cell type: HCC
+!Sample_characteristics_ch1 = genotype: KDM1A shRNA
+!Sample_characteristics_ch1 = cut&tag antibody: IgG Abclonal AC005
+!Sample_library_strategy = OTHER
+!Sample_relation = BioSample: https://www.ncbi.nlm.nih.gov/biosample/SAMN37231194
+!Sample_relation = SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21591586

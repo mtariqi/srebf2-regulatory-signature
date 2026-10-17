@@ -70,7 +70,7 @@ The original benchmarking hypothesis remains **unproven**; the context-dependent
 
 **Hypothesis H2:** A subset of transcriptionally responsive genes may exhibit SREBP2-associated regulatory occupancy. Existing ChIP-seq bigWig promoter coverage alone does not establish direct binding or transcriptional regulation.
 
-**Status:** RNA-seq and exploratory ChIP-seq promoter-signal analyses completed; CUT&Tag experiments and peak-level occupancy integration proposed.
+**Status:** RNA-seq, exploratory ChIP-seq promoter-signal analysis, and independent public H3K27ac CUT&Tag peak-overlap integration completed. SREBP2-specific CUT&Tag experiments and direct-binding validation remain proposed.
 
 ### Proposed Epigenomic Method: CUT&Tag
 
@@ -112,7 +112,7 @@ SREBP2-specific CUT&Tag enrichment would provide evidence of candidate chromatin
 
 The existing GSE282800 ChIP-seq promoter-signal analysis remains an exploratory, separate evidence layer. Existing public CUT&RUN and ChIP-seq datasets retain their original assay labels.
 
-**Status:** Proposed methodology. No new CUT&Tag experimental data have been generated or analyzed in this repository.
+**Status:** The SREBP2-specific CUT&Tag experimental design remains proposed. Separately, public HepG2 H3K27ac CUT&Tag data (GSE228074) have been computationally analyzed for exploratory chromatin-context integration; no new laboratory CUT&Tag experiments have been performed.
 ### Aim 3 — Proteomic and lipidomic consequences (proposed)
 
 - Locate compatible public LC-MS/MS proteomics and lipidomics datasets, prioritizing matched SREBF2 perturbations and nutrient conditions.
@@ -316,6 +316,143 @@ A proposed 2 × 2 genotype × serum design would test WT and SREBF2 KO under +FB
 
 **No wet-lab assays are required to document the completed computational findings.** Protocol: [`protocols/phase6j/README.md`](protocols/phase6j/README.md).
 
+## Phase 7–8: Public H3K27ac CUT&Tag Integration (Completed)
+
+**Updated:** 17 October 2026
+
+This exploratory analysis integrates the frozen SREBF2
+transcriptional signature with an independent public H3K27ac
+CUT&Tag dataset.
+
+**Data provenance**
+
+- RNA-seq: GSE267018, HeLa SREBF2 knockout.
+- CUT&Tag: GSE228074, HepG2 control-shRNA condition.
+- H3K27ac: SRR23949120.
+- IgG control: SRR25870186.
+- Genome annotation: GENCODE v47 / GRCh38.
+
+**Principal results**
+
+- 1,326 signature genes; 1,316 matched to the CUT&Tag annotation.
+- 17,097 matched genes in the RNA-seq-derived background.
+- 249/1,316 signature genes had at least one H3K27ac peak overlap.
+- 1,655/15,781 non-signature genes had at least one overlap.
+- Any-overlap enrichment: OR = 1.992,
+  95% CI 1.712–2.311, BH FDR = 1.35 × 10^-17.
+- Promoter enrichment: OR = 2.137, BH FDR = 4.27 × 10^-8.
+- Gene-body enrichment: OR = 1.979, BH FDR = 4.72 × 10^-17.
+
+**Interpretation:** The perturbation-derived SREBF2 signature
+shows greater H3K27ac peak-overlap prevalence in an independent
+HepG2 chromatin dataset than non-signature RNA-seq genes.
+
+This does not demonstrate direct SREBP2 binding, SREBF2-dependent
+histone acetylation, or causal transcriptional regulation.
+Phase 9 multivariable logistic regression confirmed that the association persisted after adjustment for gene length, baseline RNA-seq expression, and gene biotype.
+
+The completed computational analysis of public H3K27ac CUT&Tag
+data is distinct from the proposed future SREBP2-specific CUT&Tag
+experiments described above.
+
+**Research documentation:**
+[Phase 7–8 H3K27ac enrichment report](reports/phase8/SREBF2_H3K27ac_ENRICHMENT.md)
+
+**Statistical results:**
+[Background enrichment](results_public/cut_and_tag/phase7_8/SREBF2_H3K27ac_BACKGROUND_ENRICHMENT.tsv)
+and
+[direction-specific Fisher tests](results_public/cut_and_tag/phase7_8/SREBF2_H3K27ac_Fisher_results.tsv).
+
+---
+
+### Phase 11 — Expression Interaction and Direction-Specific Enrichment (Completed)
+
+Phase 11 tested expression-dependent effect modification and
+direction-specific H3K27ac enrichment across 17,097 genes.
+
+**Key findings:**
+
+- No significant signature-by-expression-quartile interaction
+  was detected across the three overlap categories.
+- Both increased-in-KO and decreased-in-KO signature genes
+  exhibited significant adjusted enrichment relative to
+  non-signature genes.
+- Direct increased-versus-decreased comparisons were not
+  statistically significant after BH correction.
+
+These results do not establish equivalence between signature
+directions, direct SREBP2 binding, or causal regulation.
+
+**Documentation:** [Phase 11 report](reports/phase11/PHASE11_INTERACTION_DIRECTION.md)
+
+**Results:** [Phase 11 public results](results_public/cut_and_tag/phase11/)
+
+---
+
+### Phase 10 — H3K27ac Sensitivity Analysis (Completed)
+
+Phase 10 evaluated the robustness of H3K27ac enrichment
+associated with the frozen SREBF2 transcriptional signature.
+
+Three sensitivity-analysis families were implemented:
+
+- Protein-coding-only models (12,465 genes).
+- Expression-quartile-stratified models.
+- Flexible gene-length models using natural cubic splines.
+
+**Key results**
+
+| Analysis | Promoter OR | Gene-body OR | Any-overlap OR |
+|---|---:|---:|---:|
+| Protein-coding only | 1.740 | 1.846 | 1.815 |
+| Flexible gene-length adjustment | 1.860 | 1.919 | 1.958 |
+
+All 18 logistic regression models converged. Fifteen of
+18 exploratory tests passed BH FDR < 0.05.
+
+Expression-stratified results were significant in Q1–Q3,
+but not in Q4. This does not establish a statistically
+significant difference between expression strata;
+formal interaction testing remains necessary.
+
+**Scientific limitation:** The transcriptional signature
+originated from HeLa SREBF2 perturbation RNA-seq, whereas
+H3K27ac CUT&Tag originated from HepG2 cells. These findings
+do not establish direct SREBP2 binding or causality.
+
+**Documentation:** [Phase 10 report](reports/phase10/PHASE10_SENSITIVITY_ANALYSIS.md)
+
+**Results:** [Phase 10 sensitivity TSV](results_public/cut_and_tag/phase10/SREBF2_H3K27ac_PHASE10_SENSITIVITY.tsv)
+
+---
+
+### Phase 9 — Adjusted H3K27ac Enrichment (Completed)
+
+Multivariable logistic regression evaluated H3K27ac peak overlap
+among 17,097 annotation-matched genes, including 1,316 SREBF2
+signature genes.
+
+The models adjusted for log10 gene length, log10(baseMean + 1),
+and gene biotype.
+
+| Overlap | Adjusted OR | 95% CI | BH FDR |
+|---|---:|---|---:|
+| Promoter | 1.938 | 1.492–2.516 | 6.898e-07 |
+| Gene body | 1.926 | 1.580–2.347 | 1.293e-10 |
+| Any overlap | 1.971 | 1.629–2.385 | 9.329e-12 |
+
+All three models converged.
+
+These results demonstrate an adjusted statistical association,
+not direct SREBP2 binding or causal regulatory activity.
+Residual confounding and cross-cell-line differences remain.
+
+**Documentation:** [Phase 9 adjusted enrichment report](reports/phase9/PHASE9_ADJUSTED_ENRICHMENT.md)
+
+**Results:** [Adjusted enrichment TSV](results_public/cut_and_tag/phase9/SREBF2_H3K27ac_ADJUSTED_ENRICHMENT.tsv)
+
+---
+
 ## 9. Repository map and reproducibility
 
 The following are documented analysis paths; raw reads, count matrices, and large serialized objects may be excluded from Git. Some supporting binding and validation scripts were still untracked at the latest local audit, so **a committed results file is not, by itself, proof that its entire pipeline can be reproduced from a clean checkout**.
@@ -408,7 +545,7 @@ git status --short
 | Directional reversal and pathway enrichment | Completed | Check final manuscript counts/denominators |
 | OXPHOS robustness and candidate ranking | Completed | Present as hypothesis-generating |
 | HeLa promoter-signal and matched-null audit | Completed (exploratory) | Avoid direct-binding claims |
-| H3K27ac/peak-level occupancy integration | Proposed | Only if suitable public data and controls |
+| Public H3K27ac CUT&Tag peak-overlap integration | Completed (exploratory) | Complete confounder-adjusted analysis; no direct SREBP2 occupancy inference |
 | Proteomics and lipidomics | Proposed | Public-data feasibility review or methods-only assignment section |
 | Wet-lab RT-qPCR/CUT&RUN/Seahorse | Protocol only | Future funding/collaboration |
 | Manuscript | Preparation | Draft methods, results, figures, limitations |

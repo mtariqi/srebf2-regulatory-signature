@@ -1,0 +1,111 @@
+========== PHASE 12F: DATASET ==========
+Total genes: 17158
+Unique gene IDs: 17158
+
+Signature counts:
+signature_selected
+False    15832
+True      1326
+Name: count, dtype: int64
+
+========== SIGNAL DISTRIBUTIONS ==========
+
+mean_promoter_Input_CholDep
+Nonmissing: 17097
+Zero: 4
+Negative: 0
+Median: 0.072068839514628
+95th percentile: 0.12375373559445131
+99th percentile: 0.1663257690027356
+Maximum: 1.841840909123421
+
+mean_promoter_H3K27ac
+Nonmissing: 17097
+Zero: 3
+Negative: 0
+Median: 0.4115133922826499
+95th percentile: 1.7386577537022518
+99th percentile: 2.785131708875898
+Maximum: 11.764370477601886
+
+mean_genebody_H3K27ac
+Nonmissing: 17097
+Zero: 58
+Negative: 0
+Median: 0.09302931216741
+95th percentile: 0.8744925833508908
+99th percentile: 2.3649485702277837
+Maximum: 12.971077371890496
+
+mean_promoter_SREBP2_FBS
+Nonmissing: 17097
+Zero: 610
+Negative: 0
+Median: 0.0818601631820201
+95th percentile: 0.1611415207516401
+99th percentile: 0.22614210645690602
+Maximum: 0.818614438816905
+
+mean_promoter_SREBP2_CholDep
+Nonmissing: 17097
+Zero: 575
+Negative: 0
+Median: 0.0988445419399067
+95th percentile: 0.24095755257867268
+99th percentile: 0.3852843066965047
+Maximum: 1.513624319374561
+
+========== COVERAGE FRACTIONS ==========
+
+promoter_defined_fraction_Input_CholDep
+Median: 1.0
+Minimum: 1.0
+Below 0.90: 0
+Below 0.50: 0
+
+promoter_defined_fraction_H3K27ac
+Median: 1.0
+Minimum: 1.0
+Below 0.90: 0
+Below 0.50: 0
+
+promoter_defined_fraction_SREBP2_FBS
+Median: 1.0
+Minimum: 1.0
+Below 0.90: 0
+Below 0.50: 0
+
+promoter_defined_fraction_SREBP2_CholDep
+Median: 1.0
+Minimum: 1.0
+Below 0.90: 0
+Below 0.50: 0
+
+genebody_defined_fraction_H3K27ac
+Median: 1.0
+Minimum: 1.0
+Below 0.90: 0
+Below 0.50: 0
+
+========== SPEARMAN CORRELATIONS ==========
+                              mean_promoter_Input_CholDep  mean_promoter_H3K27ac  mean_genebody_H3K27ac  mean_promoter_SREBP2_FBS  mean_promoter_SREBP2_CholDep  baseMean
+mean_promoter_Input_CholDep                         1.000                  0.317                  0.413                     0.439                         0.409     0.082
+mean_promoter_H3K27ac                               0.317                  1.000                  0.629                     0.625                         0.739     0.432
+mean_genebody_H3K27ac                               0.413                  0.629                  1.000                     0.494                         0.542     0.279
+mean_promoter_SREBP2_FBS                            0.439                  0.625                  0.494                     1.000                         0.862     0.271
+mean_promoter_SREBP2_CholDep                        0.409                  0.739                  0.542                     0.862                         1.000     0.339
+baseMean                                            0.082                  0.432                  0.279                     0.271                         0.339     1.000
+
+========== ANNOTATION MATCHING ==========
+_merge
+both         17097
+left_only       61
+Name: count, dtype: int64
+
+========== UNMATCHED GENES BY SIGNATURE ==========
+signature_selected  False  True 
+_merge                          
+both                15781   1316
+left_only              51     10
+
+========== QC COMPLETE ==========

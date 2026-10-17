@@ -1,0 +1,5 @@
+series	sample	assay	condition	filename	url
+GSE267019	GSM8258573	Input	Cholesterol_depletion	GSM8258573_HInput.bw	https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8258nnn/GSM8258573/suppl/GSM8258573_HInput.bw
+GSE267019	GSM8258574	H3K27ac	Cholesterol_depletion	GSM8258574_HH3K27ac.bw	https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8258nnn/GSM8258574/suppl/GSM8258574_HH3K27ac.bw
+GSE282800	GSM8650746	SREBP2	FBS	GSM8650746_FBS-IP_FKR0240286762-2A_hg38.bw	https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8650nnn/GSM8650746/suppl/GSM8650746_FBS-IP_FKR0240286762-2A_hg38.bw
+GSE282800	GSM8650747	SREBP2	Cholesterol_depletion	GSM8650747_LPPS-IP_FKR0240286764-2A_hg38.bw	https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8650nnn/GSM8650747/suppl/GSM8650747_LPPS-IP_FKR0240286764-2A_hg38.bw

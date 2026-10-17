@@ -1,0 +1,26 @@
+
+decreased_vs_background: n=16570, cases=789
+
+increased_vs_background: n=16308, cases=527
+
+increased_vs_decreased: n=1316, cases=527
+
+========== PHASE 12I RESULTS ==========
+             comparison            model        predictor     n  odds_ratio  ci_lower  ci_upper      p_value  converged       fdr_bh
+decreased_vs_background          H3K27ac        z_H3K27ac 16570    1.155867  1.067312  1.251770 3.683377e-04       True 4.604222e-04
+decreased_vs_background       SREBP2_FBS     z_SREBP2_FBS 16570    1.119602  1.041464  1.203602 2.208622e-03       True 2.366381e-03
+decreased_vs_background   SREBP2_CholDep z_SREBP2_CholDep 16570    1.435888  1.360128  1.515868 4.199273e-39       True 6.298909e-38
+decreased_vs_background Combined_CholDep        z_H3K27ac 16570    0.817145  0.738979  0.903580 8.272554e-05       True 1.128076e-04
+decreased_vs_background Combined_CholDep z_SREBP2_CholDep 16570    1.560132  1.456568  1.671059 6.604629e-37       True 4.953471e-36
+increased_vs_background          H3K27ac        z_H3K27ac 16308    0.456147  0.390611  0.532677 3.442121e-23       True 1.721061e-22
+increased_vs_background       SREBP2_FBS     z_SREBP2_FBS 16308    0.706389  0.634535  0.786380 2.144013e-10       True 4.020024e-10
+increased_vs_background   SREBP2_CholDep z_SREBP2_CholDep 16308    0.582813  0.506929  0.670057 3.309934e-14       True 9.929803e-14
+increased_vs_background Combined_CholDep        z_H3K27ac 16308    0.483576  0.399360  0.585551 9.910832e-14       True 2.477708e-13
+increased_vs_background Combined_CholDep z_SREBP2_CholDep 16308    0.912913  0.763543  1.091504 3.175522e-01       True 3.175522e-01
+ increased_vs_decreased          H3K27ac        z_H3K27ac  1316    0.497214  0.415821  0.594538 1.847038e-14       True 6.926392e-14
+ increased_vs_decreased       SREBP2_FBS     z_SREBP2_FBS  1316    0.708239  0.612605  0.818803 3.146352e-06       True 5.243921e-06
+ increased_vs_decreased   SREBP2_CholDep z_SREBP2_CholDep  1316    0.548428  0.459135  0.655085 3.469868e-11       True 7.435432e-11
+ increased_vs_decreased Combined_CholDep        z_H3K27ac  1316    0.630528  0.506542  0.784862 3.651630e-05       True 5.477446e-05
+ increased_vs_decreased Combined_CholDep z_SREBP2_CholDep  1316    0.717043  0.585820  0.877660 1.258152e-03       True 1.451714e-03
+
+Saved: results/phase12/PHASE12_DIRECTION_MODELS.tsv

@@ -1,0 +1,55 @@
+========== PHASE 12J ==========
+Matched genes: 17097
+Signature genes: 1316
+
+========== VIF DIAGNOSTICS ==========
+       predictor      VIF
+       z_H3K27ac 1.961578
+z_SREBP2_CholDep 1.908331
+ z_Input_CholDep 1.171006
+    log_baseMean 1.327143
+ log_gene_length 1.136514
+decreased_vs_background | all_biotypes | base | n=16570 | converged=True
+decreased_vs_background | all_biotypes | input_adjusted | n=16570 | converged=True
+decreased_vs_background | protein_coding | base | n=12136 | converged=True
+decreased_vs_background | protein_coding | input_adjusted | n=12136 | converged=True
+increased_vs_background | all_biotypes | base | n=16308 | converged=True
+increased_vs_background | all_biotypes | input_adjusted | n=16308 | converged=True
+increased_vs_background | protein_coding | base | n=11840 | converged=True
+increased_vs_background | protein_coding | input_adjusted | n=11840 | converged=True
+increased_vs_decreased | all_biotypes | base | n=1316 | converged=True
+increased_vs_decreased | all_biotypes | input_adjusted | n=1316 | converged=True
+increased_vs_decreased | protein_coding | base | n=954 | converged=True
+increased_vs_decreased | protein_coding | input_adjusted | n=954 | converged=True
+
+========== ROBUSTNESS RESULTS ==========
+             comparison     population  specification        predictor     n  cases  odds_ratio  ci_lower  ci_upper      p_value  converged
+decreased_vs_background   all_biotypes           base        z_H3K27ac 16570    789    0.817145  0.738979  0.903580 8.272554e-05       True
+decreased_vs_background   all_biotypes           base z_SREBP2_CholDep 16570    789    1.560132  1.456568  1.671059 6.604629e-37       True
+decreased_vs_background   all_biotypes input_adjusted        z_H3K27ac 16570    789    0.810694  0.733067  0.896540 4.377574e-05       True
+decreased_vs_background   all_biotypes input_adjusted z_SREBP2_CholDep 16570    789    1.540470  1.436561  1.651895 7.623956e-34       True
+decreased_vs_background protein_coding           base        z_H3K27ac 12136    625    0.711668  0.627304  0.807379 1.267738e-07       True
+decreased_vs_background protein_coding           base z_SREBP2_CholDep 12136    625    1.665480  1.539333  1.801964 6.413091e-37       True
+decreased_vs_background protein_coding input_adjusted        z_H3K27ac 12136    625    0.709907  0.625512  0.805689 1.121541e-07       True
+decreased_vs_background protein_coding input_adjusted z_SREBP2_CholDep 12136    625    1.658360  1.529574  1.797989 1.415999e-34       True
+increased_vs_background   all_biotypes           base        z_H3K27ac 16308    527    0.483576  0.399360  0.585551 9.910832e-14       True
+increased_vs_background   all_biotypes           base z_SREBP2_CholDep 16308    527    0.912913  0.763543  1.091504 3.175522e-01       True
+increased_vs_background   all_biotypes input_adjusted        z_H3K27ac 16308    527    0.480304  0.396221  0.582230 8.104988e-14       True
+increased_vs_background   all_biotypes input_adjusted z_SREBP2_CholDep 16308    527    0.951941  0.786367  1.152378 6.134204e-01       True
+increased_vs_background protein_coding           base        z_H3K27ac 11840    329    0.560561  0.433856  0.724269 9.528521e-06       True
+increased_vs_background protein_coding           base z_SREBP2_CholDep 11840    329    0.895226  0.708152  1.131720 3.547645e-01       True
+increased_vs_background protein_coding input_adjusted        z_H3K27ac 11840    329    0.552663  0.426971  0.715356 6.657014e-06       True
+increased_vs_background protein_coding input_adjusted z_SREBP2_CholDep 11840    329    0.963554  0.751758  1.235019 7.693948e-01       True
+ increased_vs_decreased   all_biotypes           base        z_H3K27ac  1316    527    0.630528  0.506542  0.784862 3.651630e-05       True
+ increased_vs_decreased   all_biotypes           base z_SREBP2_CholDep  1316    527    0.717043  0.585820  0.877660 1.258152e-03       True
+ increased_vs_decreased   all_biotypes input_adjusted        z_H3K27ac  1316    527    0.643725  0.516751  0.801900 8.516260e-05       True
+ increased_vs_decreased   all_biotypes input_adjusted z_SREBP2_CholDep  1316    527    0.779071  0.642063  0.945315 1.141172e-02       True
+ increased_vs_decreased protein_coding           base        z_H3K27ac   954    329    0.986450  0.736086  1.321970 9.272271e-01       True
+ increased_vs_decreased protein_coding           base z_SREBP2_CholDep   954    329    0.607129  0.463507  0.795253 2.906570e-04       True
+ increased_vs_decreased protein_coding input_adjusted        z_H3K27ac   954    329    0.991278  0.740890  1.326286 9.529725e-01       True
+ increased_vs_decreased protein_coding input_adjusted z_SREBP2_CholDep   954    329    0.732564  0.575609  0.932318 1.141854e-02       True
+
+Saved: results/phase12/PHASE12_ROBUSTNESS_MODELS.tsv
+Saved: results/phase12/PHASE12_VIF.tsv
+
+PHASE 12J COMPLETE

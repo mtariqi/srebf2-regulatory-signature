@@ -1,0 +1,28 @@
+PHASE 9: ADJUSTED H3K27ac ENRICHMENT
+
+Genes analyzed: 17097
+Signature genes: 1316
+Non-signature genes: 15781
+
+Biotype distribution:
+
+protein_coding         lncRNA          other
+         12465           3825            807
+
+Gene length summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+     53    7988   25056   60165   66110 2298757
+
+Baseline expression summary:
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max.
+4.138e+00 3.091e+01 3.111e+02 1.172e+03 1.179e+03 1.749e+05
+
+Adjusted enrichment results:
+  category n_genes signature_genes background_genes adjusted_OR CI_lower
+  promoter   17097            1316            15781    1.937879 1.492391
+ gene_body   17097            1316            15781    1.925821 1.579984
+       any   17097            1316            15781    1.970663 1.628537
+ CI_upper       pvalue converged      padj_BH
+ 2.516347 6.897965e-07      TRUE 6.897965e-07
+ 2.347358 8.619876e-11      TRUE 1.292981e-10
+ 2.384663 3.109771e-12      TRUE 9.329313e-12

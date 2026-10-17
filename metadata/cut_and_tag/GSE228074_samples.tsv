@@ -1,0 +1,12 @@
+gsm	title	cell_line	genotype	antibody	library_strategy	sra_relation
+GSM7113541	HepG2_shctr_H3K4me1_CUTTAG	HepG2	control shRNA	H3K4me1 ab176877 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758148
+GSM7113542	HepG2_shKDM1A_H3K4me1_CUTTAG	HepG2	KDM1A shRNA	H3K4me1 ab176877 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758149
+GSM7113543	HepG2_shctr_H3K4me2_CUTTAG	HepG2	control shRNA	H3K4me2 ab32356 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758150
+GSM7113544	HepG2_shKDM1A_H3K4me2_CUTTAG	HepG2	KDM1A shRNA	H3K4me2 ab32356 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758151
+GSM7113545	HepG2_shctr_H3K9me2_CUTTAG	HepG2	control shRNA	H3K9me2 ab1220 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758152
+GSM7113546	HepG2_shKDM1A_H3K9me2_CUTTAG	HepG2	KDM1A shRNA	H3K9me2 ab1220 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758153
+GSM7113547	HepG2_shctr_H3K27ac_CUTTAG	HepG2	control shRNA	H3K27ac ab4729 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758154
+GSM7113548	HepG2_shKDM1A_H3K27ac_CUTTAG	HepG2	KDM1A shRNA	H3K27ac ab4729 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758155
+GSM7113549	HepG2_KDM1A_CUTTAG	HepG2	WT	KDM1A ab129195 Abcam	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX19758156
+GSM7750106	HepG2_shctr_IgG_CUTTAG	HepG2	control shRNA	IgG Abclonal AC005	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21591585
+GSM7750107	HepG2_shKDM1A_IgG_CUTTAG	HepG2	KDM1A shRNA	IgG Abclonal AC005	OTHER	SRA: https://www.ncbi.nlm.nih.gov/sra?term=SRX21591586

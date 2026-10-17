@@ -1,0 +1,24 @@
+H3K27ac MACS3 BROAD-PEAK QC
+============================
+Valid peaks: 93,560
+Invalid peak records: 0
+Minimum width: 372 bp
+Median width: 1,472.0 bp
+Mean width: 2,430.3 bp
+90th percentile width: 5,329 bp
+Maximum width: 96,221 bp
+Sum of peak widths: 227,375,621 bp
+Union of peak intervals: 227,375,621 bp
+Median -log10(q): 2.066
+
+TOP 10 CHROMOSOMES BY PEAK COUNT
+chr2: 11,782
+chr6: 7,837
+chr3: 7,363
+chr1: 6,576
+chr5: 6,530
+chr4: 6,505
+chr8: 5,313
+chr7: 4,744
+chr11: 4,435
+chr10: 4,423
