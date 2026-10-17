@@ -1,0 +1,107 @@
+========== PHASE 12K ==========
+Matched genes: 17097 Signature genes: 1316
+Expression strata: 10
+decreased_vs_background | all_biotypes | expression_deciles | n=16570 | converged=True
+decreased_vs_background | all_biotypes | expression_spline | n=16570 | converged=True
+decreased_vs_background | protein_coding | expression_deciles | n=12136 | converged=True
+decreased_vs_background | protein_coding | expression_spline | n=12136 | converged=True
+increased_vs_background | all_biotypes | expression_deciles | n=16308 | converged=True
+increased_vs_background | all_biotypes | expression_spline | n=16308 | converged=True
+increased_vs_background | protein_coding | expression_deciles | n=11840 | converged=True
+increased_vs_background | protein_coding | expression_spline | n=11840 | converged=True
+increased_vs_decreased | all_biotypes | expression_deciles | n=1316 | converged=True
+increased_vs_decreased | all_biotypes | expression_spline | n=1316 | converged=True
+increased_vs_decreased | protein_coding | expression_deciles | n=954 | converged=True
+increased_vs_decreased | protein_coding | expression_spline | n=954 | converged=True
+
+========== MODEL RESULTS ==========
+             comparison     population      specification        predictor     n  cases  odds_ratio  ci_lower  ci_upper      p_value  converged       fdr_bh
+decreased_vs_background   all_biotypes expression_deciles        z_H3K27ac 16570    789    0.820752  0.742619  0.907106 1.087789e-04       True 2.144479e-04
+decreased_vs_background   all_biotypes expression_deciles z_SREBP2_CholDep 16570    789    1.547432  1.443301  1.659075 1.110745e-34       True 1.019737e-33
+decreased_vs_background   all_biotypes  expression_spline        z_H3K27ac 16570    789    0.823877  0.745339  0.910692 1.505419e-04       True 2.580718e-04
+decreased_vs_background   all_biotypes  expression_spline z_SREBP2_CholDep 16570    789    1.545997  1.441709  1.657829 2.244367e-34       True 1.346620e-33
+decreased_vs_background protein_coding expression_deciles        z_H3K27ac 12136    625    0.720272  0.635037  0.816947 3.284833e-07       True 1.126228e-06
+decreased_vs_background protein_coding expression_deciles z_SREBP2_CholDep 12136    625    1.658680  1.530375  1.797743 7.172348e-35       True 1.019737e-33
+decreased_vs_background protein_coding  expression_spline        z_H3K27ac 12136    625    0.721629  0.636070  0.818696 4.047874e-07       True 1.214362e-06
+decreased_vs_background protein_coding  expression_spline z_SREBP2_CholDep 12136    625    1.659210  1.530319  1.798957 1.274671e-34       True 1.019737e-33
+increased_vs_background   all_biotypes expression_deciles        z_H3K27ac 16308    527    0.492343  0.406455  0.596380 4.340524e-13       True 2.083451e-12
+increased_vs_background   all_biotypes expression_deciles z_SREBP2_CholDep 16308    527    0.973516  0.805506  1.176568 7.812440e-01       True 9.255309e-01
+increased_vs_background   all_biotypes  expression_spline        z_H3K27ac 16308    527    0.499081  0.411983  0.604593 1.225717e-12       True 4.902867e-12
+increased_vs_background   all_biotypes  expression_spline z_SREBP2_CholDep 16308    527    0.970552  0.803059  1.172978 7.571271e-01       True 9.255309e-01
+increased_vs_background protein_coding expression_deciles        z_H3K27ac 11840    329    0.575721  0.444609  0.745498 2.821000e-05       True 7.522667e-05
+increased_vs_background protein_coding expression_deciles z_SREBP2_CholDep 11840    329    0.976164  0.762251  1.250108 8.484033e-01       True 9.255309e-01
+increased_vs_background protein_coding  expression_spline        z_H3K27ac 11840    329    0.587763  0.453661  0.761504 5.770511e-05       True 1.259020e-04
+increased_vs_background protein_coding  expression_spline z_SREBP2_CholDep 11840    329    0.974415  0.760848  1.247929 8.373171e-01       True 9.255309e-01
+ increased_vs_decreased   all_biotypes expression_deciles        z_H3K27ac  1316    527    0.630058  0.503982  0.787673 5.010836e-05       True 1.202601e-04
+ increased_vs_decreased   all_biotypes expression_deciles z_SREBP2_CholDep  1316    527    0.793701  0.653262  0.964332 2.004373e-02       True 2.672497e-02
+ increased_vs_decreased   all_biotypes  expression_spline        z_H3K27ac  1316    527    0.647547  0.519153  0.807695 1.161593e-04       True 2.144479e-04
+ increased_vs_decreased   all_biotypes  expression_spline z_SREBP2_CholDep  1316    527    0.781734  0.643095  0.950262 1.342992e-02       True 2.032484e-02
+ increased_vs_decreased protein_coding expression_deciles        z_H3K27ac   954    329    1.011054  0.748736  1.365274 9.428147e-01       True 9.428147e-01
+ increased_vs_decreased protein_coding expression_deciles z_SREBP2_CholDep   954    329    0.727799  0.564953  0.937584 1.394469e-02       True 2.032484e-02
+ increased_vs_decreased protein_coding  expression_spline        z_H3K27ac   954    329    1.021643  0.759454  1.374348 8.874682e-01       True 9.260538e-01
+ increased_vs_decreased protein_coding  expression_spline z_SREBP2_CholDep   954    329    0.734151  0.573182  0.940324 1.439676e-02       True 2.032484e-02
+
+========== STRATA COUNTS ==========
+             comparison     population  expression_decile    n  cases  controls  median_baseMean
+decreased_vs_background   all_biotypes                  1 1639     74      1565         8.404374
+decreased_vs_background   all_biotypes                  2 1609     90      1519        15.108531
+decreased_vs_background   all_biotypes                  3 1577    107      1470        30.916401
+decreased_vs_background   all_biotypes                  4 1616    130      1486        78.457735
+decreased_vs_background   all_biotypes                  5 1661     90      1571       211.792528
+decreased_vs_background   all_biotypes                  6 1670     74      1596       431.382937
+decreased_vs_background   all_biotypes                  7 1699     66      1633       729.727314
+decreased_vs_background   all_biotypes                  8 1691     53      1638      1179.042256
+decreased_vs_background   all_biotypes                  9 1705     59      1646      1946.079548
+decreased_vs_background   all_biotypes                 10 1703     46      1657      4449.335641
+decreased_vs_background protein_coding                  1  415     38       377         8.554409
+decreased_vs_background protein_coding                  2  502     44       458        15.417090
+decreased_vs_background protein_coding                  3  625     59       566        31.808049
+decreased_vs_background protein_coding                  4  963    109       854        82.128810
+decreased_vs_background protein_coding                  5 1360     83      1277       216.211727
+decreased_vs_background protein_coding                  6 1568     73      1495       433.346909
+decreased_vs_background protein_coding                  7 1665     63      1602       731.948433
+decreased_vs_background protein_coding                  8 1665     52      1613      1179.008931
+decreased_vs_background protein_coding                  9 1689     58      1631      1947.232600
+decreased_vs_background protein_coding                 10 1684     46      1638      4455.210344
+increased_vs_background   all_biotypes                  1 1636     71      1565         8.369003
+increased_vs_background   all_biotypes                  2 1620    101      1519        15.078138
+increased_vs_background   all_biotypes                  3 1602    132      1470        30.986729
+increased_vs_background   all_biotypes                  4 1580     94      1486        78.285704
+increased_vs_background   all_biotypes                  5 1620     49      1571       212.124046
+increased_vs_background   all_biotypes                  6 1635     39      1596       431.093390
+increased_vs_background   all_biotypes                  7 1644     11      1633       730.690902
+increased_vs_background   all_biotypes                  8 1656     18      1638      1179.010973
+increased_vs_background   all_biotypes                  9 1651      5      1646      1948.341120
+increased_vs_background   all_biotypes                 10 1664      7      1657      4434.503858
+increased_vs_background protein_coding                  1  404     27       377         8.448075
+increased_vs_background protein_coding                  2  504     46       458        15.304879
+increased_vs_background protein_coding                  3  636     70       566        31.700595
+increased_vs_background protein_coding                  4  928     74       854        81.937945
+increased_vs_background protein_coding                  5 1323     46      1277       216.863058
+increased_vs_background protein_coding                  6 1527     32      1495       433.297834
+increased_vs_background protein_coding                  7 1613     11      1602       732.379366
+increased_vs_background protein_coding                  8 1626     13      1613      1177.028732
+increased_vs_background protein_coding                  9 1635      4      1631      1948.630484
+increased_vs_background protein_coding                 10 1644      6      1638      4440.950513
+ increased_vs_decreased   all_biotypes                  1  145     71        74         8.111858
+ increased_vs_decreased   all_biotypes                  2  191    101        90        16.132067
+ increased_vs_decreased   all_biotypes                  3  239    132       107        30.512585
+ increased_vs_decreased   all_biotypes                  4  224     94       130        78.188448
+ increased_vs_decreased   all_biotypes                  5  139     49        90       184.488935
+ increased_vs_decreased   all_biotypes                  6  113     39        74       421.506282
+ increased_vs_decreased   all_biotypes                  7   77     11        66       724.215762
+ increased_vs_decreased   all_biotypes                  8   71     18        53      1177.145419
+ increased_vs_decreased   all_biotypes                  9   64      5        59      1858.545129
+ increased_vs_decreased   all_biotypes                 10   53      7        46      4409.025180
+ increased_vs_decreased protein_coding                  1   65     27        38         8.274917
+ increased_vs_decreased protein_coding                  2   90     46        44        15.872633
+ increased_vs_decreased protein_coding                  3  129     70        59        33.386226
+ increased_vs_decreased protein_coding                  4  183     74       109        78.800327
+ increased_vs_decreased protein_coding                  5  129     46        83       187.026558
+ increased_vs_decreased protein_coding                  6  105     32        73       434.240029
+ increased_vs_decreased protein_coding                  7   74     11        63       723.690881
+ increased_vs_decreased protein_coding                  8   65     13        52      1134.151366
+ increased_vs_decreased protein_coding                  9   62      4        58      1829.747121
+ increased_vs_decreased protein_coding                 10   52      6        46      4332.575338
+
+PHASE 12K COMPLETE
