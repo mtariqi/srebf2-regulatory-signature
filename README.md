@@ -361,6 +361,30 @@ and
 
 ---
 
+### Phase 11 — Expression Interaction and Direction-Specific Enrichment (Completed)
+
+Phase 11 tested expression-dependent effect modification and
+direction-specific H3K27ac enrichment across 17,097 genes.
+
+**Key findings:**
+
+- No significant signature-by-expression-quartile interaction
+  was detected across the three overlap categories.
+- Both increased-in-KO and decreased-in-KO signature genes
+  exhibited significant adjusted enrichment relative to
+  non-signature genes.
+- Direct increased-versus-decreased comparisons were not
+  statistically significant after BH correction.
+
+These results do not establish equivalence between signature
+directions, direct SREBP2 binding, or causal regulation.
+
+**Documentation:** [Phase 11 report](reports/phase11/PHASE11_INTERACTION_DIRECTION.md)
+
+**Results:** [Phase 11 public results](results_public/cut_and_tag/phase11/)
+
+---
+
 ### Phase 10 — H3K27ac Sensitivity Analysis (Completed)
 
 Phase 10 evaluated the robustness of H3K27ac enrichment
