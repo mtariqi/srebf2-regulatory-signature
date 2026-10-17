@@ -45,3 +45,6 @@ __pycache__/
 /data/raw/cut_and_tag/
 /results/cut_and_tag/
 /logs/cut_and_tag/
+
+# Phase 12 large GEO bigWig files
+data/processed/phase12/bigwig/

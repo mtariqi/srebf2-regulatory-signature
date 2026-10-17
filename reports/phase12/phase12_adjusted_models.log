@@ -1,0 +1,28 @@
+========== PRIMARY MODELS ==========
+Analysis genes: 17097
+Signature genes: 1316
+M1_H3K27ac: converged=True
+M2_SREBP2_FBS: converged=True
+M3_SREBP2_CholDep: converged=True
+M4_H3K27ac_FBS: converged=True
+M5_H3K27ac_CholDep: converged=True
+
+========== DIRECTION-SPECIFIC MODELS ==========
+Observed direction labels:
+direction
+decreased_in_KO    789
+increased_in_KO    527
+Name: count, dtype: int64
+Unique signature directions: ['increased_in_KO', 'decreased_in_KO']
+
+========== ADJUSTED RESULTS ==========
+             model        predictor     n  odds_ratio  ci_lower  ci_upper      p_value         aic       fdr_bh
+        M1_H3K27ac        z_H3K27ac 17097    0.911536  0.850556  0.976888 8.745207e-03 8891.692821 1.530411e-02
+     M2_SREBP2_FBS     z_SREBP2_FBS 17097    0.960059  0.902028  1.021823 2.000807e-01 8897.082433 2.334275e-01
+ M3_SREBP2_CholDep z_SREBP2_CholDep 17097    1.219086  1.158011  1.283381 4.209225e-14 8849.379137 9.821525e-14
+    M4_H3K27ac_FBS        z_H3K27ac 17097    0.906260  0.833901  0.984897 2.042732e-02 8893.632004 2.859825e-02
+    M4_H3K27ac_FBS     z_SREBP2_FBS 17097    1.009511  0.936405  1.088324 8.050657e-01 8893.632004 8.050657e-01
+M5_H3K27ac_CholDep        z_H3K27ac 17097    0.694382  0.636480  0.757551 2.205761e-16 8779.219970 7.720165e-16
+M5_H3K27ac_CholDep z_SREBP2_CholDep 17097    1.440020  1.353376  1.532211 1.077563e-30 8779.219970 7.542939e-30
+
+Saved: results/phase12/PHASE12_ADJUSTED_MODELS.tsv

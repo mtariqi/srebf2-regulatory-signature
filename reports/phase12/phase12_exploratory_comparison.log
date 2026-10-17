@@ -1,0 +1,14 @@
+
+PHASE 12G — EXPLORATORY SIGNAL COMPARISONS
+Genes analyzed: 17097
+Signature genes: 1316
+Non-signature genes: 15781
+
+                      signal  n_signature  n_background  median_signature  median_background  median_difference  rank_biserial      p_value       fdr_bh
+       mean_promoter_H3K27ac         1316         15781          0.174969           0.428510          -0.253541      -0.195875 2.935785e-32 1.467892e-31
+       mean_genebody_H3K27ac         1316         15781          0.084821           0.093262          -0.008441      -0.044208 7.617108e-03 9.521385e-03
+    mean_promoter_SREBP2_FBS         1316         15781          0.073158           0.082460          -0.009302      -0.131897 1.691553e-15 4.228882e-15
+mean_promoter_SREBP2_CholDep         1316         15781          0.084774           0.099953          -0.015179      -0.114735 4.327141e-12 7.211901e-12
+ mean_promoter_Input_CholDep         1316         15781          0.071626           0.072091          -0.000466       0.017457 2.919850e-01 2.919850e-01
+
+Saved: results/phase12/PHASE12_EXPLORATORY_COMPARISONS.tsv

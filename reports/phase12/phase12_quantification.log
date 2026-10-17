@@ -1,0 +1,27 @@
+Processed 2,000/17,158 genes
+Processed 4,000/17,158 genes
+Processed 6,000/17,158 genes
+Processed 8,000/17,158 genes
+Processed 10,000/17,158 genes
+Processed 12,000/17,158 genes
+Processed 14,000/17,158 genes
+Processed 16,000/17,158 genes
+
+PHASE 12E — HELA REGULATORY SIGNAL QUANTIFICATION
+Background rows: 17158
+Output rows: 17158
+Exact annotation matches: 17097
+Unmatched annotation rows: 61
+Promoter radius: 2000 bp
+Promoter coordinates: BED zero-based, half-open
+Signal means: defined bases only; exact bigWig summaries
+
+SIGNAL COMPLETENESS
+mean_promoter_Input_CholDep: 17097 nonmissing; 61 missing
+mean_promoter_H3K27ac: 17097 nonmissing; 61 missing
+mean_promoter_SREBP2_FBS: 17097 nonmissing; 61 missing
+mean_promoter_SREBP2_CholDep: 17097 nonmissing; 61 missing
+mean_genebody_H3K27ac: 17097 nonmissing; 61 missing
+
+Saved: results/phase12/SREBF2_HELA_REGULATORY_SIGNAL.tsv
+Saved: reports/phase12/phase12_signal_quantification_qc.txt
