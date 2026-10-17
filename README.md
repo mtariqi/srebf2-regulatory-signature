@@ -345,7 +345,7 @@ HepG2 chromatin dataset than non-signature RNA-seq genes.
 
 This does not demonstrate direct SREBP2 binding, SREBF2-dependent
 histone acetylation, or causal transcriptional regulation.
-Gene-length, expression, and biotype-adjusted analyses are pending.
+Phase 9 multivariable logistic regression confirmed that the association persisted after adjustment for gene length, baseline RNA-seq expression, and gene biotype.
 
 The completed computational analysis of public H3K27ac CUT&Tag
 data is distinct from the proposed future SREBP2-specific CUT&Tag
@@ -358,6 +358,33 @@ experiments described above.
 [Background enrichment](results_public/cut_and_tag/phase7_8/SREBF2_H3K27ac_BACKGROUND_ENRICHMENT.tsv)
 and
 [direction-specific Fisher tests](results_public/cut_and_tag/phase7_8/SREBF2_H3K27ac_Fisher_results.tsv).
+
+---
+
+### Phase 9 — Adjusted H3K27ac Enrichment (Completed)
+
+Multivariable logistic regression evaluated H3K27ac peak overlap
+among 17,097 annotation-matched genes, including 1,316 SREBF2
+signature genes.
+
+The models adjusted for log10 gene length, log10(baseMean + 1),
+and gene biotype.
+
+| Overlap | Adjusted OR | 95% CI | BH FDR |
+|---|---:|---|---:|
+| Promoter | 1.938 | 1.492–2.516 | 6.898e-07 |
+| Gene body | 1.926 | 1.580–2.347 | 1.293e-10 |
+| Any overlap | 1.971 | 1.629–2.385 | 9.329e-12 |
+
+All three models converged.
+
+These results demonstrate an adjusted statistical association,
+not direct SREBP2 binding or causal regulatory activity.
+Residual confounding and cross-cell-line differences remain.
+
+**Documentation:** [Phase 9 adjusted enrichment report](reports/phase9/PHASE9_ADJUSTED_ENRICHMENT.md)
+
+**Results:** [Adjusted enrichment TSV](results_public/cut_and_tag/phase9/SREBF2_H3K27ac_ADJUSTED_ENRICHMENT.tsv)
 
 ---
 
