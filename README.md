@@ -361,6 +361,43 @@ and
 
 ---
 
+### Phase 10 — H3K27ac Sensitivity Analysis (Completed)
+
+Phase 10 evaluated the robustness of H3K27ac enrichment
+associated with the frozen SREBF2 transcriptional signature.
+
+Three sensitivity-analysis families were implemented:
+
+- Protein-coding-only models (12,465 genes).
+- Expression-quartile-stratified models.
+- Flexible gene-length models using natural cubic splines.
+
+**Key results**
+
+| Analysis | Promoter OR | Gene-body OR | Any-overlap OR |
+|---|---:|---:|---:|
+| Protein-coding only | 1.740 | 1.846 | 1.815 |
+| Flexible gene-length adjustment | 1.860 | 1.919 | 1.958 |
+
+All 18 logistic regression models converged. Fifteen of
+18 exploratory tests passed BH FDR < 0.05.
+
+Expression-stratified results were significant in Q1–Q3,
+but not in Q4. This does not establish a statistically
+significant difference between expression strata;
+formal interaction testing remains necessary.
+
+**Scientific limitation:** The transcriptional signature
+originated from HeLa SREBF2 perturbation RNA-seq, whereas
+H3K27ac CUT&Tag originated from HepG2 cells. These findings
+do not establish direct SREBP2 binding or causality.
+
+**Documentation:** [Phase 10 report](reports/phase10/PHASE10_SENSITIVITY_ANALYSIS.md)
+
+**Results:** [Phase 10 sensitivity TSV](results_public/cut_and_tag/phase10/SREBF2_H3K27ac_PHASE10_SENSITIVITY.tsv)
+
+---
+
 ### Phase 9 — Adjusted H3K27ac Enrichment (Completed)
 
 Multivariable logistic regression evaluated H3K27ac peak overlap
