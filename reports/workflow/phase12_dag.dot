@@ -1,0 +1,18 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+	0[label = "all", color = "0.10 0.6 0.85", style="rounded,dashed"];
+	1[label = "phase12_signal_qc", color = "0.48 0.6 0.85", style="rounded,dashed"];
+	2[label = "phase12_exploratory", color = "0.38 0.6 0.85", style="rounded,dashed"];
+	3[label = "phase12_adjusted", color = "0.19 0.6 0.85", style="rounded,dashed"];
+	4[label = "phase12_direction", color = "0.57 0.6 0.85", style="rounded,dashed"];
+	5[label = "phase12_robustness", color = "0.00 0.6 0.85", style="rounded,dashed"];
+	6[label = "phase12_expression_stratified", color = "0.29 0.6 0.85", style="rounded,dashed"];
+	1 -> 0
+	2 -> 0
+	3 -> 0
+	4 -> 0
+	5 -> 0
+	6 -> 0
+}            
