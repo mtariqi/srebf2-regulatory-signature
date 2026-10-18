@@ -1,0 +1,3 @@
+file	structure_identical	numerically_equivalent	maximum_absolute_difference	rtol	atol
+PHASE12_ROBUSTNESS_MODELS.tsv	True	True	0.0	1e-08	1e-10
+PHASE12_VIF.tsv	True	True	8.881784197001252e-16	1e-08	1e-10

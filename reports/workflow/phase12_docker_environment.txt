@@ -1,0 +1,21 @@
+SREBF2 Phase 12 Docker Validation
+Date: 2026-10-17T21:48:54-04:00
+Git commit: ead9c91
+Docker image: srebf2-phase12:0.1
+Image ID: sha256:5c94500f8b198cd0b734ed9cb1ef8081c9af0103b658230cd9898308cf8a1124
+
+Container package versions:
+formulaic==1.2.2
+interface_meta==2.0.1
+narwhals==2.27.1
+numpy==2.5.4
+packaging==26.3
+pandas==3.0.6
+patsy==1.0.3
+pyBigWig==0.3.26
+python-dateutil==2.9.0.post0
+scipy==1.18.1
+six==1.17.0
+statsmodels==0.15.0
+typing_extensions==4.16.0
+wrapt==2.5.1

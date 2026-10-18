@@ -56,3 +56,12 @@ data/processed/phase12/bigwig/
 /.snakemake/
 
 # Local research backups
+
+# Container images and local validation workspaces
+/containers/images/
+/docker_validation/
+/singularity_validation/
+
+# Local Apptainer/Singularity caches
+/.apptainer/
+/.singularity/
