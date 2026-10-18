@@ -48,3 +48,11 @@ __pycache__/
 
 # Phase 12 large GEO bigWig files
 data/processed/phase12/bigwig/
+
+# Local research backups
+/backups/
+
+# Snakemake local execution metadata
+/.snakemake/
+
+# Local research backups

@@ -1,0 +1,16 @@
+SREBF2 Phase 12 Reproducibility Summary
+Date: 2026-10-17T19:58:59-04:00
+Snakemake: 7.32.4
+Python: Python 3.14.4
+Git commit: 2c9e6f9
+
+Exact SHA-256 agreement: 6 of 8 TSV files
+Numerical equivalence: 2 additional TSV files
+Tolerance: rtol=1e-8, atol=1e-10
+
+Maximum observed absolute discrepancy: 8.88e-16
+
+Conclusion:
+All eight Phase 12 TSV outputs reproduce exactly
+or are numerically equivalent in the current environment.
+Cross-environment portability remains untested.

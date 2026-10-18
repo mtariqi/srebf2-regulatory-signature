@@ -1,0 +1,15 @@
+SREBF2 Phase 12 Snakemake Reproducibility Verification
+Date: 2026-10-17T19:56:48-04:00
+Snakemake: 7.32.4
+Python: Python 3.14.4
+Git commit: 2c9e6f9
+
+SHA-256 verification:
+results/phase12/PHASE12_ADJUSTED_MODELS.tsv: OK
+results/phase12/PHASE12_DIRECTION_MODELS.tsv: OK
+results/phase12/PHASE12_EXPLORATORY_COMPARISONS.tsv: OK
+results/phase12/PHASE12_EXPRESSION_STRATA_COUNTS.tsv: OK
+results/phase12/PHASE12_EXPRESSION_STRATIFIED_MODELS.tsv: FAILED
+results/phase12/PHASE12_ROBUSTNESS_MODELS.tsv: OK
+results/phase12/PHASE12_VIF.tsv: FAILED
+results/phase12/SREBF2_HELA_REGULATORY_SIGNAL.tsv: OK
