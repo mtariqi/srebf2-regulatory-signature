@@ -1,0 +1,26 @@
+=== SREBF2 Phase 12 Singularity Validation ===
+Date: 2026-10-17T22:07:32-04:00
+Git commit: ead9c91
+singularity-ce version 4.1.5
+7403810b0d826153c8e60ae606a8bd0b37faa668f34889221b9518a86a4ac7ec  /home/mtariq/srebf2-regulatory-signature/containers/images/srebf2-phase12_0.1.sif
+=== Preparing isolated workspace ===
+=== Checking input integrity ===
+Input matrix: IDENTICAL
+=== Checking scientific dependencies ===
+numpy: 2.5.4
+pandas: 3.0.6
+scipy: 1.18.1
+statsmodels: 0.15.0
+patsy: 1.0.3
+pyBigWig: 0.3.26
+Scientific imports: PASS
+=== Running Phase 12 robustness analysis ===
+=== Comparing statistical outputs ===
+                         file  structure_identical  numerically_equivalent  maximum_absolute_difference         rtol         atol
+PHASE12_ROBUSTNESS_MODELS.tsv                 True                    True                 0.000000e+00 1.000000e-08 1.000000e-10
+              PHASE12_VIF.tsv                 True                    True                 8.881784e-16 1.000000e-08 1.000000e-10
+
+Saved: /home/mtariq/srebf2-regulatory-signature/reports/workflow/phase12_singularity_reproducibility.tsv
+
+Singularity reproducibility: PASS
+=== PHASE 12 SINGULARITY VALIDATION: PASS ===
