@@ -8,12 +8,16 @@
 ![Proteomics](https://img.shields.io/badge/Proteomics-Proposed-888888)
 ![Lipidomics](https://img.shields.io/badge/Lipidomics-Proposed-888888)
 ![Reference](https://img.shields.io/badge/Annotation-GENCODE%20v47-555555)
-![Status](https://img.shields.io/badge/Status-Manuscript%20preparation-008080)
+![Status](https://img.shields.io/badge/Status-Phase%2012%20validated-008080)
+![Docker](https://img.shields.io/badge/Docker-7%2F7%20outputs-2496ED)
+![Singularity](https://img.shields.io/badge/Singularity%20CE-7%2F7%20outputs-6B4CA0)
+![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
+![CI](https://img.shields.io/badge/GitHub%20Actions-configuration%20fix%20pending-BC4B36)
 
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
-**Research update:** 12 October 2026  
+**Research update:** 17 October 2026  
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.  
-**Current stage:** Computational results consolidated; manuscript preparation and reproducibility audit.
+**Current stage:** Phase 12 statistical modeling completed; seven statistical outputs validated under native Ubuntu, Docker, and Singularity CE on one local Linux workstation. Independent HPC validation, full CI repair, and manuscript preparation remain ongoing.
 
 > **Evidence boundary:** The frozen 1,326-gene signature is **perturbation-derived, not confirmed binding-supported**. Promoter bigWig coverage is descriptive signal, not peak-level proof of SREBP2 occupancy. The 13 oxidative-phosphorylation (OXPHOS) genes are *computational candidates*, not confirmed direct targets. No proteomic, lipidomic, Seahorse, RT-qPCR, or binding-validation experiments have been performed. The signature has **not** been demonstrated to consistently outperform SREBF2 transcript abundance.
 
@@ -449,19 +453,99 @@ Residual confounding and cross-cell-line differences remain.
 
 ---
 
+## Phase 12 — HeLa regulatory-signal modeling and reproducibility (completed locally)
+
+### Phase 12J–12K: Direction-specific promoter-signal associations
+
+Phase 12 combined the **HeLa SREBF2-knockout transcriptional signature** (GSE267018) with HeLa SREBP2 ChIP-seq-derived promoter bigWig signal (GSE282800), H3K27ac/input context (GSE267019), and annotation-based covariates. The Phase 12 analysis universe comprised **17,097 annotation-matched genes**, including **1,316 mapped signature genes** (789 decreased in KO; 527 increased in KO). These mapped counts are distinct from the frozen 1,326-gene discovery signature.
+
+- **Phase 12J, input-adjusted models:** The association between SREBP2 promoter signal under cholesterol depletion and **decreased-in-KO** signature membership persisted after adjustment: odds ratio approximately **1.540** across all biotypes and **1.658** among protein-coding genes. The corresponding increased-in-KO association was not statistically significant in the tested models.
+- **Phase 12K, baseline-expression sensitivity:** Expression-decile and flexible-spline analyses retained the decreased-in-KO association (odds ratios approximately **1.55–1.66**). Increased-in-KO associations remained nonsignificant; increased-versus-decreased comparisons yielded odds ratios approximately **0.73–0.79**.
+- These estimates represent **statistical associations**, not proof of direct SREBP2 binding, differential occupancy, or causal transcriptional regulation. Input-adjusted H3K27ac signal and SREBP2 ChIP-seq tracks have different assay and control considerations; no matched SREBP2 input track was available for every comparison.
+- Phase 9–11 HepG2 H3K27ac CUT&Tag associations are a **separate cross-cell-type evidence layer**, not a matched HeLa perturbation experiment.
+
+**Primary Phase 12 input:** `results/phase12/SREBF2_HELA_REGULATORY_SIGNAL.tsv`  
+**Statistical scripts:** `scripts/phase12/`  
+**Statistical outputs:** `results/phase12/`
+
+### Phase 12 workflow and cross-environment validation
+
+A six-rule Snakemake workflow orchestrates six Phase 12 Python analysis scripts. The statistical input and seven output tables were checked for reproducibility in three local execution environments:
+
+| Execution environment | Statistical tables compared | Result |
+|---|---:|---|
+| Native Ubuntu (reference) | 7 | Validated reference |
+| Docker (`srebf2-phase12:0.1`) | 7/7 | Numerically equivalent |
+| Singularity CE 4.1.5 (`.sif` converted from validated Docker image) | 7/7 | Numerically equivalent |
+
+The comparison checked table dimensions, column names, nonnumeric values, and numerical values with `numpy.allclose(rtol=1e-8, atol=1e-10, equal_nan=True)`. The **largest observed absolute numerical difference was 8.881784 × 10⁻¹⁶**. Input-matrix identity was verified using SHA-256, including:
+
+```text
+4288bc644db29513a4775eb497a76a57c5bafd8dcb9a8ee495a9d09f68728915  SREBF2_HELA_REGULATORY_SIGNAL.tsv
+```
+
+**Singularity image SHA-256:**
+
+```text
+7403810b0d826153c8e60ae606a8bd0b37faa668f34889221b9518a86a4ac7ec  srebf2-phase12_0.1.sif
+```
+
+**Environment provenance:** Python 3.14.8 inside the validated container; NumPy 2.5.4, pandas 3.0.6, SciPy 1.18.1, statsmodels 0.15.0, patsy 1.0.3, and pyBigWig 0.3.26. Host and container Python patch versions differed; recorded package versions and numerical validation provide the relevant evidence, not a claim of byte-for-byte identical environments.
+
+**Reproducibility artifacts:**
+
+- [Root Snakemake workflow](Snakefile) and [workflow documentation](reports/workflow/)
+- [Dockerfile](containers/Dockerfile) and [pinned direct Python requirements](containers/requirements-phase12.txt)
+- [Docker numerical comparison](reports/workflow/phase12_docker_reproducibility.tsv) and [environment capture](reports/workflow/phase12_docker_environment.txt)
+- [Singularity representative validation script](scripts/workflow/validate_singularity_phase12.sh)
+- [Singularity full execution log](reports/workflow/phase12_singularity_full_execution.log) and [seven-output comparison](reports/workflow/phase12_singularity_full_reproducibility.tsv)
+
+The full seven-output Singularity run was executed and documented; **its full rerun procedure has not yet been consolidated into a dedicated, version-controlled one-command script**. Image archives and local validation workspaces are intentionally Git-ignored. The Docker build context is `containers/` to avoid copying large raw sequencing data into the image build.
+
+#### Reproduce the statistical workflow (requires local Phase 12 input)
+
+```bash
+# From repository root, after obtaining the validated Phase 12 input:
+snakemake --cores 1 --dry-run
+
+# Build the container without using the large repository as build context:
+docker build -f containers/Dockerfile -t srebf2-phase12:0.1 containers/
+
+# Inspect recorded results without modifying them:
+cat reports/workflow/phase12_docker_reproducibility.tsv
+cat reports/workflow/phase12_singularity_full_reproducibility.tsv
+```
+
+**Scope of the claim:** The above demonstrates reproducibility of the **precomputed-input Phase 12 statistical stage** across three runtimes **on the same local Ubuntu workstation**. It does **not** establish clean-checkout end-to-end reproduction from raw FASTQ/BAM, independent HPC portability, independent biological replication, or resolution of GitHub Actions checks. The existing Conda GitHub Actions workflow references a missing root `environment.yml`; CI repair is pending and must not be represented as passing.
+
+### Remaining scientific and infrastructure work
+
+1. **Phase 12L:** Direction-aware GO/Reactome/KEGG enrichment for decreased- and increased-in-KO signature subsets, with an explicitly defined tested-gene universe and multiple-testing control. This is distinct from the **already completed HAP1 181-gene reversal enrichment**.
+2. **Epigenomic follow-up:** Complete and quality-check remaining public CUT&Tag pilot samples, replicate concordance, peak calling, and cross-study interpretation as appropriate.
+3. **HPC:** Execute the validated container and statistical workflow on an independent HPC environment.
+4. **CI and reproducibility:** Repair the missing-environment GitHub Actions failure and automate the full seven-output Singularity validation in a committed script.
+5. **Scientific validation:** Seek held-out datasets and, if feasible, properly controlled experimental binding and functional assays.
+
 ## 9. Repository map and reproducibility
 
-The following are documented analysis paths; raw reads, count matrices, and large serialized objects may be excluded from Git. Some supporting binding and validation scripts were still untracked at the latest local audit, so **a committed results file is not, by itself, proof that its entire pipeline can be reproduced from a clean checkout**.
+The following are documented analysis paths; raw reads, count matrices, and large serialized objects may be excluded from Git. Some supporting binding and validation scripts were still untracked at the latest local audit, so **a committed results file is not, by itself, proof that its entire pipeline can be reproduced from a clean checkout**. The precomputed-input Phase 12 statistical stage has separately passed Snakemake and local container reproducibility tests.
 
 ```text
 srebf2-regulatory-signature/
 ├── README.md
+├── Snakefile
+├── containers/
+│   ├── Dockerfile
+│   └── requirements-phase12.txt
+├── reports/workflow/              # reproducibility logs and comparisons
 ├── metadata/
 │   ├── GSE271000_validation_samples.tsv
 │   ├── SREBF2_VALIDATION_SCORING_POLICY_v1.json
 │   └── validation/GSE147770/GSE147770_series_matrix.txt.gz
 ├── protocols/phase6j/README.md
 ├── scripts/
+│   ├── workflow/validate_singularity_phase12.sh
+│   ├── phase12/                    # six statistical analysis scripts
 │   ├── srebf2_differential_expression.R
 │   ├── srebf2_build_signature_v1.py
 │   ├── srebf2_validation_score_v1.py
@@ -474,6 +558,7 @@ srebf2-regulatory-signature/
 │   ├── srebf2_GSE147770_phase6h_binding_audit_v1.py
 │   └── srebf2_GSE147770_phase6i_candidate_prioritization_v1.py
 └── results/
+    ├── phase12/                    # validated input and statistical tables (local)
     ├── de/discovery_v1/
     ├── signature/discovery_v1/
     ├── signature_validation/
@@ -532,7 +617,7 @@ git status --short
 
 ## 10. Research progress and publication plan
 
-| Work package | Status (12 October 2026) | Remaining action |
+| Work package | Status (17 October 2026) | Remaining action |
 |---|---|---|
 | HeLa RNA-seq discovery and sensitivity | Completed | Freeze and cite original sources |
 | 1,326-gene signature | Completed, frozen | Preserve selection audit and hashes |
@@ -541,11 +626,14 @@ git status --short
 | Directional reversal and pathway enrichment | Completed | Check final manuscript counts/denominators |
 | OXPHOS robustness and candidate ranking | Completed | Present as hypothesis-generating |
 | HeLa promoter-signal and matched-null audit | Completed (exploratory) | Avoid direct-binding claims |
-| Public H3K27ac CUT&Tag peak-overlap integration | Completed (exploratory) | Complete confounder-adjusted analysis; no direct SREBP2 occupancy inference |
+| Public H3K27ac CUT&Tag peak-overlap integration | Completed (exploratory) | Interpret adjusted Phase 9–11 analyses with cross-cell-type caveats |
 | Proteomics and lipidomics | Proposed | Public-data feasibility review or methods-only assignment section |
 | Wet-lab RT-qPCR/CUT&RUN/Seahorse | Protocol only | Future funding/collaboration |
 | Manuscript | Preparation | Draft methods, results, figures, limitations |
-| Reproducibility / CI | Partial | Audit supporting scripts, environment and build workflows |
+| Phase 12J–12K regulatory modeling | Completed | Preserve input-adjusted and expression-stratified evidence and limitations |
+| Phase 12 Snakemake statistical workflow | Completed and validated | Document clean-checkout input acquisition |
+| Docker and Singularity local numerical validation | Completed: 7/7 tables each | Automate full Singularity rerun; test independently on HPC |
+| Reproducibility / GitHub Actions CI | Local statistical stage validated; CI failing | Repair missing `environment.yml` reference and verify CI |
 
 ### Suggested manuscript framing
 
@@ -561,7 +649,7 @@ The multi-omics teaching proposal may use the broader title *Integrative Multi-O
 4. **Selection and multiple testing:** the 181 reversal genes and 13 OXPHOS candidates are selected within an analyzed cohort; follow-up ranking is exploratory. Distinguish pathway-adjusted p-values from nominal sensitivity p-values.
 5. **Functional evidence absent:** no measured respiration, SREBP2 protein activity, proteomic abundance, or lipidomic phenotypes in this project.
 6. **Model comparison unresolved:** signature performance has not consistently exceeded SREBF2 RNA expression across independent contexts.
-7. **Reproducibility incomplete:** raw-data acquisition, environment locking, supporting script publication, and CI repair remain to be finalized.
+7. **Reproducibility scope:** Phase 12 precomputed-input statistical results reproduced under native Ubuntu, Docker, and Singularity locally; raw-data acquisition, clean-checkout replay, independent HPC execution, and CI repair remain to be finalized.
 
 The findings are compatible with context-dependent indirect or compensatory mitochondrial responses; **they do not establish SREBP2 as a direct regulator of OXPHOS**.
 
