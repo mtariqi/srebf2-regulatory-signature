@@ -11,8 +11,8 @@
 ![Status](https://img.shields.io/badge/Status-Manuscript%20preparation-008080)
 
 
+<img width="858" height="576" alt="image" src="https://github.com/user-attachments/assets/02df56e9-5c85-4ce4-a604-c9044cd1c410" />
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/35518438-2375-4803-9f8f-fd4561dacebf" />
 
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
 **Research update:** 12 October 2026  
