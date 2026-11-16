@@ -14,7 +14,8 @@
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
 ![CI](https://img.shields.io/badge/GitHub%20Actions-configuration%20fix%20pending-BC4B36)
 
-<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/5cf7d791-e8fe-45b0-9fb2-22e098e8f18a" />
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/114f4443-64dd-4b76-a304-19294155019d" />
+
 
 
 
