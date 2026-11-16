@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_validation_common_support_v3.py
+# Purpose     : GSE271000 Phase 4C: common-support background matching (descriptive)
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """GSE271000 Phase 4C: common-support background matching (descriptive)."""
 from pathlib import Path
 import gzip, hashlib, json

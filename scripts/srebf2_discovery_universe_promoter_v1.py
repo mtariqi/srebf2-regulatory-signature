@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_discovery_universe_promoter_v1.py
+# Purpose     : Extract SREBP2 promoter bigWig signal for the frozen GSE267018 evaluated
+#               universe
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Extract SREBP2 promoter bigWig signal for the frozen GSE267018 evaluated universe.
 Run from the root of srebf2-regulatory-signature with srebf2-binding environment.
 """

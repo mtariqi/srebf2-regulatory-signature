@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/adjusted_h3k27ac_enrichment.R
+# Purpose     : Phase 9: Confounder-adjusted H3K27ac enrichment
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 # Phase 9: Confounder-adjusted H3K27ac enrichment
 # Study: SREBF2 regulatory signature

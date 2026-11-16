@@ -1,3 +1,12 @@
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : Snakefile
+# Purpose     : SREBF2 Regulatory Signature
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # SREBF2 Regulatory Signature
 # Phase 12 reproducibility workflow
 #

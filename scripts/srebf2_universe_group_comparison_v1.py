@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_universe_group_comparison_v1.py
+# Purpose     : Exploratory universe comparisons; use after promoter extraction
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Exploratory universe comparisons; use after promoter extraction."""
 import csv
 from collections import Counter

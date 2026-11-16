@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6c_components_v1.py
+# Purpose     : Phase 6C: read-only decomposition of frozen Phase 6B HAP1 scores
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 6C: read-only decomposition of frozen Phase 6B HAP1 scores.
 
 Run from the repository root. Requires pandas and numpy. Does not re-score genes.

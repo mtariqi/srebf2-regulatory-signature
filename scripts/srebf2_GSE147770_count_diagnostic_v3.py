@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_count_diagnostic_v3.py
+# Purpose     : Read-only count-value diagnostic for GSE147770; never changes source or
+#               previous audits
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Read-only count-value diagnostic for GSE147770; never changes source or previous audits."""
 from pathlib import Path
 import gzip, hashlib, json

@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase12/phase12_expression_stratified.py
+# Purpose     : Phase 12K: expression-decile and nonlinear-expression sensitivity
+#               analyses
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 12K: expression-decile and nonlinear-expression sensitivity analyses.
 
 Run from repository root in the same environment as Phase 12J.

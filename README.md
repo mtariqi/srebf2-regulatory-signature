@@ -16,6 +16,7 @@
 
 <img width="858" height="576" alt="image" src="https://github.com/user-attachments/assets/02df56e9-5c85-4ce4-a604-c9044cd1c410" />
 
+
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
 **Research update:** 17 October 2026  
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.  

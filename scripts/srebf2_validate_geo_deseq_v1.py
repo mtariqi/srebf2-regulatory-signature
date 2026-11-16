@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_validate_geo_deseq_v1.py
+# Purpose     : Frozen SREBF2 signature concordance in GEO GSE271000 processed DESeq2
+#               contrasts
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Frozen SREBF2 signature concordance in GEO GSE271000 processed DESeq2 contrasts."""
 from pathlib import Path
 import gzip, hashlib, json

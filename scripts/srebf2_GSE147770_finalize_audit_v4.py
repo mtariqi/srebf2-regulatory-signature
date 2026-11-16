@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_finalize_audit_v4.py
+# Purpose     : GSE147770 Phase 6A: non-destructive complete-case and signature mapping
+#               audit
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """GSE147770 Phase 6A: non-destructive complete-case and signature mapping audit."""
 import hashlib, json, re
 from pathlib import Path

@@ -1,3 +1,12 @@
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/annotate_srebf2_results.py
+# Purpose     : Run from repository root
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Run from repository root. Standard-library-only, exact GENCODE ID mapping."""
 import csv
 import gzip

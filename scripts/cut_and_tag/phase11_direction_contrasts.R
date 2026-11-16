@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/phase11_direction_contrasts.R
+# Purpose     : Run phase11 direction contrasts analysis
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 input <- "results/cut_and_tag/integration/SREBF2_RNASEQ_H3K27ac_BACKGROUND.tsv"
 bed_file <- "data/processed/cut_and_tag/annotation/gencode_v47_gene_bodies.bed"

@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/test_signature_h3k27ac_overlap.R
+# Purpose     : Run test signature h3k27ac overlap analysis
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 input <- "results/cut_and_tag/integration/SREBF2_SIGNATURE_H3K27ac_INTEGRATED.tsv"
 

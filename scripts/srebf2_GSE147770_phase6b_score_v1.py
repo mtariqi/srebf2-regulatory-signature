@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6b_score_v1.py
+# Purpose     : Phase 6B external HAP1 scoring
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 6B external HAP1 scoring. Frozen gene directions, cohort-adapted mapping/universe.
 Requires pandas/numpy. Never overwrites outputs. Run from repository root.
 """

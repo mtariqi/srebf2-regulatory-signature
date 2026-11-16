@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6g_mitochondrial_robustness_v1.R
+# Purpose     : Phase 6G: mitochondrial leading genes and enrichment robustness
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # Phase 6G: mitochondrial leading genes and enrichment robustness.
 # Requires msigdbr; uses only frozen Phase 6D/6E/6F outputs.
 options(stringsAsFactors=FALSE)
