@@ -14,7 +14,8 @@
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
 ![CI](https://img.shields.io/badge/GitHub%20Actions-configuration%20fix%20pending-BC4B36)
 
-<img width="858" height="576" alt="image" src="https://github.com/user-attachments/assets/02df56e9-5c85-4ce4-a604-c9044cd1c410" />
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/5cf7d791-e8fe-45b0-9fb2-22e098e8f18a" />
+
 
 
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature
