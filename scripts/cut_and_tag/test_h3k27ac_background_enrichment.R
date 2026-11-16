@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/test_h3k27ac_background_enrichment.R
+# Purpose     : Run test h3k27ac background enrichment analysis
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 input <- paste0(
   "results/cut_and_tag/integration/",

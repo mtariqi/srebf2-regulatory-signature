@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase14/phase14a1_model_audit.py
+# Purpose     : Phase 14A.1: numerical audit of frozen Phase 13H models
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 14A.1: numerical audit of frozen Phase 13H models."""
 
 from pathlib import Path

@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase12/quantify_hela_regulatory_signal.py
+# Purpose     : Quantify continuous HeLa ChIP-seq bigWig signals over GENCODE v47 genes
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Quantify continuous HeLa ChIP-seq bigWig signals over GENCODE v47 genes."""
 
 import csv

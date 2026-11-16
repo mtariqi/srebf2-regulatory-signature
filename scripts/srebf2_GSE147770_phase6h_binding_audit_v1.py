@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6h_binding_audit_v1.py
+# Purpose     : Phase 6H: exploratory cross-study promoter-signal audit; run at
+#               repository root
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 6H: exploratory cross-study promoter-signal audit; run at repository root.
 Requires pandas numpy scipy; reads frozen Phase 6G and GSE282800 outputs.
 GSE282800 LPPS is cholesterol depletion, NOT HAP1 -FBS serum starvation.

@@ -1,4 +1,14 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6f_enrichment_v1.R
+# Purpose     : Phase 6F: exploratory overrepresentation of independently frozen SREBF2
+#               reversal genes
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # Phase 6F: exploratory overrepresentation of independently frozen SREBF2 reversal genes.
 # Run from repository root. Requires msigdbr, unless MSIGDB_GMT points to a local GMT.
 options(stringsAsFactors=FALSE)

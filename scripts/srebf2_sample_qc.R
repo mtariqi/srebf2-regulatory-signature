@@ -1,3 +1,13 @@
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_sample_qc.R
+# Purpose     : Run from repository root with Rscript --vanilla
+#               scripts/srebf2_sample_qc.R
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # Run from repository root with Rscript --vanilla scripts/srebf2_sample_qc.R
 prefix <- Sys.getenv('CONDA_PREFIX')
 stopifnot(nzchar(prefix))

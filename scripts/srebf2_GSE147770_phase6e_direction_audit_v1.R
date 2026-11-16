@@ -1,4 +1,14 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6e_direction_audit_v1.R
+# Purpose     : Phase 6E: descriptive directional audit of frozen signature against
+#               DESeq2 interaction
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # Phase 6E: descriptive directional audit of frozen signature against DESeq2 interaction.
 # Input discovery signature, Phase 6A mapping, and Phase 6D DESeq2 tables; no refitting.
 suppressPackageStartupMessages(library(utils))

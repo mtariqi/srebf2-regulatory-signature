@@ -1,3 +1,12 @@
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/validate_pilot_pairs.py
+# Purpose     : Run validate pilot pairs analysis
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 cd ~/srebf2-regulatory-signature
 
 python3 -c '

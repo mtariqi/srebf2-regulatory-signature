@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_promoter_adjusted_v2.py
+# Purpose     : Exploratory adjusted promoter analysis, preserves all frozen v1 files
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Exploratory adjusted promoter analysis, preserves all frozen v1 files.
 Run from repository root: conda run -n srebf2-binding python scripts/srebf2_promoter_adjusted_v2.py
 Requires pandas, numpy, scipy, statsmodels.

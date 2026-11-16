@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase13/phase13f_protein_coding_sensitivity.py
+# Purpose     : Phase 13F: protein-coding-only E117 chromatin-state sensitivity
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 13F: protein-coding-only E117 chromatin-state sensitivity."""
 
 from pathlib import Path

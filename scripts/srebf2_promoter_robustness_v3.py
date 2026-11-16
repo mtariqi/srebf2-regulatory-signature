@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_promoter_robustness_v3.py
+# Purpose     : Sensitivity audit of SREBF2 promoter-signal association; never modifies
+#               v1/v2
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Sensitivity audit of SREBF2 promoter-signal association; never modifies v1/v2."""
 from pathlib import Path
 import hashlib, json

@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase12/phase12_adjusted_models.py
+# Purpose     : Phase 12H: Adjusted HeLa regulatory-signal associations
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 12H: Adjusted HeLa regulatory-signal associations."""
 
 import numpy as np

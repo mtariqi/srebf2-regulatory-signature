@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_validation_score_v1.py
+# Purpose     : Pre-register then score the GSE271000 validation cohort
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Pre-register then score the GSE271000 validation cohort.
 Run from repository root:
   python scripts/srebf2_validation_score_v1.py --freeze-policy

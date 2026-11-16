@@ -1,3 +1,12 @@
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_validation_qc.R
+# Purpose     : Run srebf2 validation qc analysis
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 conda <- Sys.getenv("CONDA_PREFIX")
 stopifnot(nzchar(conda))
 .libPaths(file.path(conda, "lib/R/library"), include.site = FALSE)

@@ -1,4 +1,14 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_GSE147770_phase6d_interaction_v1.R
+# Purpose     : Phase 6D: independent HAP1 SREBF2 KO x serum interaction, reproducible
+#               audit
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 # Phase 6D: independent HAP1 SREBF2 KO x serum interaction, reproducible audit.
 suppressPackageStartupMessages(library(DESeq2))
 options(stringsAsFactors=FALSE)

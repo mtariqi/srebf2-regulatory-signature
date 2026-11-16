@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase13/annotate_e117_tss.py
+# Purpose     : Annotate frozen SREBF2 gene universe with Roadmap E117 TSS states
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Annotate frozen SREBF2 gene universe with Roadmap E117 TSS states."""
 
 import csv

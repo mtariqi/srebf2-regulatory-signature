@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/process_remaining_srebf2.py
+# Purpose     : Run from the project root in the srebf2-rnaseq environment
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Run from the project root in the srebf2-rnaseq environment.
 Real-data pipeline; one sample at a time. Incomplete work is not silently reused.
 """

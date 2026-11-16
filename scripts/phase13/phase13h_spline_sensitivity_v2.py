@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase13/phase13h_spline_sensitivity_v2.py
+# Purpose     : Phase 13H: flexible covariate adjustment for E117 state enrichment
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 13H: flexible covariate adjustment for E117 state enrichment."""
 
 from pathlib import Path

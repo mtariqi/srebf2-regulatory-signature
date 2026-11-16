@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/phase11_interaction_direction.R
+# Purpose     : Phase 11: Expression interaction and direction-specific
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 # Phase 11: Expression interaction and direction-specific
 # H3K27ac enrichment in the SREBF2 signature.

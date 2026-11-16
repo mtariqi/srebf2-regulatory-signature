@@ -1,4 +1,13 @@
 #!/usr/bin/env Rscript
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/cut_and_tag/phase10_sensitivity_analysis.R
+# Purpose     : Phase 10: SREBF2 / H3K27ac enrichment sensitivity analyses
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 
 # Phase 10: SREBF2 / H3K27ac enrichment sensitivity analyses
 

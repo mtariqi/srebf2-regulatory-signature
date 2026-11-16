@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/srebf2_validation_benchmark_v2.py
+# Purpose     : Phase 5D exploratory benchmark and expression/biotype-matched gene-set
+#               controls
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 5D exploratory benchmark and expression/biotype-matched gene-set controls.
 
 Run from repository root. Read-only inputs; refuses to overwrite outputs.

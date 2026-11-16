@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+# ==============================================================================
+# Project     : Chromatin-state context of SREBF2 knockout-responsive genes in HeLa cells: an exploratory integrative epigenomic analysis
+# File        : scripts/phase14/phase14a2_match_background.py
+# Purpose     : Phase 14A.2: deterministic biotype-exact background matching
+# Author      : Md Tariqul Islam
+# Institution : Northeastern University | Bioinformatics Department
+# License     : MIT (see LICENSE)
+# ==============================================================================
+
 """Phase 14A.2: deterministic biotype-exact background matching.
 
 Greedy nearest-neighbor matching without replacement.
