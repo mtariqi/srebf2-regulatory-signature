@@ -1,6 +1,6 @@
-# Integrative Multi-Omics Investigation of SREBF2 Regulatory Responses
+# SREBF2 Perturbation Transcriptomics and Regulatory Chromatin Context
 
-**A reproducible, public-data-driven study of context-dependent SREBF2/SREBP2 transcriptional regulation, promoter-associated epigenomic signal, and proposed proteomic and lipidomic validation**
+**Reproducible reanalysis of public SREBF2-knockout RNA-seq, independent context-dependent signature validation, and exploratory integration with historical HeLa-S3 ChromHMM states and public epigenomic signals.**
 
 [![Research](https://img.shields.io/badge/Research-SREBF2%20%2F%20SREBP2-2455A4)](https://github.com/mtariqi/srebf2-regulatory-signature)
 ![RNA-seq](https://img.shields.io/badge/Transcriptomics-RNA--seq-1F77B4)
@@ -8,7 +8,7 @@
 ![Proteomics](https://img.shields.io/badge/Proteomics-Proposed-888888)
 ![Lipidomics](https://img.shields.io/badge/Lipidomics-Proposed-888888)
 ![Reference](https://img.shields.io/badge/Annotation-GENCODE%20v47-555555)
-![Status](https://img.shields.io/badge/Status-Phase%2012%20validated-008080)
+![Status](https://img.shields.io/badge/Status-Phase%2015%20analysis-008080)
 ![Docker](https://img.shields.io/badge/Docker-7%2F7%20outputs-2496ED)
 ![Singularity](https://img.shields.io/badge/Singularity%20CE-7%2F7%20outputs-6B4CA0)
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
@@ -17,12 +17,67 @@
 <img width="858" height="576" alt="image" src="https://github.com/user-attachments/assets/02df56e9-5c85-4ce4-a604-c9044cd1c410" />
 
 
-**Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
-**Research update:** 17 October 2026  
-**Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.  
-**Current stage:** Phase 12 statistical modeling completed; seven statistical outputs validated under native Ubuntu, Docker, and Singularity CE on one local Linux workstation. Independent HPC validation, full CI repair, and manuscript preparation remain ongoing.
+**Repository:** https://github.com/mtariqi/srebf2-regulatory-signature
+**Research update:** 16 November 2026
+**Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.
+**Current stage:** Phases 13–14 chromatin-state enrichment and chromosome-exact matched analyses are committed; the Phase 15E enrichment script and Figure 5 membership table are committed. Full Phase 15 enrichment outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
 
 > **Evidence boundary:** The frozen 1,326-gene signature is **perturbation-derived, not confirmed binding-supported**. Promoter bigWig coverage is descriptive signal, not peak-level proof of SREBP2 occupancy. The 13 oxidative-phosphorylation (OXPHOS) genes are *computational candidates*, not confirmed direct targets. No proteomic, lipidomic, Seahorse, RT-qPCR, or binding-validation experiments have been performed. The signature has **not** been demonstrated to consistently outperform SREBF2 transcript abundance.
+
+## Latest research extension (Phases 13–15)
+
+This update **adds** to the original repository's signature-transferability, HAP1 serum-interaction, ChIP-seq promoter-signal, H3K27ac CUT&Tag, and Phase 12 reproducibility studies. All historical sections, links, and the existing workflow infographic are retained below.
+
+### Research question and contribution
+
+The published HeLa SREBF2-knockout dataset **[GSE267018](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267018)** was reanalyzed to quantify established cholesterol-biosynthetic transcriptional responses and identify a 12-gene sterol leading-edge intersection. The extension asks whether genes responsive to knockout are associated with historical HeLa-S3 **E117 ChromHMM** annotations. This is **secondary computational analysis, not matched WT-versus-KO chromatin profiling**; the cholesterol-response observation is not claimed as a new discovery.
+
+### Methods at a glance
+
+| Analysis | Brief approach | Evidence status |
+|---|---|---|
+| Differential expression | Gene-level DESeq2 estimates from public SREBF2-knockout RNA-seq; distinguish increased and decreased expression in KO; retain defined gene universes. | Completed public-data reanalysis |
+| Functional enrichment (Phase 15) | GO Biological Process, Reactome and KEGG; over-representation analysis plus ranked GSEA using Wald statistics and multiple-testing correction. | Phase 15E analysis completed locally; R script versioned; full result tables not yet all committed |
+| Sterol core | Intersect leading-edge members from GO sterol, Reactome cholesterol and KEGG steroid biosynthesis; summarize membership across five selected pathway definitions. | Validated 12-gene TSV committed |
+| Historical ChromHMM (Phase 13) | Annotate gene transcription start sites using the E117 HeLa-S3 reference; test reference-state enrichment with Fisher tests and covariate-adjusted logistic models. | Scripts and result tables versioned |
+| Matched sensitivity (Phase 14) | Match signature and background genes on chromosome and selected gene characteristics; compare state prevalence using matched-pair analyses and BH correction. | Phase 14A6 result table and pairing data versioned |
+| Earlier independent contexts | HepG2 shRNA, HAP1 genotype × serum interactions and public epigenomic signal / H3K27ac CUT&Tag comparisons. | Retained in original sections below |
+
+### Key updated results
+
+- **Cholesterol-pathway reanalysis:** the 12-gene shared sterol core comprises `CYP51A1`, `DHCR24`, `DHCR7`, `EBP`, `FDFT1`, `HSD17B7`, `LSS`, `MSMO1`, `NSDHL`, `SC5D`, `SQLE`, and `TM7SF2`. These genes are decreased in KO in the analyzed primary comparison; this recovers and synthesizes previously established cholesterol biology.
+- **Phase 13, covariate-adjusted reference-state association:** increased-in-KO genes showed association with `15_Quies` versus background (adjusted OR **1.821**, 95% CI **1.486–2.232**, BH FDR **1.36 × 10⁻⁷**). This is not evidence of chromatin opening or state transition.
+- **Phase 14A6, chromosome-exact matched association:** increased-in-KO genes had higher historical `15_Quies` prevalence than matched background genes (**425 matched pairs; OR 1.927**, 95% CI **1.379–2.720**; exact *p* = **7.15 × 10⁻⁵**, BH FDR **1.43 × 10⁻⁴**).
+- **Specificity / caution:** the decreased-in-KO weak-Polycomb `14_ReprPCWk` association was **not significant** after matching (**677 pairs; OR 1.25**, 95% CI **0.667–2.373**, BH FDR **0.551**).
+- These sensitivity analyses strengthen a **reference-state association**, but do **not** provide independent biological replication, SREBP2 occupancy evidence, or an experimentally tested adaptive-response mechanism.
+
+### Recent figures and directly inspectable data
+
+**Figure — Matched chromatin-state enrichment (Phase 14A6).** Estimates and 95% intervals derive from the [committed matched-enrichment table](results/phase14/SREBF2_PHASE14A6_CHROMOSOME_EXACT_ENRICHMENT.tsv).
+
+![Phase 14A6 chromosome-exact matched odds ratios](results/phase14/figures/SREBF2_Phase14A6_Matched_OR_Forest.png)
+
+**Figure 5 — Sterol-core leading-edge membership.** Dark marks denote leading-edge membership in five *overlapping* GO, Reactome and KEGG definitions. Upper and side bars are counts **within the 12-gene subset**, not total leading-edge pathway sizes.
+
+![Figure 5: 12-gene sterol-core leading-edge membership](results/phase15/figures/SREBF2_Figure5_LeadingEdge_Membership.png)
+
+[Figure 5 validated TSV](results/phase15/figures/SREBF2_Figure5_Membership_Source.tsv) · [Phase 13 reference-state enrichment](results/phase13/SREBF2_E117_ADJUSTED_ENRICHMENT.tsv) · [Phase 14 matched-pair results](results/phase14/SREBF2_PHASE14A6_CHROMOSOME_EXACT_ENRICHMENT.tsv) · [Phase 15E R analysis](scripts/phase15/phase15e_enrichment.R) · [Reproducible figure script](scripts/phase15/phase15i_readme_figures.py)
+
+**Additional legacy figure and resources:** [13-gene OXPHOS heatmap (PDF)](results/validation/GSE147770/mitochondrial_robustness_v1/OXPHOS_13_LFC_HEATMAP_v1.pdf), existing workflow infographic (above), and all previous reports, tables, and protocols retained below.
+
+**Reproduce the two new figures** from the versioned TSVs (requires Python, pandas, NumPy and Matplotlib):
+
+```bash
+python3 scripts/phase15/phase15i_readme_figures.py --root .
+```
+
+> **Interpretation boundary:** E117 is a historical HeLa-S3 reference annotation, not a chromatin profile measured in the GSE267018 knockout experiment. Public HepG2 H3K27ac CUT&Tag comparisons likewise come from a different cellular context. GO/Reactome/KEGG definitions are overlapping, not independent biological validations. Proteomics, lipidomics, ATAC-seq and new SREBP2-specific CUT&Tag experiments remain proposed.
+
+---
+
+### Historical research documentation (Phases 1–12 and prior methods)
+
+The sections below preserve the original research narrative, figures, links, statistical results, limitations, and proposed multi-omics methods. Historical progress statements dated October 2026 describe their status **at that time**; the Phase 13–15 extension above provides the more recent summary.
 
 ## Executive summary
 
@@ -467,8 +522,8 @@ Phase 12 combined the **HeLa SREBF2-knockout transcriptional signature** (GSE267
 - These estimates represent **statistical associations**, not proof of direct SREBP2 binding, differential occupancy, or causal transcriptional regulation. Input-adjusted H3K27ac signal and SREBP2 ChIP-seq tracks have different assay and control considerations; no matched SREBP2 input track was available for every comparison.
 - Phase 9–11 HepG2 H3K27ac CUT&Tag associations are a **separate cross-cell-type evidence layer**, not a matched HeLa perturbation experiment.
 
-**Primary Phase 12 input:** `results/phase12/SREBF2_HELA_REGULATORY_SIGNAL.tsv`  
-**Statistical scripts:** `scripts/phase12/`  
+**Primary Phase 12 input:** `results/phase12/SREBF2_HELA_REGULATORY_SIGNAL.tsv`
+**Statistical scripts:** `scripts/phase12/`
 **Statistical outputs:** `results/phase12/`
 
 ### Phase 12 workflow and cross-environment validation
@@ -664,9 +719,9 @@ Future work can proceed through public datasets and computational reproducibilit
 
 ## 13. Attribution, citations, and stewardship
 
-**Graduate Research Student:** Md. Tariqul Islam  
-**Collaborator:** Sarah Daley  
-**Program:** MSc Bioinformatics, Northeastern University  
+**Graduate Research Student:** Md. Tariqul Islam
+**Collaborator:** Sarah Daley
+**Program:** MSc Bioinformatics, Northeastern University
 **Repository:** [mtariqi/srebf2-regulatory-signature](https://github.com/mtariqi/srebf2-regulatory-signature)
 
 ### Suggested repository citation
