@@ -1,0 +1,13 @@
+gene	GO sterol biosynthesis	GO cholesterol biosynthesis	Reactome cholesterol	Reactome SREBF activation	KEGG steroid biosynthesis	number_of_pathways
+CYP51A1	1	1	1	1	1	5
+DHCR7	1	1	1	1	1	5
+FDFT1	1	1	1	1	1	5
+LSS	1	1	1	1	1	5
+SC5D	1	1	1	1	1	5
+TM7SF2	1	1	1	1	1	5
+DHCR24	1	1	1	0	1	4
+EBP	1	1	1	0	1	4
+HSD17B7	1	1	1	0	1	4
+MSMO1	1	1	1	0	1	4
+NSDHL	1	1	1	0	1	4
+SQLE	1	0	1	1	1	4
