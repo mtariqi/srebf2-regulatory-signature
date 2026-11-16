@@ -14,6 +14,9 @@
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
 ![CI](https://img.shields.io/badge/GitHub%20Actions-configuration%20fix%20pending-BC4B36)
 
+<img width="858" height="576" alt="image" src="https://github.com/user-attachments/assets/02df56e9-5c85-4ce4-a604-c9044cd1c410" />
+
+
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature  
 **Research update:** 17 October 2026  
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.  
