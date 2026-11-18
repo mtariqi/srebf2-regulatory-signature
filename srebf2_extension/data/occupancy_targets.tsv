@@ -1,0 +1,6 @@
+gene	GSE282800_HeLa_SREBP2	ENCSR000EZO_HepG2_SREBF2	GSE267019_HeLa_H3K27ac	note
+SQLE	not_tested	not_tested	not_tested	Published article displays SREBP2/H3K27ac browser tracks at SQLE; no peak overlap computed here
+FDFT1	not_tested	not_tested	not_tested	Quantitative peak overlap requires harmonized peaks and hg38 TSS
+CYP51A1	not_tested	not_tested	not_tested	Quantitative peak overlap requires harmonized peaks and hg38 TSS
+DHCR24	not_tested	not_tested	not_tested	Quantitative peak overlap requires harmonized peaks and hg38 TSS
+LSS	not_tested	not_tested	not_tested	Quantitative peak overlap requires harmonized peaks and hg38 TSS

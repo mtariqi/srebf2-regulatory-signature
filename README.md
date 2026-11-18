@@ -20,7 +20,7 @@
 
 
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature
-**Research update:** 16 November 2026
+**Research update:** 18 November 2026
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.
 **Current stage:** Phases 13–14 chromatin-state enrichment and chromosome-exact matched analyses are committed; the Phase 15E enrichment script and Figure 5 membership table are committed. Full Phase 15 enrichment outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
 
@@ -74,6 +74,66 @@ python3 scripts/phase15/phase15i_readme_figures.py --root .
 ```
 
 > **Interpretation boundary:** E117 is a historical HeLa-S3 reference annotation, not a chromatin profile measured in the GSE267018 knockout experiment. Public HepG2 H3K27ac CUT&Tag comparisons likewise come from a different cellular context. GO/Reactome/KEGG definitions are overlapping, not independent biological validations. Proteomics, lipidomics, ATAC-seq and new SREBP2-specific CUT&Tag experiments remain proposed.
+
+---
+
+## New computational extension — HeLa PCA and exploratory STRING GNN (18 November 2026)
+
+This **additive** update documents completed sample-level RNA-seq quality assessment and exploratory network modeling. It preserves the earlier SREBF2 signature, epigenomic, chromatin-state, functional-enrichment, and reproducibility investigations. The new analysis code and figure files live under `srebf2_pca_gnn/` once the accompanying local artifacts have been committed.
+
+### Research figures
+
+| Figure | Scientific question and data | Source |
+|---|---|---|
+| **PCA: all 12 HeLa samples** | Do WT and SREBF2-knockout transcriptomes separate in the original GSE267018 experiment? Library-size-normalized logCPM from the 2,000 most variable expressed genes; PC1 **65.82%**, PC2 **17.98%**. | [PNG](srebf2_pca_gnn/figures/PCA_all12.png) · [SVG](srebf2_pca_gnn/figures/PCA_all12.svg) · [sample scores](srebf2_pca_gnn/figures/PCA_all12_scores.tsv) · [explained variance](srebf2_pca_gnn/figures/PCA_all12_variance.tsv) |
+| **PCA sensitivity: exclude SRR28966285** | Does the exploratory sample configuration persist when the previously flagged sample is removed? Eleven samples; PC1 **68.63%**, PC2 **18.14%**. Exclusion is a sensitivity analysis, **not** the default primary model. | [PNG](srebf2_pca_gnn/figures/PCA_exclude_SRR28966285.png) · [SVG](srebf2_pca_gnn/figures/PCA_exclude_SRR28966285.svg) · [scores](srebf2_pca_gnn/figures/PCA_exclude_SRR28966285_scores.tsv) |
+| **Verified five-gene functional network** | How are FDFT1, SQLE, CYP51A1, NSDHL and DHCR7 associated in STRING? All **10 of 10** gene pairs exceeded a STRING combined-score threshold of **0.700**. | [PNG](srebf2_pca_gnn/figures/STRING_5_gene_verified.png) · [SVG](srebf2_pca_gnn/figures/STRING_5_gene_verified.svg) · [previous source table](srebf2_extension/data/ppi_edges.tsv) |
+| **Exploratory GCN embedding** | How are the 12 sterol-core genes positioned in a GCN representation of an expanded functional STRING network? Network: **82 nodes**, **524 associations**; colored seed nodes use measured HeLa log2FC as a *display overlay*, not a supervised prediction target. | [PNG](srebf2_pca_gnn/figures/GNN_STRING_embedding.png) · [SVG](srebf2_pca_gnn/figures/GNN_STRING_embedding.svg) · [node embeddings](srebf2_pca_gnn/figures/GNN_node_embeddings.tsv) · [2D projection](srebf2_pca_gnn/figures/GNN_embedding_projection.tsv) |
+| **GNN versus topology baseline** | Does the GCN autoencoder reconstruct withheld STRING functional links better than common neighbors? **No** on this single split. | [Exact metrics JSON](srebf2_pca_gnn/figures/GNN_exploratory_metrics.json) |
+
+**Sample-level principal component analysis**
+
+![PCA of 12 HeLa SREBF2 knockout and wild-type samples](srebf2_pca_gnn/figures/PCA_all12.png)
+
+**Exploratory graph convolutional network embedding**
+
+![Exploratory 82-node STRING GCN embedding](srebf2_pca_gnn/figures/GNN_STRING_embedding.png)
+
+### Brief methods
+
+**PCA:** Counts from `results/counts/GSE267018_raw_count_matrix.tsv` were matched to `metadata/GSE267018_analysis_samples.tsv`. Library-size-normalized logCPM values were analyzed using the 2,000 most variable expressed genes. Samples are annotated by genotype and cholesterol-depletion/FBS treatment. The 12-sample analysis is primary; the 11-sample exclusion is exploratory sensitivity analysis. PCA is **not** a differential-expression significance test.
+
+**Network:** The 12-gene leading-edge sterol core seeded a STRING functional-association query for *Homo sapiens* (taxon 9606), with `required_score=700` and `add_nodes=70`. The resulting 82-node, 524-edge network was used for graph convolutional autoencoder link reconstruction. The report uses **393 training edges**, **52 positive and 52 sampled negative validation pairs**, and **79 positive and 79 sampled negative test pairs** with split seed 13 and 160 training epochs. Held-out edges should not enter message passing during evaluation.
+
+### GNN benchmarking — report negative results faithfully
+
+| Split | Metric | GCN autoencoder | Common neighbors |
+|---|---|---:|---:|
+| Validation | ROC–AUC | 0.8439 | **0.9016** |
+| Validation | Average precision | 0.8820 | **0.8958** |
+| Test | ROC–AUC | 0.8638 | **0.9287** |
+| Test | Average precision | 0.8658 | **0.9038** |
+
+The simpler **common-neighbors baseline outperformed the GCN** on both validation and test metrics. Accordingly, this is an exploratory feasibility analysis, **not a demonstrated improvement in biological prediction**. STRING non-edges are not verified noninteractions; the same source network supplied association structure and reconstruction targets; the 12 biologically related seed genes were selected in advance; only one split was evaluated. GCN embedding proximity does not establish direct SREBP2 binding, protein physical interaction, causal transcriptional control, or independent experimental validation.
+
+### Reproducible analyses and provenance
+
+```bash
+# Activate your existing, persistent project environment:
+source .venv-srebf2-validation/bin/activate
+
+python srebf2_pca_gnn/scripts/01_pca_samples.py \
+  --counts results/counts/GSE267018_raw_count_matrix.tsv \
+  --metadata metadata/GSE267018_analysis_samples.tsv \
+  --out srebf2_pca_gnn/figures
+
+python srebf2_pca_gnn/scripts/02_fetch_string_expanded.py --add-nodes 70 --score 700
+python srebf2_pca_gnn/scripts/03_gnn_string_autoencoder.py
+```
+
+[STRING retrieval provenance](srebf2_pca_gnn/data/string_expanded_provenance.json) · [Expanded STRING edges](srebf2_pca_gnn/data/string_expanded_edges.tsv) · [GNN exploratory metrics](srebf2_pca_gnn/figures/GNN_exploratory_metrics.json) · [Analysis methods and caption text](srebf2_pca_gnn/MANUSCRIPT_METHODS_CAPTIONS.md).
+
+**Repository synchronization note:** If a newly linked file is temporarily absent on GitHub, the local PCA/GNN artifacts still require their separate commit and push. The README must not be interpreted as proof that any uncommitted data have been deposited.
 
 ---
 

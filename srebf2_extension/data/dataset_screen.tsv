@@ -1,0 +1,12 @@
+accession	assay	context	comparison	utility	status	url
+GSE267018	RNA-seq	HeLa WT/SREBF2 KO FBS and cholesterol depletion	Primary discovery	Primary dataset	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267018
+GSE271000	RNA-seq	HepG2 SREBF2 shRNA vs shControl	External SREBF2 perturbation	High priority conditional on original contrasts	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271000
+GSE147770	RNA-seq	HAP1 WT/SREBF2 KO with or without FBS	Independent SREBF2 knockout	High priority but starvation is not cholesterol depletion	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE147770
+GSE113546	RNA-seq	Human iPSC cardiomyocytes with four statins vs vehicle	Drug perturbation benchmark	Mechanistic comparator not SREBF2 knockout replication	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113546
+GSE196187	RNA-seq	Macrophages with cholesterol reduction MCD or statin and LPS	Cholesterol perturbation comparator	Inflammation and cell-type confounding	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196187
+GSE221582	Expression microarray	HepG2 CYP51A1/DHCR24/SC5D/HSD17B7 KO	Sterol-pathway enzyme knockout comparator	Not SREBF2 KO and different platform	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221582
+GSE327534	RNA-seq	Mouse Leydig MA-10 Srebf2 ablation	Cross-species knockout comparator	Published recently species and lineage differ	confirmed_secondary_index	https://www.omicsdi.org/dataset/geo/GSE327534
+GSE282800	SREBP2 ChIP-seq	HeLa FBS vs cholesterol depletion	Primary occupancy evidence	Peak-level overlap not yet computed	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282800
+GSE267019	H3K27ac ChIP-seq	HeLa cholesterol depletion	Context chromatin mark	Not SREBP2-specific occupancy	confirmed	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267019
+ENCSR000EZO	SREBF2 ChIP-seq	HepG2 pravastatin 2uM for 16h	External TF binding evidence	HepG2 context and legacy genome assembly must be checked	confirmed	https://www.encodeproject.org/experiments/ENCSR000EZO/
+ENCSR000EZR	Control ChIP-seq	HepG2 pravastatin	Matched ENCODE control	Use with ENCSR000EZO after QC	confirmed	https://www.encodeproject.org/experiments/ENCSR000EZR/

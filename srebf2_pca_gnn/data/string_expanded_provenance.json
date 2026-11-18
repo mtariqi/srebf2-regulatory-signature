@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-18T18:30:56.490462+00:00",
+  "url": "https://string-db.org/api/tsv/network",
+  "parameters": {
+    "identifiers": "TM7SF2\rCYP51A1\rMSMO1\rSQLE\rFDFT1\rHSD17B7\rLSS\rNSDHL\rDHCR7\rEBP\rSC5D\rDHCR24",
+    "species": 9606,
+    "required_score": 700,
+    "add_nodes": 70,
+    "network_type": "functional",
+    "caller_identity": "srebf2_regulatory_signature"
+  },
+  "seed_genes": [
+    "TM7SF2",
+    "CYP51A1",
+    "MSMO1",
+    "SQLE",
+    "FDFT1",
+    "HSD17B7",
+    "LSS",
+    "NSDHL",
+    "DHCR7",
+    "EBP",
+    "SC5D",
+    "DHCR24"
+  ],
+  "returned_rows": 524,
+  "returned_nodes": 82
+}
