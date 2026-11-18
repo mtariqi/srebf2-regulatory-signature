@@ -1,0 +1,40 @@
+{
+  "type": "exploratory_link_reconstruction",
+  "n_nodes": 82,
+  "n_edges_full": 524,
+  "n_training_edges": 393,
+  "split_seed": 13,
+  "epochs": 160,
+  "model": {
+    "validation": {
+      "roc_auc": 0.8439349112426036,
+      "average_precision": 0.881964629694002,
+      "n_positive": 52,
+      "n_negative": 52
+    },
+    "test": {
+      "roc_auc": 0.8638038775837206,
+      "average_precision": 0.8658286530565418,
+      "n_positive": 79,
+      "n_negative": 79
+    }
+  },
+  "common_neighbors_baseline": {
+    "validation": {
+      "roc_auc": 0.9016272189349113,
+      "average_precision": 0.8958032696335945
+    },
+    "test": {
+      "roc_auc": 0.9286973241467713,
+      "average_precision": 0.9037953414415779
+    }
+  },
+  "limitations": [
+    "STRING is an association database, not a direct physical-interaction gold standard",
+    "Negatives are non-edges, not verified biological non-interactions",
+    "Same network supplied both features and reconstruction targets; holdout evaluation only checks graph structure",
+    "Only one split tested; results should not be generalized",
+    "No RNA response labels were used for prediction",
+    "Prior pathway gene selection can inflate apparent biological coherence"
+  ]
+}

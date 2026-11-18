@@ -1,0 +1,11 @@
+preferredName_A	preferredName_B	score	source
+CYP51A1	DHCR7	0.963	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+CYP51A1	NSDHL	0.977	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+CYP51A1	FDFT1	0.989	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+CYP51A1	SQLE	0.996	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+SQLE	DHCR7	0.974	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+SQLE	NSDHL	0.978	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+SQLE	FDFT1	0.999	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+DHCR7	FDFT1	0.943	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+DHCR7	NSDHL	0.955	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18
+NSDHL	FDFT1	0.936	STRING API functional network; minimum required_score=700; user-retrieved 2026-11-18

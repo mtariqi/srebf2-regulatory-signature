@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.0
+matplotlib>=3.8
+scikit-learn>=1.4
+networkx>=3.0
+requests>=2.31
+torch>=2.1
