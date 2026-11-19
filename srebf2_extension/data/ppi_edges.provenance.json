@@ -1,0 +1,14 @@
+{
+  "retrieved_utc": "2026-11-18T13:55:21.824943+00:00",
+  "url": "https://string-db.org/api/tsv/network?identifiers=FDFT1%0DSQLE%0DCYP51A1%0DNSDHL%0DDHCR7&species=9606&required_score=700&add_nodes=0&network_type=functional&caller_identity=srebf2-regulatory-signature",
+  "taxon": 9606,
+  "min_score": 700,
+  "genes": [
+    "FDFT1",
+    "SQLE",
+    "CYP51A1",
+    "NSDHL",
+    "DHCR7"
+  ],
+  "n_edges": 10
+}
