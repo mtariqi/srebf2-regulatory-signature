@@ -1,0 +1,4 @@
+database	pathway_id	description	original_NES	original_padj	set_size	rank_length
+GO	GO:0016126	sterol biosynthetic process	-2.94849963749003	4.04615384615385e-08	48	12355
+GO	GO:0006695	cholesterol biosynthetic process	-2.91007056220878	4.04615384615385e-08	42	12355
+Reactome	R-HSA-191273	Cholesterol biosynthesis	-3.02775314317795	6.06086956521739e-09	26	12355
