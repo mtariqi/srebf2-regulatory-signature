@@ -8,7 +8,7 @@
 ![Proteomics](https://img.shields.io/badge/Proteomics-Proposed-888888)
 ![Lipidomics](https://img.shields.io/badge/Lipidomics-Proposed-888888)
 ![Reference](https://img.shields.io/badge/Annotation-GENCODE%20v47-555555)
-![Status](https://img.shields.io/badge/Status-Phases%2017%20%26%2019%20audited-008080)
+![Status](https://img.shields.io/badge/Status-Phase%2018%20validated-008080)
 ![Docker](https://img.shields.io/badge/Docker-7%2F7%20outputs-2496ED)
 ![Singularity](https://img.shields.io/badge/Singularity%20CE-7%2F7%20outputs-6B4CA0)
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
@@ -22,9 +22,34 @@
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature
 **Research update:** 20 November 2026
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.
-**Current stage:** Phase 17 contrast-level DoRothEA/VIPER inference, Phase 19 statistical robustness verification, and their selected reproducibility inputs/results are committed. Phase 15 enrichment scripts and selected figures/tables are committed, while additional Phase 15 outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
+**Current stage:** Phase 18 cross-context sterol-core validation, Phase 17 contrast-level DoRothEA/VIPER inference, Phase 19 statistical robustness verification, and their selected reproducibility inputs/results are committed. Phase 15 enrichment scripts and selected figures/tables are committed, while additional Phase 15 outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
 
 > **Evidence boundary:** The frozen 1,326-gene signature is **perturbation-derived, not confirmed binding-supported**. Promoter bigWig coverage is descriptive signal, not peak-level proof of SREBP2 occupancy. The 13 oxidative-phosphorylation (OXPHOS) genes are *computational candidates*, not confirmed direct targets. No proteomic, lipidomic, Seahorse, RT-qPCR, or binding-validation experiments have been performed. The signature has **not** been demonstrated to consistently outperform SREBF2 transcript abundance.
+
+## Phase 18 — Cross-context sterol-core validation (20 November 2026)
+
+**New analysis:** The predefined 12-gene sterol-biosynthesis core from HeLa discovery was examined in two HAP1 SREBF2-KO contrasts (with and without FBS) and three HepG2 SREBP2-knockdown contrasts (shRNA 664, 665, 667). **All 72/72 gene–contrast log2 fold changes were negative** across HeLa discovery plus five external comparisons, and **71/72** passed the respective within-contrast BH-adjusted *p* < 0.05 threshold. The 12-gene panel was defined using HeLa; only HAP1/HepG2 provide external contexts, and the 72 observations are **not independent biological replicates**.
+
+| Context | Negative sterol-core genes | FDR < 0.05 among 12 | Source |
+|---|---:|---:|---|
+| HeLa discovery, KO versus WT under depletion | 12/12 | 12/12 | Discovery DESeq2 results |
+| HAP1 KO versus WT, minus FBS | 12/12 | 12/12 | GSE147770 |
+| HAP1 KO versus WT, plus FBS | 12/12 | 11/12 | GSE147770 |
+| HepG2 shSREBP2 664 | 12/12 | 12/12 | GSE271000 |
+| HepG2 shSREBP2 665 | 12/12 | 12/12 | GSE271000 |
+| HepG2 shSREBP2 667 | 12/12 | 12/12 | GSE271000 |
+
+![Cross-context sterol-core gene-level log2FC heatmap](results/phase18/figures/Figure_Phase18_Sterol_Core_Validation.png)
+
+[High-resolution PDF](results/phase18/figures/Figure_Phase18_Sterol_Core_Validation.pdf) · [Full 72-entry source table](results/phase18/phase18f_all_contrast_gene_values.tsv) · [Validation summary](results/phase18/phase18c_sterol_core_summary.tsv) · [Gene-level external results](results/phase18/phase18c_sterol_core_gene_level.tsv) · [Reproducible Phase 18 scripts](scripts/phase18)
+
+**HepG2 count-level orientation audit:** Original GEO sample labels were mapped to **8/8** locally available paired-end FASTQ runs (two shControl samples; two each for shSREBP2 664, 665, and 667). Existing GENCODE v47 gene counts were used for an independent **descriptive** median-ratio normalized-count check. The count-derived treatment-versus-control directions agreed with the deposited DESeq2 signs for **17/17 prespecified genes × three shRNAs = 51/51 comparisons**, including all 12 sterol-core genes and SREBF2. No new alignment or formal DESeq2 fit was required.
+
+[Verified sample/run mapping](metadata/phase18/GSE271000_sample_run_map.tsv) · [Count-level direction audit](results/phase18/phase18e2_count_direction_audit.tsv) · [Estimated size factors](results/phase18/phase18e2_size_factors.tsv) · [HepG2 knockdown-gene audit](results/phase18/phase18d_hepg2_knockdown_gene_check.tsv)
+
+**Important qualifications:** This strongly corroborates the deposited HepG2 fold-change direction relative to labeled groups, but **the original GEO authors' DESeq2 contrast command was not recovered**, so archival documentation retains the exact-contrast-ordering caveat. Counts were reanalyzed from the *same* biological samples, not a new cohort; all three shRNAs share two control samples. Spearman correlations of per-gene fold-change ranking between HeLa and validation contrasts were weak, so consistent direction must not be described as conserved response magnitude. Neither this analysis nor Phase 17 establishes direct SREBP2 occupancy, SREBF1 compensation, or a causal regulatory mechanism.
+
+---
 
 ## Latest verified research update — Phases 17 and 19 (20 November 2026)
 
