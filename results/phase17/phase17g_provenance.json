@@ -1,0 +1,50 @@
+{
+  "project": "SREBF2 Regulatory Signature",
+  "phase": "17G",
+  "date": "2026-11-20",
+  "contrast": "KO_vs_WT_depletion",
+  "method": "DoRothEA/VIPER",
+  "regulon_confidence_primary": [
+    "A",
+    "B",
+    "C"
+  ],
+  "minimum_targets_primary": 10,
+  "minimum_targets_sensitivity": 5,
+  "files": {
+    "primary_deseq2": {
+      "path": "results/de/discovery_v1/all12/KO_vs_WT_depletion.tsv",
+      "sha256": "b3b85ff36a26b0853199b9bae7bde4d25078d8683c548deba0a82ee98c54261b",
+      "rows": 17158,
+      "columns": [
+        "gene_id",
+        "baseMean",
+        "log2FoldChange",
+        "lfcSE",
+        "stat",
+        "pvalue",
+        "padj"
+      ]
+    },
+    "original_wald_ranked": {
+      "path": "results/phase15/gsea_primary_wald_ranked.tsv",
+      "sha256": "a179f936f8511df4974ea051a404744cdc40a2507db9485f441eae55e9ea560b",
+      "rows": 12485,
+      "columns": [
+        "gene_id",
+        "gene_symbol",
+        "stat"
+      ]
+    },
+    "phase17_ranked_unique_symbols": {
+      "path": "results/phase17/phase17b_ranked_unique_symbols.tsv",
+      "sha256": "a64a9143a4ebf7b9cbcc705c60c9e677910d78ac6c3bfd87e7279e46754a4bb1",
+      "rows": 12483,
+      "columns": [
+        "gene_id",
+        "gene_symbol",
+        "stat"
+      ]
+    }
+  }
+}
