@@ -8,7 +8,7 @@
 ![Proteomics](https://img.shields.io/badge/Proteomics-Proposed-888888)
 ![Lipidomics](https://img.shields.io/badge/Lipidomics-Proposed-888888)
 ![Reference](https://img.shields.io/badge/Annotation-GENCODE%20v47-555555)
-![Status](https://img.shields.io/badge/Status-Phase%2015%20analysis-008080)
+![Status](https://img.shields.io/badge/Status-Phases%2017%20%26%2019%20audited-008080)
 ![Docker](https://img.shields.io/badge/Docker-7%2F7%20outputs-2496ED)
 ![Singularity](https://img.shields.io/badge/Singularity%20CE-7%2F7%20outputs-6B4CA0)
 ![Snakemake](https://img.shields.io/badge/Snakemake-Phase%2012%20validated-22A162)
@@ -20,11 +20,51 @@
 
 
 **Repository:** https://github.com/mtariqi/srebf2-regulatory-signature
-**Research update:** 18 November 2026
+**Research update:** 20 November 2026
 **Research approach:** Integrative multi-omics *framework*, with completed transcriptomic analyses and exploratory ChIP-seq-derived promoter-signal integration; proteomics, lipidomics, and laboratory assays are proposed rather than performed.
-**Current stage:** Phases 13–14 chromatin-state enrichment and chromosome-exact matched analyses are committed; the Phase 15E enrichment script and Figure 5 membership table are committed. Full Phase 15 enrichment outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
+**Current stage:** Phase 17 contrast-level DoRothEA/VIPER inference, Phase 19 statistical robustness verification, and their selected reproducibility inputs/results are committed. Phase 15 enrichment scripts and selected figures/tables are committed, while additional Phase 15 outputs remain local unless individually committed. Phase 12 statistical outputs were numerically validated in native Ubuntu, Docker, and Singularity CE on one workstation. Independent HPC validation and CI repair remain pending.
 
 > **Evidence boundary:** The frozen 1,326-gene signature is **perturbation-derived, not confirmed binding-supported**. Promoter bigWig coverage is descriptive signal, not peak-level proof of SREBP2 occupancy. The 13 oxidative-phosphorylation (OXPHOS) genes are *computational candidates*, not confirmed direct targets. No proteomic, lipidomic, Seahorse, RT-qPCR, or binding-validation experiments have been performed. The signature has **not** been demonstrated to consistently outperform SREBF2 transcript abundance.
+
+## Latest verified research update — Phases 17 and 19 (20 November 2026)
+
+**Scope:** These phases add *contrast-level* DoRothEA/VIPER transcription-factor inference and independent numerical/region-exclusion audits of previously reported HeLa E117 chromatin-state associations. They do not add a new experimental omics modality, matched chromatin measurements, or independent TF-activity validation.
+
+### Phase 17 — DoRothEA/VIPER transcription-factor inference
+
+The SREBF2 KO-versus-WT cholesterol-depletion contrast was analyzed with signed DESeq2 Wald statistics. Of **12,485** ranked protein-coding gene entries, **12,483 unique mapped gene symbols** entered the TF analysis after an ambiguous symbol was removed. The human DoRothEA **A–C** reference yielded **13,223** regulatory interactions before measured-gene filtering, **10,309** measured interactions, and **238** TFs with at least **10** measured targets.
+
+| Regulator | Measured regulon targets | VIPER activity score (KO vs WT) | Model-derived BH FDR | Evidence limit |
+|---|---:|---:|---:|---|
+| **SREBF2** | 12 | **−6.817** | **4.42 × 10⁻¹⁰** | Small regulon; inferred activity, not direct binding |
+| **SREBF1** | 20 | **−6.706** | **7.92 × 10⁻¹⁰** | May share target-driven signal with SREBF2 |
+| MYC | 335 | −3.702 | 0.00159 | Exploratory network inference |
+| SP1 | 208 | −2.319 | 0.0647 | Not significant at BH FDR < 0.05 |
+
+**Sensitivity:** SREBF2/SREBF1 activity scores were identical to displayed precision for DoRothEA A–B versus A–C and minimum-target thresholds of five versus ten. This should **not** be construed as four independent replications: the effective target subsets for these TFs may be unchanged. The primary VIPER fit reproduced numerically (maximum absolute score difference **4.88 × 10⁻¹⁵**).
+
+SREBF2 and SREBF1 share **eight** measured reference targets: `ACLY`, `FDFT1`, `HMGCR`, `INSIG1`, `LDLR`, `LRP1`, `PCYT2`, `SQLE`. After removing these shared targets, SREBF1 remained negative (**−3.883; 12 targets**) while SREBF2 was **not estimable** at the primary ten-target threshold (**four** remaining targets). After excluding the predefined 12-gene sterol core, SREBF1 remained negative (**−5.668; 18 targets**); SREBF2 remained negative only in the *exploratory five-target* analysis (**−4.869; nine targets**). **These observations neither prove SREBF1 compensation nor independently validate TF activity.**
+
+![SREBF1 and SREBF2 target-exclusion VIPER sensitivity](results/phase17/Figure_TF_Activity_Sensitivity.png)
+
+[Phase 17 source scripts](scripts/phase17) · [VIPER primary scores](results/phase17/phase17c_viper_activity.tsv) · [Confidence/target-threshold sensitivity](results/phase17/phase17d_candidate_tf_sensitivity.tsv) · [Shared-target exclusion results](results/phase17/phase17e_regulon_dependence.tsv) · [Five-target sensitivity](results/phase17/phase17f_five_target_sensitivity.tsv) · [Input provenance and SHA-256](results/phase17/phase17g_provenance.json) · [R environment](results/phase17/phase17_session_info.txt)
+
+### Phase 19 — Numerical and regional robustness verification
+
+- **45** original Fisher exact comparisons (15 historical E117 states × three gene-group contrasts) independently recomputed, including the original global BH adjustment: **12** comparisons had FDR < 0.05.
+- **18** adjusted follow-up models (six selected states × three contrasts) all converged, retained full-rank design matrices, and reproduced frozen odds ratios (maximum absolute difference **4.44 × 10⁻¹⁶**). The six-state set is *post-screen exploratory*; within-follow-up adjustment does not constitute independent confirmation.
+- Chromosome-exact matched increased-in-KO × historical `15_Quies`: **425 pairs**, **106** signature-only and **55** background-only discordant pairs; matched OR **1.927**, exact 95% CI **1.379–2.720**, exact *p* **7.15 × 10⁻⁵** (BH over two matched tests **1.43 × 10⁻⁴**).
+- Chromosome-exact matched decreased-in-KO × `14_ReprPCWk`: **677 pairs**, OR **1.250**, exact 95% CI **0.667–2.373**, *p* **0.551** (not significant).
+- Leave-one-chromosome-out (**23** exclusions): quiescent-state OR range **1.782–2.102**; maximum nominal exact *p* **0.000833**.
+- Leave-one-1-Mb-signature-TSS-block-out (**340** genomic blocks, **141** informative): OR range **1.873–1.981**; maximum nominal exact *p* **0.000166**.
+- Exact chromosome sign-flip sensitivity using the **18** nonzero chromosome net-discordance contributions: two-sided *p* **0.002083** under chromosome-level sign symmetry. This is sensitivity evidence, not independent biological replication.
+- Original preranked GO/Reactome results versus `fgseaMultilevel(eps=0)` were audited separately, retaining the original and rerun FDR values as distinct numerical estimates.
+
+[Consolidated Phase 19 audit](docs/PHASE19_STATISTICAL_AUDIT.md) · [Chromosome-exact results](results/phase14/SREBF2_PHASE14A6_CHROMOSOME_EXACT_ENRICHMENT.tsv) · [Chromosome-exclusion audit](results/phase14/SREBF2_PHASE19_CHROMOSOME_EXACT_LOCO_AUDIT.tsv) · [1-Mb block summary](results/phase19/SREBF2_PHASE19_1MB_BLOCK_SUMMARY.tsv) · [Block-exclusion sensitivity](results/phase19/SREBF2_PHASE19_LEAVE_ONE_BLOCK_OUT.tsv)
+
+> **Inference boundary:** E117 state labels come from a historical HeLa-S3 reference rather than the cells used for SREBF2 KO RNA-seq. Neither the regional robustness results nor VIPER scores demonstrate chromatin remodeling, direct SREBP2 occupancy, causal TF mechanisms, or completed protein/lipid-level multi-omics integration. Further external biological validation remains important.
+
+---
 
 ## Latest research extension (Phases 13–15)
 
